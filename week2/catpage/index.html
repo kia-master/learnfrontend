@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey about your cat</title>
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/1818/1818405.png" type="image/png">
+</head>
+
+<body>
+    <h2 style="text-align: center; color: #2da9da;">
+        Несколько вопросов о вашем питомце
+    </h2>
+
+    <div style="width: 500px; margin: auto; border: thick double #2da9da; padding: 1em; border-radius: 10px;">
+
+        <form>
+            <div>
+                <fieldset style="border-radius: 5px;">
+                    <legend>
+                        <b>Данные о владельце</b>
+                    </legend>
+                    <p>Имя&nbsp;&nbsp;<input type="text" name="name"></p>
+                    <p>Телефон&nbsp;&nbsp;<input type="tel" name="phone"></p>
+                </fieldset>
+            </div>
+            <br>
+            <fieldset style="border-radius: 5px;">
+                <legend><b>Данные о питомце</b></legend>
+                <div>
+                    <br> Кличка&nbsp;
+                    <input type="text" name="" id="petname">
+                </div>
+                <hr noshade="0" size="1" color="#b8e6f8">
+                <div>
+                    Порода&nbsp;
+                    <select name="" id="">
+                        <option value="one">Британец</option>
+                        <option value="">Сиамская</option>
+                        <option value="">Без породы</option>
+                        <option value="">Другое</option>
+                    </select>
+                </div>
+                <hr noshade="0" size="1" color="#b8e6f8">
+                <div>
+                    <p>Чем питается</p>
+                    <input type="checkbox" name="food" value="1" /> Сухой корм <br>
+                    <input type="checkbox" name="food" value="2" /> Влажный корм <br>
+                    <input type="checkbox" name="food" value="3" /> Натуральный корм <br>
+                </div>
+                <hr noshade="0" size="1" color="#b8e6f8">
+                <div>
+                    <p>Пол</p>
+                    <input type="radio" name="sex" value="1" /> Самец
+                    <input type="radio" name="sex" value="1" /> Самка <br>
+                </div>
+                <hr noshade="0" size="1" color="#b8e6f8">
+                <div>
+                    <p>Приложить фото питомца</p>
+                    <p><input type="file" /></p>
+                </div>
+                <hr noshade="0" size="1" color="#b8e6f8">
+                <div>
+                    <p>Комментарий</p>
+                    <textarea name="comment" style="width:100%" rows="4"></textarea>
+                </div>
+            </fieldset>
+
+            <div style="text-align: center;">
+                <br>
+                <input type="button" value="Сохранить" style="background-color: #a1ddf5; border-radius: 5px;">&nbsp;
+                <input type="reset" value="Очистить форму" style="background-color: #f5f6f8; border-radius: 5px;">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
