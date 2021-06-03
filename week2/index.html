@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My student's way. Second week</title>
+    <style>
+        code {
+            background-color: rgb(255, 254, 254);
+            border-radius: 5px;
+        }
+
+        section {
+            background-color: rgb(255, 234, 253);
+            border-radius: 5px;
+            padding: 20px;
+            margin: 40px;
+        }
+
+        header {
+            margin: 40px;
+        }
+
+        footer {
+            margin: 40px;
+        }
+
+        nav {
+            display: inline-flex;
+        }
+
+        a.top {
+            color: rgb(243, 76, 215);
+            text-decoration: none;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <span id="top"></span>
+    <header>
+        <h1>My student's way. Second week</h1>
+        <nav>
+            <img src="https://pbs.twimg.com/profile_images/734503934296006656/oCQhfNfl.jpg" alt="ris">
+            <ul>
+                <li>
+                    <a href="#blog">About blog</a>
+                </li>
+                <li>
+                    <a href="#questpet">The questions about a cat</a>
+                </li>
+                <li>
+                    <a href="#answers">Questions and Answers</a>
+                </li>
+                <li>
+                    <a href="#inwiki">Wiki</a>
+                </li>
+                <li>
+                    <a href="#valid">Checking the code</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Homework</h1>
+            <section id="blog">
+                <h2>About blog</h2>
+                <p>Всем привет!</p>
+                <p>
+                    Эта страничка и будет моим блогом для второго задания. Решение принято ввиду отсутсвия идей
+                    &#128518;&#128518;&#128518;.
+                    <br>Какая-то часть будет на английском, т.к. я в процессе изучения языка.
+                    <br>И немного стиля (css). Не удержалась, ведь так хочется сделать красиво
+                    &#127801;&#127801;&#127801;
+                </p>
+                Также здесь расположились:
+                <ul>
+                    <li>опросник о питомце &#128008;</li>
+                    <li>ответы на вопросы &#10067;</li>
+                    <li>статья для вики &#128221;</li>
+                    <li>результаты проверки кода &#9989;</li>
+                </ul>
+                Ссылки в навигационном меню направляют на контент этой страницы с использованием якорей.
+                <p style="text-align: right;"><a href="#top" class="top">Наверх</a></p>
+            </section>
+
+            <section id="questpet">
+                <h2>About your cat</h2>
+                <p>
+                    Мы прожили уже больше года, то уходя в локдаун, то выходя из него &#128567;. Никто не может сказать
+                    точно, как
+                    долго мы
+                    будем вынуждены соблюдать требования социальной изоляции. Возможно, вашей кошке &#128008; даже
+                    нравится то,
+                    что вы
+                    чаще остаетесь дома. И это значит, что у вас есть больше времени на то, чтобы обратить внимание на
+                    вещи,
+                    до которых у вас раньше не доходили руки.
+                    <br>Не забывайте: даже во время локдауна вы время от времени выходите на улицу, а ваша кошка
+                    &#128008; сидит
+                    дома месяц за месяцем, год за годом.
+                </p>
+                Позаботьтесь о ее комфорте! Пройдите наш <a
+                    href="https://kia-master.github.io/learnfrontend/week2/catpage/" target="_blank">опрос</a>!
+                <p style="text-align: right;"><a href="#top" class="top">Наверх</a></p>
+            </section>
+
+            <section id="answers">
+                <h2>Questions and Answers</h2>
+                <ol>
+                    <li>
+                        Что такое валидация? - автоматическая проверка кода по установленным правилам и шаблонам.
+                    </li>
+                    <li>
+                        Какой спецсимвол используется для указания знака ©? - <code
+                            style="background-color: rgb(253, 183, 236); border-radius: 5px;">&nbsp;&amp;copy;&nbsp;</code>
+                        подсмотрела <a href="https://unicode-table.com/ru/00A9/" target="_blank">здесь</a>.
+                    </li>
+                    <li>
+                        Найдите пример еще тега HTML5, который не вошел в урок - тег
+                        <code>&nbsp;&lt;datalist&gt;&nbsp;</code>
+                        -
+                        стандартное текстовое поле, только при вводе слова, которое есть в списке - в выпадающем списке
+                        это слово
+                        появится. При клике на поле - покажет выпадающий список со всеми значениями. Содержит набор
+                        опций <code>&nbsp;&lt;option&gt;&nbsp;</code>,
+                        доступных для выбора. Выбранное значение будет установлено для элемента
+                        <code>&nbsp;&lt;input&gt;&nbsp;</code>,
+                        с атрибутом <code>&nbsp;list&nbsp;</code>.
+                        Подсмотрела <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/datalist"
+                            target="_blank">здесь</a>.
+                    </li>
+                    <li>
+                        Какой тег мы используем для создания меню? - для создания меню используется тег
+                        <code>&nbsp;&lt;nav&gt;&nbsp;</code>
+                    </li>
+                    <li>
+                        Чем плохо использовать <code>&nbsp;div&nbsp;</code> для
+                        всего?</li>
+                    <li>
+                        Самостоятельно разберитесь, как вставлять в страницу видео тегами HTML5 и приложите пример кода
+                    </li>
+                    <li>
+                        Как сделать блок радиокнопок, чтобы выбирался только один пункт?
+                    </li>
+                    <li>
+                        Каким тегом можно сделать поле ввода даты?
+                    </li>
+                    <li>
+                        Как определяется, какой именно пункт будет выбран по умолчанию в выпадающем списке?
+                    </li>
+                    <li>
+                        Что такое хорошая разметка?
+                    </li>
+                </ol>
+                <p style="text-align: right;"><a href="#top" class="top">Наверх</a></p>
+            </section>
+
+            <section id="inwiki">
+                <h2>Мой вклад в Wiki</h2>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium recusandae rem soluta distinctio
+                iusto excepturi laudantium suscipit architecto maxime libero est placeat fugit doloribus cum cumque, id
+                quia doloremque perferendis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt praesentium sit incidunt, quasi
+                consequatur nobis sed distinctio porro repellat similique! Commodi similique perferendis quia doloribus
+                numquam nisi animi excepturi nulla.
+                <p style="text-align: right;"><a href="#top" class="top">Наверх</a></p>
+            </section>
+
+            <section id="valid">
+                <h2>Checking the code</h2>
+                <p>
+                    Код этой страницы проверен на сайте <a href="https://validator.w3.org/"
+                        target="_blank">validator.w3.org</a>.
+                    <br>Но для удобства есть плагин для vscode &#8594; <a
+                        href="https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator"
+                        target="_blank">&#128279; W3C Web Validator</a>. Прямо в редакторе&#10071;&#10071;&#10071;
+                    <br>Проверила с помощью плагина, результаты проверки совпадают с сайтом.
+                </p>
+                <p>
+                    Ошибки остались только:
+                    <br><code>Use CSS instead.error(web_validator)</code>
+                    <br>Исправлю, когда полноценно к CSS приступим.
+                </p>
+                <p style="text-align: right;"><a href="#top" class="top">Наверх</a></p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <address>My GitHab</address>
+        <p style="text-align: right;">&copy;kia-master</p>
+    </footer>
+</body>
+
+</html>
