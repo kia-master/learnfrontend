@@ -10,6 +10,8 @@
         code {
             background-color: rgb(255, 254, 254);
             border-radius: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
 
         section {
@@ -39,6 +41,19 @@
         h1 {
             text-align: center;
         }
+
+        li.menu {
+            line-height: 2.7;
+            list-style-type: "\1F449";
+
+        }
+
+        a.menu {
+            color: #860ad8;
+            font-weight: bold;
+            padding-inline-start: 2ch;
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -49,20 +64,20 @@
         <nav>
             <img src="https://pbs.twimg.com/profile_images/734503934296006656/oCQhfNfl.jpg" alt="ris">
             <ul>
-                <li>
-                    <a href="#blog">About blog</a>
+                <li class="menu">
+                    <a class="menu" href="#blog">ABOUT BLOG</a>
                 </li>
-                <li>
-                    <a href="#questpet">The questions about a cat</a>
+                <li class="menu">
+                    <a class="menu" href="#questpet">THE QUESTIONS ABOUT A CAT</a>
                 </li>
-                <li>
-                    <a href="#answers">Questions and Answers</a>
+                <li class="menu">
+                    <a class="menu" href="#answers">QUESTIONS AND ANSWERS</a>
                 </li>
-                <li>
-                    <a href="#inwiki">Wiki</a>
+                <li class="menu">
+                    <a class="menu" href="#inwiki">WIKI</a>
                 </li>
-                <li>
-                    <a href="#valid">Checking the code</a>
+                <li class="menu">
+                    <a class="menu" href="#valid">CHECKING THE CODE</a>
                 </li>
             </ul>
         </nav>
@@ -88,7 +103,18 @@
                     <li>статья для вики &#128221;</li>
                     <li>результаты проверки кода &#9989;</li>
                 </ul>
-                Ссылки в навигационном меню направляют на контент этой страницы с использованием якорей.
+                <p>Ссылки в навигационном меню направляют на контент этой страницы с использованием якорей.</p>
+
+                <strong>При выполнении домашки открыла для себя следующие ресурсы:</strong>
+                <ul>
+                    <li>Отличный ресурс по спецсимволам: <a href="https://unicode-table.com/ru/00A9/" target="_blank">от
+                            эмоджи до иврита</a></li>
+                    <li>Одна из лучших документаций по Web от Mozilla: <a
+                            href="https://developer.mozilla.org/ru/docs/Web" target="_blank">здесь</a></li>
+                    <li>Если хочешь разместить код на своей страничке, можно использовать <a
+                            href="https://highlight.hohli.com/" target="_blank">online
+                            parser</a>. Выдаст готовый html-код. Здорово!</li>
+                </ul>
                 <p style="text-align: right;"><a href="#top" class="top">Наверх</a></p>
             </section>
 
@@ -117,48 +143,105 @@
                 <h2>Questions and Answers</h2>
                 <ol>
                     <li>
-                        Что такое валидация? - автоматическая проверка кода по установленным правилам и шаблонам.
+                        <b>Что такое валидация?</b>
+                        <p>Автоматическая проверка кода по установленным правилам и шаблонам.</p>
                     </li>
                     <li>
-                        Какой спецсимвол используется для указания знака ©? - <code
-                            style="background-color: rgb(253, 183, 236); border-radius: 5px;">&nbsp;&amp;copy;&nbsp;</code>
-                        подсмотрела <a href="https://unicode-table.com/ru/00A9/" target="_blank">здесь</a>.
+                        <b>Какой спецсимвол используется для указания знака ©?</b>
+                        <p>Спецсимвол <code>&amp;copy;</code></p>
                     </li>
                     <li>
-                        Найдите пример еще тега HTML5, который не вошел в урок - тег
-                        <code>&nbsp;&lt;datalist&gt;&nbsp;</code>
-                        -
-                        стандартное текстовое поле, только при вводе слова, которое есть в списке - в выпадающем списке
-                        это слово
-                        появится. При клике на поле - покажет выпадающий список со всеми значениями. Содержит набор
-                        опций <code>&nbsp;&lt;option&gt;&nbsp;</code>,
-                        доступных для выбора. Выбранное значение будет установлено для элемента
-                        <code>&nbsp;&lt;input&gt;&nbsp;</code>,
-                        с атрибутом <code>&nbsp;list&nbsp;</code>.
-                        Подсмотрела <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/datalist"
-                            target="_blank">здесь</a>.
+                        <b>Найдите пример еще тега HTML5, который не вошел в урок - тег</b>
+                        <p>
+                            Тэг <code>&lt;datalist&gt;</code>.
+                            <br>
+                            Стандартное текстовое поле. При вводе слова появляется выпадающий список - только если это
+                            слово есть в листе.
+                            При клике на поле - покажет список со всеми значениями, но можно ввести и другое.
+                            Очень удобно, можно предлагать значения уже существующие в базе данных
+                            <br>Содержит набор опций <code>&lt;option&gt;</code>, доступных для выбора.
+                            Выбранное значение будет установлено для элемента
+                            <code>&lt;input&gt;</code>, с атрибутом <code>list</code>.
+                            <br>Подсмотрела &#128279; <a
+                                href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/datalist"
+                                target="_blank">здесь</a> &#128279;.
+                        </p>
+                        <p>
+                            <label for="ice-cream-choice">Набери <mark>шоколад</mark> или <mark>мята</mark> или
+                                просто кликни на поле &nbsp;</label>
+                            <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+                            <datalist id="ice-cream-flavors">
+                                <option value="шоколад">
+                                <option value="кокос">
+                                <option value="мята">
+                                <option value="клубника">
+                                <option value="банан">
+                            </datalist>
+                        </p>
                     </li>
                     <li>
-                        Какой тег мы используем для создания меню? - для создания меню используется тег
-                        <code>&nbsp;&lt;nav&gt;&nbsp;</code>
+                        <b>Какой тег мы используем для создания меню?</b>
+                        <p>Для создания меню используется тег <code>&lt;nav&gt;</code></p>
                     </li>
                     <li>
-                        Чем плохо использовать <code>&nbsp;div&nbsp;</code> для
-                        всего?</li>
-                    <li>
-                        Самостоятельно разберитесь, как вставлять в страницу видео тегами HTML5 и приложите пример кода
+                        <b>Чем плохо использовать <kbd>div</kbd> для всего?</b>
+                        <p>
+                            Тег <code>div</code> - это обычная прямоугольная область, которая не несет никакой
+                            информации.
+                            Соответсвенно для поисковых систем все элементы страницы будут одинаковыми и структура
+                            документа с тегами <code>div</code> менее читаема и понятна на всех этапах проектирования,
+                            от разработки до публикации. </p>
                     </li>
                     <li>
-                        Как сделать блок радиокнопок, чтобы выбирался только один пункт?
+                        <b>Самостоятельно разберитесь, как вставлять в страницу видео тегами HTML5 и приложите пример
+                            кода.</b>
+                        <p>
+                            В HTML5 используется тег <code>video</code> для добавления видео контента. Более подробно
+                            можно ознакомиться
+                            <a
+                                href="https://developer.mozilla.org/ru/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content">здесь</a>.
+                        </p>
+                        <pre class="html5" style="font-family:monospace;">
+                                <span><b>Пример кода</b><br></span>
+                                <span style="color: #808080; font-style: italic;">&lt;!-- Simple video example --&gt;</span>
+                                <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">video</span> 
+                                <span style="color: #000066;">src</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;videofile.ogg&quot;</span> autoplay poster<span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;posterimage.jpg&quot;</span>&gt;</span>
+                                    Sorry, your browser doesn't support embedded videos,
+                                    but don't worry, you can <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">a</span> <span style="color: #000066;">href</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;videofile.ogg&quot;</span>&gt;</span>download it<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">a</span>&gt;</span>
+                                    and watch it with your favorite video player!
+                                <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">video</span>&gt;</span>
+                                <video src="video/video-dns.mp4" controls poster="video/poster.jpg"></video>
+                                <a href="https://www.youtube.com/watch?v=t2NMbSarXC4&list=PLVULwBUtsriM4vvqL6HNAdkLMEo0NR3S2&index=11" target="_blank">Источник</a>
+                            </pre>
                     </li>
                     <li>
-                        Каким тегом можно сделать поле ввода даты?
+                        <b>Как сделать блок радиокнопок, чтобы выбирался только один пункт?</b>
+                        <p>
+                            Использовать тег формы <code>input</code> с типом <code>radio</code>:
+                            <br><code>&lt;input type="radio" /></code>
+                        </p>
                     </li>
                     <li>
-                        Как определяется, какой именно пункт будет выбран по умолчанию в выпадающем списке?
+                        <b>Каким тегом можно сделать поле ввода даты?</b>
+                        <p>
+                            Элементы тега <code>&lt;input></code> типа <code>date</code> создают поля
+                            ввода и позволяют пользователю ввести дату. Код <code>&lt;input type="date" /></code>
+                        </p>
+                        <p>
+                            <label for="inputdate"><mark>Выберите дату</mark>: </label>
+                            <input type="date" id="inputdate" />
+                        </p>
                     </li>
                     <li>
-                        Что такое хорошая разметка?
+                        <b>Как определяется, какой именно пункт будет выбран по умолчанию в выпадающем списке?</b>
+                        <p>Определяется с помощью атрибута <code>selected</code></p>
+                    </li>
+                    <li>
+                        <b>Что такое хорошая разметка?</b>
+                        <p>
+                            Простая и понятная, нет ничего лишнего, работает, проходит
+                            валидацию, соответсвует стилю написания кода в компании
+                        </p>
                     </li>
                 </ol>
                 <p style="text-align: right;"><a href="#top" class="top">Наверх</a></p>
@@ -166,12 +249,12 @@
 
             <section id="inwiki">
                 <h2>Мой вклад в Wiki</h2>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium recusandae rem soluta distinctio
-                iusto excepturi laudantium suscipit architecto maxime libero est placeat fugit doloribus cum cumque, id
-                quia doloremque perferendis!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt praesentium sit incidunt, quasi
-                consequatur nobis sed distinctio porro repellat similique! Commodi similique perferendis quia doloribus
-                numquam nisi animi excepturi nulla.
+                <p>
+                    Мини-статья про тип <code>date</code> тэга <code>input</code>
+                    <hr>
+                    <a href="https://www.notion.so/Input-field-for-date-016dc122bad040d3b9e0a93fcbc41340"
+                        target="_blank">Input field for date</a>
+                </p>
                 <p style="text-align: right;"><a href="#top" class="top">Наверх</a></p>
             </section>
 
@@ -196,7 +279,8 @@
     </main>
 
     <footer>
-        <address>My GitHab</address>
+        <address>My project on <a href="https://github.com/kia-master/learnfrontend" target="_blank">GitHab</a>
+        </address>
         <p style="text-align: right;">&copy;kia-master</p>
     </footer>
 </body>
