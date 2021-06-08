@@ -5,28 +5,72 @@
     <meta charset="utf-8">
     <title>Homework. Week 1</title>
     <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/1818/1818405.png" type="image/png">
+    <style>
+        div.header-act {
+            text-align: center;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        div.head-and-footer {
+            text-align: center;
+            background-color: rgba(253, 234, 239, 0.856);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 7px;
+        }
+
+        hr {
+            border-bottom: 5px solid rgb(125, 163, 194);
+            border-radius: 15px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
 </head>
 
 <body>
-
-    <div align="center">
-        <h1>Homework. Week 1</h1>
-        <br><kbd>Kotэ</kbd> <img src="assets/images/kote.png" alt="cat" width="100"> <kbd> VS </kbd> <img
-            src="assets/images/me.jpg" alt="cat" width="95"> <kbd>Ирина</kbd>
-    </div>
-    <div align="center">
-        <h2>Actors</h2>
-        <b>Kotэ</b> - повелитель знаний, главный чекер и просто КОТ
-        <br>
-        <b>Ирина</b> - студент, пытается дружить с "няшным" фронтендом
+    <div class="head-and-footer">
+        <div
+            style="background-color: rgba(253, 214, 221, 0.8); border-radius: 7px; padding-top: 5px; padding-bottom: 40px; width: 40vw; display: inline-block;">
+            <h1>
+                Homework. Week 1
+            </h1>
+            <kbd>Kotэ</kbd> <img src="assets/images/kote.png" alt="cat" width="100"> <kbd> VS </kbd> <img
+                src="assets/images/me.jpg" alt="cat" width="95"> <kbd>Ирина</kbd>
+        </div>
+        <h2 style="font-size:25px; font-weight:bold">Actors</h2>
+        <p><b>Kotэ</b> - повелитель знаний, главный чекер и просто КОТ</p>
+        <p><b>Ирина</b> - студент, пытается дружить с "няшным" фронтендом</p>
     </div>
 
     <hr noshade="0" size="1" color="pink">
-    <div>
-        <h2 align="center">Act 1</h2>
-        <span style="background-color: rgb(202, 252, 190);">Kotэ</span>: Ну рассказывай, какие программки установила?
+    <!-- act 1 -->
+    <div style="background-color: rgba(230, 255, 255, 0.753); padding: 20px;">
+        <div class="header-act">
+            <object data="assets/images/a.png" type="image/png"></object>
+            <object data="assets/images/c.png" type="image/png"></object>
+            <object data="assets/images/t.png" type="image/png"></object>
+            <svg height="60px" version="1.1" viewBox="0 0 60 60" width="60px" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title />
+                <desc />
+                <defs />
+                <g fill="none" fill-rule="evenodd" id="People" stroke="none" stroke-width="1">
+                    <g fill="#000000" id="Icon-71">
+                        <path
+                            d="M32,19 L32,41 C32,41.553 31.552,42 31,42 C30.448,42 30,41.553 30,41 L30,21.414 L25.707,25.707 C25.316,26.098 24.684,26.098 24.293,25.707 C23.902,25.316 23.902,24.684 24.293,24.293 L30.293,18.293 C30.579,18.006 31.008,17.919 31.383,18.076 C31.756,18.23 32,18.596 32,19 M30,58 C14.561,58 2,45.439 2,30 C2,14.561 14.561,2 30,2 C45.439,2 58,14.561 58,30 C58,45.439 45.439,58 30,58 M30,0 C13.458,0 0,13.458 0,30 C0,46.542 13.458,60 30,60 C46.542,60 60,46.542 60,30 C60,13.458 46.542,0 30,0"
+                            id="number-one" />
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <span style="background-color: rgb(202, 252, 190);">Kotэ</span>: Ну
+        рассказывай, какие программки установила?
         <br>
-        <span style="background-color: rgb(252, 207, 229);">Ирина</span>: Так эээ это ... все было почти установлено.
+        <span style="background-color: rgb(252, 207, 229);">Ирина</span>: Так эээ это ... все было почти
+        установлено.
         <br>
         <span style="background-color: rgb(202, 252, 190);">Kotэ</span>: Пруфы где?! МЯУУУ... <i
             style=" color: rgb(139, 139, 139);">(требовательно мяукает)</i>
@@ -34,39 +78,51 @@
         <span style="background-color: rgb(252, 207, 229);">Ирина</span>: Сейчас ... <i
             style="color: rgb(139, 139, 139);">(занервничала)</i>
 
-        <div align="center">
+        <div>
             <h3>Task 1</h3>
             <img src="assets/images/task1.png" alt="task1" width="700">
         </div>
-        <p><span style="background-color: rgb(202, 252, 190);">Kotэ</span>: Что-то не понятно совсем... Где фотки???
-            <br>
-            <span style="background-color: rgb(252, 207, 229);">Ирина</span>: Так это по привычке. Работаю в основном в
-            консоли, а делать 100400 скринов, ну такое себе). Поэтому вывела список установленных программ + список
-            плагинов в vscode. Конечно программи плагинов гораздо больше, но я их "загрепала"))
-            <br>
-            <span style="background-color: rgb(202, 252, 190);">Kotэ</span>: А где расширение, с иконками которое.
-            Кажется <a href="https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons"
-                target="_blank" style="color: rgba(32, 145, 211, 0.911);">vscode-icons</a>.
-            <br>
-            <span style="background-color: rgb(252, 207, 229);">Ирина</span>: Я другое использую - уже давно.
-            Хочешь, можешь посмотреть <a
-                href="https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons"
-                target="_blank" style="color: rgba(32, 145, 211, 0.911);">vscode-great-icons</a>.
-            <br>
-            <span style="background-color: rgb(202, 252, 190);">Kotэ</span>: Муррр мяю прррощаю! <i
-                style="color: rgb(139, 139, 139);">(трется и ластится)</i>
-        </p>
+        <br>
+        <span style="background-color: rgb(202, 252, 190);">Kotэ</span>: Что-то не понятно совсем... Где
+        фотки???
+        <br>
+        <span style="background-color: rgb(252, 207, 229);">Ирина</span>: Так это по привычке. Работаю в
+        основном в
+        консоли, а делать 100400 скринов, ну такое себе). Поэтому вывела список установленных программ +
+        список
+        плагинов в vscode. Конечно программи плагинов гораздо больше, но я их "загрепала"))
+        <br>
+        <span style="background-color: rgb(202, 252, 190);">Kotэ</span>: А где расширение, с иконками
+        которое.
+        Кажется <a href="https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons"
+            target="_blank" style="color: rgba(32, 145, 211, 0.911);">vscode-icons</a>.
+        <br>
+        <span style="background-color: rgb(252, 207, 229);">Ирина</span>: Я другое использую - уже давно.
+        Хочешь, можешь посмотреть <a
+            href="https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons" target="_blank"
+            style="color: rgba(32, 145, 211, 0.911);">vscode-great-icons</a>.
+        <br>
+        <span style="background-color: rgb(202, 252, 190);">Kotэ</span>: Муррр мяю прррощаю! <i
+            style="color: rgb(139, 139, 139);">(трется и ластится)</i>
     </div>
 
     <hr noshade="0" size="1" color="pink">
-    <div>
-        <h2 align="center">Act 2</h2>
+    <!-- act 2 -->
+    <div style="background-color: rgba(255, 244, 230, 0.753); padding: 20px;">
+        <div class="header-act">
+            <object data="assets/images/a.png" type="image/png"></object>
+            <object data="assets/images/c.png" type="image/png"></object>
+            <object data="assets/images/t.png" type="image/png"></object>
+            <img src="assets/svg/2.svg" alt="one">
+
+        </div>
         <span style="background-color: rgb(202, 252, 190);">Kotэ</span>: А githab и trello?
         <br>
         <span style="background-color: rgb(252, 207, 229);">Ирина</span>: Скучный ты какой! Требовательный!
         <div>
             <h3>Task 2</h3>
-            <a href="https://github.com/kia-master" target="_blank" style="color: rgba(32, 145, 211, 0.911);">My profile
+            <a href="https://github.com/kia-master" target="_blank" style="color: rgba(32, 145, 211, 0.911);">My
+                profile
                 GitHab</a>. Email: <code>kia.iri.kia@gmail.com</code>
             <br>
             <span style="color: blue; font-weight: bold;">Trello</span> <code>kia.iri.kia@gmail.com</code>
@@ -74,9 +130,28 @@
     </div>
 
     <hr noshade="0" size="1" color="pink">
-    <div>
-        <h2 align="center">Act 3</h2>
-        <span style="background-color: rgb(202, 252, 190);">Kotэ</span>: Хммммм... А вот ты и попалась! А страничка где?
+    <!-- act 3 -->
+    <div style="background-color: rgba(230, 239, 255, 0.753); padding: 20px;">
+        <div class="header-act">
+            <object data="assets/images/a.png" type="image/png"></object>
+            <object data="assets/images/c.png" type="image/png"></object>
+            <object data="assets/images/t.png" type="image/png"></object>
+            <svg height="60px" version="1.1" viewBox="0 0 60 60" width="60px" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title />
+                <desc />
+                <defs />
+                <g fill="none" fill-rule="evenodd" id="People" stroke="none" stroke-width="1">
+                    <g fill="#000000" id="Icon-73">
+                        <path
+                            d="M36,36 C36,39.309 33.309,42 30,42 C26.691,42 24,39.309 24,36 C24,35.447 24.448,35 25,35 C25.552,35 26,35.447 26,36 C26,38.206 27.794,40 30,40 C32.206,40 34,38.206 34,36 C34,33.794 32.206,32 30,32 C29.666,32 29.354,31.833 29.168,31.555 C28.982,31.276 28.948,30.924 29.077,30.615 L33.5,20 L25,20 C24.448,20 24,19.553 24,19 C24,18.447 24.448,18 25,18 L35,18 C35.334,18 35.646,18.167 35.832,18.445 C36.018,18.724 36.052,19.076 35.923,19.385 L31.429,30.172 C34.05,30.814 36,33.184 36,36 M30,58 C14.561,58 2,45.439 2,30 C2,14.561 14.561,2 30,2 C45.439,2 58,14.561 58,30 C58,45.439 45.439,58 30,58 M30,0 C13.458,0 0,13.458 0,30 C0,46.542 13.458,60 30,60 C46.542,60 60,46.542 60,30 C60,13.458 46.542,0 30,0"
+                            id="number-three" />
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <span style="background-color: rgb(202, 252, 190);">Kotэ</span>: Хммммм... А вот ты и попалась! А страничка
+        где?
         А html?
         <br>
         <span style="background-color: rgb(252, 207, 229);">Ирина</span>: Так ты на ней сидишь!!! &#128516;
@@ -95,8 +170,14 @@
     </div>
 
     <hr noshade="0" size="1" color="pink">
-    <div>
-        <h2 align="center">Act 4</h2>
+    <!-- act 4 -->
+    <div style="background-color: rgba(251, 230, 255, 0.753); padding: 20px;">
+        <div class="header-act">
+            <object data="assets/images/a.png" type="image/png"></object>
+            <object data="assets/images/c.png" type="image/png"></object>
+            <object data="assets/images/t.png" type="image/png"></object>
+            <img src="assets/svg/4.svg" alt="one">
+        </div>
         <span style="background-color: rgb(202, 252, 190);">Kotэ</span>: А сколько времени у тебя ушло на написание
         этого прекрасного кода?
         <br>
@@ -116,9 +197,28 @@
     </div>
 
     <hr noshade="0" size="1" color="pink">
-    <div>
-        <h2 align="center">Act 5</h2>
-        <span style="background-color: rgb(202, 252, 190);">Kotэ</span>: Последнее испытание и подарок ждет тебя! Муррр,
+    <!-- act 5 -->
+    <div style="background-color: rgba(253, 255, 230, 0.753); padding: 20px;">
+        <div class="header-act">
+            <object data="assets/images/a.png" type="image/png"></object>
+            <object data="assets/images/c.png" type="image/png"></object>
+            <object data="assets/images/t.png" type="image/png"></object>
+            <svg height="60px" version="1.1" viewBox="0 0 60 60" width="60px" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title />
+                <desc />
+                <defs />
+                <g fill="none" fill-rule="evenodd" id="People" stroke="none" stroke-width="1">
+                    <g fill="#000000" id="Icon-75">
+                        <path
+                            d="M26,20 L26,28 L30,28 C33.309,28 36,30.691 36,34 L36,36 C36,39.309 33.309,42 30,42 C26.691,42 24,39.309 24,36 C24,35.447 24.447,35 25,35 C25.553,35 26,35.447 26,36 C26,38.206 27.794,40 30,40 C32.206,40 34,38.206 34,36 L34,34 C34,31.832 32.168,30 30,30 L25,30 C24.447,30 24,29.553 24,29 L24,19 C24,18.447 24.447,18 25,18 L35,18 C35.553,18 36,18.447 36,19 C36,19.553 35.553,20 35,20 L26,20 Z M30,58 C14.561,58 2,45.439 2,30 C2,14.561 14.561,2 30,2 C45.439,2 58,14.561 58,30 C58,45.439 45.439,58 30,58 L30,58 Z M30,0 C13.458,0 0,13.458 0,30 C0,46.542 13.458,60 30,60 C46.542,60 60,46.542 60,30 C60,13.458 46.542,0 30,0 L30,0 Z"
+                            id="number-five" />
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <span style="background-color: rgb(202, 252, 190);">Kotэ</span>: Последнее испытание и подарок ждет тебя!
+        Муррр,
         мяю <i style="color: rgb(139, 139, 139);">(мурчит, улыбаясь)</i>
         <br>
         <span style="background-color: rgb(252, 207, 229);">Ирина</span>: Ой, а что за подарок?
@@ -127,10 +227,12 @@
         <div>
             <h3>Task 5</h3>
             <ol>
-                <li><span style="background-color: rgb(202, 252, 190);">Kotэ</span>: Что такое атрибут тега? Какие есть
+                <li><span style="background-color: rgb(202, 252, 190);">Kotэ</span>: Что такое атрибут тега? Какие
+                    есть
                     атрибуты у тега <codeimages style="background-color:rgb(233, 233, 233);">img</codeimages />?
                     <br>
-                    <span style="background-color: rgb(252, 207, 229);">Ирина</span>: Атрибут тега - это свойство тега,
+                    <span style="background-color: rgb(252, 207, 229);">Ирина</span>: Атрибут тега - это свойство
+                    тега,
                     которое позволяет форматировать текст, изменять картинку. У тэга <codeimages
                         style="background-color:rgb(233, 233, 233);">img</codeimages /> есть следующие атрибуты:
                     <ul>
@@ -142,19 +244,22 @@
                         style="background-color:rgb(233, 233, 233);">span</code>?
                     <br>
                     <span style="background-color: rgb(252, 207, 229);">Ирина</span>: Тег <code
-                        style="background-color:rgb(233, 233, 233);">span</code> нужен для выделения блока текста без
+                        style="background-color:rgb(233, 233, 233);">span</code> нужен для выделения блока текста
+                    без
                     переноса строки. Необходим для форматирования одного или несколько слов.
                     <br>
                 <li><span style="background-color: rgb(202, 252, 190);">Kotэ</span>: Как добавить иконку?
                 </li>
-                <span style="background-color: rgb(252, 207, 229);">Ирина</span>: Для добавления иконки используется тэг
+                <span style="background-color: rgb(252, 207, 229);">Ирина</span>: Для добавления иконки используется
+                тэг
                 <code style="background-color:rgb(233, 233, 233);">link</code> с атрибутами:
                 <ul>
                     <li>rel - указываем короткое имя </li>
                     <li>href - ссылка на иконку</li>
                     <li>type - тип image/svg или png, в зависимости от типа иконки</li>
                 </ul>
-                <li><span style="background-color: rgb(202, 252, 190);">Kotэ</span>: Как сделать маркированный список?
+                <li><span style="background-color: rgb(202, 252, 190);">Kotэ</span>: Как сделать маркированный
+                    список?
                     <br>
                     <span style="background-color: rgb(252, 207, 229);">Ирина</span>: Список помещаем в тег
                     <code>ul</code>, а каждый подпункт списка в теги <code>li</code>.
@@ -162,7 +267,8 @@
                 <li><span style="background-color: rgb(202, 252, 190);">Kotэ</span>: А как выделить слово жирным
                     шрифтом?
                     <br>
-                    <span style="background-color: rgb(252, 207, 229);">Ирина</span>: Можно внутри текста выделить тегом
+                    <span style="background-color: rgb(252, 207, 229);">Ирина</span>: Можно внутри текста выделить
+                    тегом
                     <code>b</code>, а можно внутри стилевых тегов с использованием атрибута <code>style</code> и
                     свойства внутри <code>font-weight:bold</code>.
                 </li>
@@ -171,8 +277,17 @@
     </div>
 
     <hr noshade="0" size="1" color="pink">
-    <div align="center">
-        <h2>Final</h2>
+    <div class="head-and-footer">
+
+        <p>
+            <img src="assets/images/fire-start.png" alt="fire-start">
+            <img src="assets/images/fire-start.png" alt="fire-start">
+            <img src="assets/images/fire-start.png" alt="fire-start">
+            <h2 style="color: blue;">FINAL</h2>
+            <img src="assets/images/fire-end.png" alt="fire-end">
+            <img src="assets/images/fire-end.png" alt="fire-end">
+            <img src="assets/images/fire-end.png" alt="fire-end">
+        </p>
         <span style="background-color: rgb(202, 252, 190);">Kotэ</span>: Молодец!!! А вот и твой подарок!
         <br><br>
         <details>
