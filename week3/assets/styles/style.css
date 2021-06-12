@@ -1,0 +1,173 @@
+body {
+    padding: 0.5vh 4vw;
+}
+
+header {
+    padding: 0 2rem;
+    height: 70px;
+    color: #444242;
+    background-color: #d3d3d4;
+    font-family: menlo;
+}
+
+footer {
+    padding: 0 2rem;
+    height: 70px;
+    color: #444242;
+    background-color: #d3d3d4;
+    font-family: menlo;
+    display: flex;
+    padding-top: 0;
+}
+
+nav {
+    float: right;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px;
+    display: inline-block;
+}
+
+header img {
+    padding: 0 2rem 0 0;
+    float: left;
+}
+
+header h1,
+.nav li {
+    line-height: 70px;
+}
+
+.nav li {
+    padding: 0 0 0 2rem;
+    display: inline;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+a:link {
+    color: #2ab142;
+}
+
+a:visited {
+    color: #4d9414;
+}
+
+.top {
+    float: right;
+}
+
+main section {
+    padding: 2% 0 2% 0;
+    display: block;
+}
+
+section figure {
+    display: inline-block;
+    background-color: #fdfcfc;
+    border-radius: 5px;
+    width: 30%;
+    padding-bottom: 1%;
+    margin: 1.66%;
+}
+
+.last {
+    padding-bottom: 0;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    font-family: menlo;
+    text-align: right;
+    margin-right: 7%;
+}
+
+article {
+    padding: 1.5%;
+}
+
+article section {
+    padding: 0 0 1% 0;
+    color: #444242;
+    font-family: menlo;
+}
+
+.texty {
+    padding: 0 10%;
+}
+
+section div {
+    background-color: #f8fcff;
+    padding-bottom: 0;
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+div blockquote {
+    padding-bottom: 2%;
+}
+
+.lin-he {
+    line-height: 1.8;
+}
+
+pre {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+code {
+    font-family: menlo;
+    background-color: #d9f9ff;
+    padding: 0.1em 0.5em 0.1em 0.5em;
+    border-radius: 0.4em;
+}
+
+.gradi {
+    padding: 1.5em 0 1.5em 0;
+}
+
+.pic {
+    display: flex;
+}
+
+.pic figure {
+    display: block;
+    margin-right: 1%;
+    margin-left: 1%;
+    width: 100%;
+    background-color: #f8fcff;
+}
+
+.pic figcaption {
+    text-align: center;
+    color: #663e13;
+    font-weight: bolder;
+}
+
+footer a {
+    display: inline-flex;
+    width: 7%;
+}
+
+a img {
+    margin: 20%;
+}

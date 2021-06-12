@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My blog</title>
+    <link rel="shortcut icon" href="/week3/assets/images/icon.png" type="image/png">
+    <link href="/week3/assets/styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <img src="/week3/assets/svg/logo.svg" alt="logo" width="6%">
+        <h1>My blog</h1>
+        <nav>
+            <ul class="nav">
+                <li><a href="#answ">Answers</a></li>
+                <li><a href="#homework">Homeworks</a></li>
+                <li><a href="#wiki">Wiki</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <img src="/week3/assets/svg/head-section.svg" alt="main-image" width="100%">
+    </section>
+
+    <main>
+        <section id="homework" class="pic">
+            <figure>
+                <img src="/week3/assets/svg/task1.svg" alt="task-one">
+                <figcaption><a href="https://kia-master.github.io/learnfrontend/week1/" target="_blank">Смотреть</a>
+                </figcaption>
+            </figure>
+            <figure id="wiki">
+                <img src="/week3/assets/svg/wiki.svg" alt="wiki">
+                <figcaption><a href="https://www.notion.so/Wiki-f9ed9a703fa241ec9029dfd09c37cdf0"
+                        target="_blank">Читать</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="/week3/assets/svg/prototype.svg" alt="proto">
+                <figcaption><a href="https://www.notion.so/Wiki-f9ed9a703fa241ec9029dfd09c37cdf0"
+                        target="_blank">Смотреть</a>
+                </figcaption>
+            </figure>
+        </section>
+
+        <article>
+            <div>
+                <img src="/week3/assets/svg/about.svg" alt="about" width="100%" id="answ">
+            </div>
+            <section class="texty">
+                <h2>
+                    Ответы на вопросы
+                </h2>
+                <div>
+                    <p>1. Какой формат картинки лучше всего подходит для большого фото?</p>
+                    <b>Ответ</b>
+                    <blockquote>Для больших фотографий лучшим выбором будет формат JPEG</blockquote>
+                </div>
+                <div>
+                    <p>2. В чем особенность формата SVG?</p>
+                    <b>Ответ</b>
+                    <blockquote class="lin-he">Формат SVG имеет следующие "плюшки": <br>малый вес; поддерживает
+                        прозрачность; отлично
+                        масштабируется, обеспечивая чёткость изображения на любом разрешении экрана; поддерживает
+                        анимацию; можно управлять через CSS и размещать в HTML, сокращая количество запросов
+                    </blockquote>
+                </div>
+                <div>
+                    <p>3. Какой формат картинки идеально подходит для логотипа?</p>
+                    <b>Ответ</b>
+                    <blockquote>Для логотипа отлично подойдет формат SVG</blockquote>
+                </div>
+                <div>
+                    <p>4. Какие форматы поддерживают анимацию?</p>
+                    <b>Ответ</b>
+                    <blockquote>Анимацию поддерживают форматы GIF и SVG</blockquote>
+                </div>
+                <div>
+                    <p>5. Какими способами можно указывать цвет (минимум 3 варианта)?</p>
+                    <b>Ответ</b>
+                    <blockquote> <a href="https://developer.mozilla.org/ru/docs/Web/CSS/color_value"
+                            target="_blank">Источник</a></blockquote>
+                    <pre>
+                        /* Шестнадцатеричный синтаксис */
+                        #f09
+                        #F09
+                        #ff0099
+                        #FF0099
+                            
+                        /* Функциональный синтаксис */
+                        rgb(255,0,153)
+                        rgb(255, 0, 153)
+                        rgb(255, 0, 153.0)
+                        rgb(100%,0%,60%)
+                        rgb(100%, 0%, 60%)
+                        rgb(255 0 153)
+
+                        /* Шестнадцатеричный синтаксис с прозрачностью */
+                        #f09f
+                        #F09F
+                        #ff0099ff
+                        #FF0099FF
+
+                        /* Функциональный синтаксис с прозрачностью */
+                        rgb(255, 0, 153, 1)
+                        rgb(255, 0, 153, 100%)
+
+                        /* Синтаксис пробелов */
+                        rgb(255 0 153 / 1)
+                        rgb(255 0 153 / 100%)
+                    </pre>
+                </div>
+                <div>
+                    <p>6. Самостоятельно разберитесь, как можно задать цвет в виде градиента</p>
+                    <b>Ответ</b>
+                    <blockquote class="lin-he">
+                        Градиент можно получить с помощью CSS-функции <code>linear-gradient()</code>, например, для
+                        свойства <code>background</code>.
+                        <br>
+                        <pre><code>background: linear-gradient(#e66465, #9198e5);</code></pre>
+                        <p class="gradi" style="background: linear-gradient(#eea3a3, #a1a8f1);">ПРИМЕР</p>
+                        <pre><code>background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);</code></pre>
+                        <p class="gradi" style="background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);">
+                            ПРИМЕР
+                        </p>
+                        <pre><code>background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);</code></pre>
+                        <p class="gradi"
+                            style="background: linear-gradient(to left, rgb(243, 127, 127), rgb(209, 1, 1) 50%, rgb(247, 206, 206) 75%, rgb(221, 138, 138) 75%);">
+                            ПРИМЕР
+                        </p>
+                        <pre><code>background: linear-gradient(45deg, #CBDDEB, #CBDDEB 50%, #527383 50%);</code></pre>
+                        <p class="gradi"
+                            style="background: linear-gradient(45deg, #CBDDEB, #CBDDEB 50%, #527383 50%); background-size: 50px 50px;">
+                            ПРИМЕР
+                        </p>
+                    </blockquote>
+                </div>
+                <div>
+                    <p>7. Как можно задавать прозрачность для блока?</p>
+                    <b>Ответ</b>
+                    <blockquote class="lin-he">
+                        При указании цвета блока можно указать и прозрачность с помощью функции <code>rgba()</code>, где
+                        последний параметр устанавливает значение прозрачности для конкретного цвета. Действующий
+                        диапазон значений находится между 0.0 (полная прозрачность) и 1.0 (полная непрозрачность).
+                        <br>Например, для свойства <code>background-color</code>, последний параметр 0.5 указывает, что
+                        фон прозрачный на 50%
+                        <pre><code>background-color: rgba(255, 255, 128, 0.5);</code></pre>
+                        <p class="gradi" style="background-color: rgba(255, 255, 128, 0.5);">
+                            ПРИМЕР
+                        </p>
+                    </blockquote>
+                </div>
+                <div>
+                    <p>8. Какой способ подключения файлов самый лучший?</p>
+                    <b>Ответ</b>
+                    <blockquote>
+                        Лучше всего подключать файлы по относительному пути.
+                    </blockquote>
+                </div>
+                <div>
+                    <p>9. Как сделать картинку на 45% размера экрана?</p>
+                    <b>Ответ</b>
+                    <blockquote class="lin-he">
+                        Для указания размеров картинки, текста и другого контента относительно экрана используются
+                        следующие единицы измерения:
+                        <br><code>vw</code> – ширина
+                        <br><code>vh</code> – высота
+                        <br>Эти значения были созданы, в первую очередь, для поддержки мобильных устройств.
+                        Их основное преимущество – в том, что любые размеры, которые в них заданы, автоматически
+                        масштабируются при изменении размеров окна.
+                    </blockquote>
+                </div>
+                <div>
+                    <p class="lin-he">
+                        10. Уменьшите размер картинок из п.2 ДЗ любым сервисом для сжатия картинок и пришлите разницу
+                        размеров До и После
+                    </p>
+                    <b>Ответ</b>
+                    <blockquote class="lin-he">
+                        Для сжатия использовался сайт <a href="https://compressor.io/" target="_blank">Compressor.io</a>
+                        <div class="pic">
+                            <figure>
+                                <img src="/week3/assets/images/leo-before.jpg" alt="leo-before">
+                                <figcaption>До</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="/week3/assets/images/leo-after.jpg" alt="leo-after">
+                                <figcaption>После</figcaption>
+                            </figure>
+                        </div>
+                        <div class="pic">
+                            <figure>
+                                <img src="/week3/assets/images/diff.png" alt="diff-comp">
+                                <figcaption>Разницы не видно, а вот размер заметно уменьшился</figcaption>
+                            </figure>
+                        </div>
+                    </blockquote>
+                </div>
+                <a href="#" class="top">Наверх</a>
+            </section>
+        </article>
+        <section class="last">
+            <div class="pic">
+                <figure>
+                    <img src="/week3/assets/images/wasting_time.gif" alt="foot">
+                </figure>
+                <figure>
+                    <img src="/week3/assets/images/orig.gif" alt="foot2">
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <a href="https://github.com/kia-master/learnfrontend" target="_blank">
+            <img src="/week3/assets/svg/git-logo.svg" alt="git-logo">
+        </a>
+    </footer>
+</body>
+
+</html>
