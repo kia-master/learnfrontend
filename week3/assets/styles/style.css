@@ -62,7 +62,7 @@ a:link {
 }
 
 a:visited {
-    color: #4d9414;
+    color: #3a6b12;
 }
 
 .top {
@@ -109,6 +109,8 @@ article section {
 
 .texty {
     padding: 0 10%;
+    font-family: menlo;
+    font-size: 16px;
 }
 
 section div {
