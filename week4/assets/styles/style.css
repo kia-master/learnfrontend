@@ -1,0 +1,18 @@
+body {
+    background-color: #F0F0F6;
+}
+
+header,
+footer {
+    height: 110px;
+    background-color: #FAFAFA;
+}
+
+section {
+    margin: 50px 50px 0 50px;
+    border: #868383 solid 1px;
+}
+
+.feedbacks {
+    margin: 50px 150px 50px 150px;
+}
