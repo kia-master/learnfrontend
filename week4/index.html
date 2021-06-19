@@ -11,48 +11,55 @@
 
 <body>
     <header>
-        навигация
         <nav>
-            <a href="">
-                <img src="" alt="home">
-            </a>
-            <a href="">
-                <img src="" alt="about-me">
-            </a>
-            <a href="">
-                <img src="" alt="education">
-            </a>
-            <a href="">
-                <img src="" alt="works">
-            </a>
-            <a href="">
-                <img src="" alt="portfolio">
-            </a>
-            <a href="">
-                <img src="" alt="feedback">
-            </a>
+            <ul>
+                <li><a href=""><img src="assets/svg/home-menu.svg" alt="home"></a></li>
+                <li><a href=""><img src="assets/svg/blog-menu.svg" alt="about-me"></a></li>
+                <li><a href=""><img src="assets/svg/eduandwork-menu.svg" alt="education"></a></li>
+                <li><a href=""><img src="assets/svg/portfolio-menu.svg" alt="portfolio"></a></li>
+                <li><a href=""><img src="assets/svg/contact-menu.svg" alt="contacts"></a></li>
+                <li><a href=""><img src="assets/svg/github-menu.svg" alt="git"></a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
         <!-- Main section after header -->
-        <section>
+        <section class="main">
             <div>
-                <h1></h1>
-                <p></p>
+                <h1>I’m Irina Kulikova. Front-end Developer </h1>
+                <p>Hi! I am studying front-end development at itgirlschool</p>
             </div>
             <div>
+                <ul>
+                    <li><a href=""><img src="assets/svg/facebook.svg" alt="fb"></a></li>
+                    <li><a href=""><img src="assets/svg/instagram.svg" alt="insta"></a></li>
+                    <li><a href=""><img src="assets/svg/linkeding.svg" alt="link"></a></li>
+                    <li><a href=""><img src="assets/svg/youtube.svg" alt="yout"></a></li>
+                    <li><a href=""><img src="assets/svg/github.svg" alt="github"></a></li>
+                </ul>
             </div>
         </section>
 
         <!-- About me -->
         <section>
             <h2>About me</h2>
-            <p>Кстати, диаграммы связей, которые представляют собой яркий пример континентально-европейского типа
-                политической культуры, будут в равной степени предоставлены сами себе.</p>
-            <div>
-                <div>Right block</div>
-                <div>
+            <p class="text-before-header">Кстати, диаграммы связей, которые представляют собой яркий пример
+                континентально-европейского типа политической культуры, будут в равной степени предоставлены сами себе.
+            </p>
+
+            <!-- Block about me -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p><span class="left-block-text-orange">Age:</span><span class="left-block-text">30</span></p>
+                    <p><span class="left-block-text-orange">Residence:</span><span class="left-block-text">RU</span>
+                    </p>
+                    <p><span class="left-block-text-orange">Freelance:</span><span
+                            class="left-block-text">Available</span></p>
+                    <p><span class="left-block-text-orange">Address:</span><span
+                            class="left-block-text">St.Petersburg</span></p>
+                </div>
+                <div class="text-about-rblock">
                     <h3>О себе</h3>
                     <p>Мы вынуждены отталкиваться от того, что базовый вектор развития выявляет срочную потребность форм
                         воздействия. А также стремящиеся вытеснить традиционное производство, нанотехнологии могут быть
@@ -60,9 +67,16 @@
                         проекта играет важную роль в формировании новых предложений.</p>
                 </div>
             </div>
-            <div>
-                <div>Right block</div>
-                <div>
+
+            <!-- Block Languages -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Russian<span class="left-block-text">100%</span>
+                        <img src="assets/svg/line-rus-lang.svg" alt="line-rus-lang"></p>
+                    <p>English<span class="left-block-text">40%</span>
+                        <img src="assets/svg/line-eng-lang.svg" alt="line-eng-lang"></p>
+                </div>
+                <div class="text-about-rblock">
                     <h3>Языки</h3>
                     <p>Сложно сказать, почему тщательные исследования конкурентов, инициированные исключительно
                         синтетически, разоблачены. Являясь всего лишь частью общей картины, явные признаки победы
@@ -70,9 +84,20 @@
                         современных стандартов, акционеры крупнейших компаний неоднозначны и будут обнародованы.</p>
                 </div>
             </div>
-            <div>
-                <div>Right block</div>
-                <div>
+
+            <!-- Block Skills -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>HTML<span class="left-block-text">40%</span>
+                        <img src="assets/svg/line-40.svg" alt="line-40"></p>
+                    <p>CSS<span class="left-block-text">10%</span>
+                        <img src="assets/svg/line-10.svg" alt="line-10"></p>
+                    <p>JS<span class="left-block-text">10%</span>
+                        <img src="assets/svg/line-10.svg" alt="line-10"></p>
+                    <p>PYTHON<span class="left-block-text">60%</span>
+                        <img src="assets/svg/line-60.svg" alt="line-60"></p>
+                </div>
+                <div class="text-about-rblock">
                     <h3>Скилы</h3>
                     <p>Банальные, но неопровержимые выводы, а также сторонники тоталитаризма в науке функционально
                         разнесены
@@ -82,9 +107,20 @@
                         проверки приоритизации разума над эмоциями.</p>
                 </div>
             </div>
-            <div>
-                <div>Right block</div>
-                <div>
+
+            <!-- Block Extra and Soft skills -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p><img src="assets/svg/icon-soft.svg" alt="icon-soft" class="icon-for-left-block">Bootstrap,
+                        Materialize
+                    </p>
+                    <p><img src="assets/svg/icon-soft.svg" alt="icon-soft" class="icon-for-left-block">Stylus, Sass,
+                        Less</p>
+                    <p><img src="assets/svg/icon-soft.svg" alt="icon-soft" class="icon-for-left-block">Gulp, Webpack,
+                        Grunt</p>
+                    <p><img src="assets/svg/icon-soft.svg" alt="icon-soft" class="icon-for-left-block">GIT Knowledge</p>
+                </div>
+                <div class="text-about-rblock">
                     <h3>Экстра и софт скилы</h3>
                     <p>Сложно сказать, почему диаграммы связей набирают популярность среди определенных слоев населения,
                         а
@@ -97,26 +133,39 @@
                         кроме определения новых принципов формирования материально-технической и кадровой базы.</p>
                 </div>
             </div>
+
         </section>
 
         <!-- education -->
         <section>
             <h2>Education</h2>
-            <p>Являясь всего лишь частью общей картины, явные признаки победы институционализации лишь добавляют
+            <p class="text-before-header">Являясь всего лишь частью общей картины, явные признаки победы
+                институционализации лишь добавляют
                 фракционных разногласий и объединены в целые кластеры себе подобных.</p>
-            <div>
-                <div>Right block</div>
-                <div>
-                    <h3>Универ</h3>
-                    <p>Диаграммы связей являются только методом политического участия и разоблачены. Современные
-                        технологии достигли такого уровня, что убеждённость некоторых оппонентов однозначно определяет
-                        каждого участника как способного принимать собственные решения касаемо переосмысления
-                        внешнеэкономических политик.</p>
+
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>University of Toronto</p>
+                    <p><span class="right-block-text-orange">Jan 2016 - Dec 2021</span></p>
+                </div>
+                <div class="text-about-rblock">
+                    <div>
+                        <h3>Универ</h3>
+                        <p>Диаграммы связей являются только методом политического участия и разоблачены. Современные
+                            технологии достигли такого уровня, что убеждённость некоторых оппонентов однозначно
+                            определяет
+                            каждого участника как способного принимать собственные решения касаемо переосмысления
+                            внешнеэкономических политик.</p>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div>Right block</div>
-                <div>
+
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Programming Course</p>
+                    <p><span class="right-block-text-orange">Jan 2016 - Dec 2021</span></p>
+                </div>
+                <div class="text-about-rblock">
                     <h3>Курсы 1</h3>
                     <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством
                         простого факта: убеждённость некоторых оппонентов напрямую зависит от экономической
@@ -124,9 +173,13 @@
                         интернет-аналитики выводы своевременно верифицированы.</p>
                 </div>
             </div>
-            <div>
-                <div>Right block</div>
-                <div>
+
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Web developer courses</p>
+                    <p><span class="right-block-text-orange">Jan 2016 - Dec 2021</span></p>
+                </div>
+                <div class="text-about-rblock">
                     <h3>Курсы 2</h3>
                     <p>Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта представляет
                         собой интересный эксперимент проверки форм воздействия. Банальные, но неопровержимые выводы, а
@@ -138,11 +191,16 @@
         <!-- works -->
         <section>
             <h2>Works</h2>
-            <p>Банальные, но неопровержимые выводы, а также многие известные личности преданы социально-демократической
+            <p class="text-before-header">Банальные, но неопровержимые выводы, а также многие известные личности преданы
+                социально-демократической
                 анафеме!</p>
-            <div>
-                <div>Right block</div>
-                <div>
+
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Work One</p>
+                    <p><span class="right-block-text-orange">Jan 2016 - Dec 2021</span></p>
+                </div>
+                <div class="text-about-rblock">
                     <h3>Первая работа</h3>
                     <p>В рамках спецификации современных стандартов, элементы политического процесса могут быть
                         объективно рассмотрены соответствующими инстанциями. Повышение уровня гражданского сознания
@@ -150,9 +208,13 @@
                         решений.</p>
                 </div>
             </div>
-            <div>
-                <div>Right block</div>
-                <div>
+
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Work Two</p>
+                    <p><span class="right-block-text-orange">Jan 2016 - Dec 2021</span></p>
+                </div>
+                <div class="text-about-rblock">
                     <h3>Вторая работа</h3>
                     <p>А ещё независимые государства формируют глобальную экономическую сеть и при этом - обнародованы.
                         Идейные соображения высшего порядка, а также экономическая повестка сегодняшнего дня, в своём
@@ -160,9 +222,13 @@
                         решений.</p>
                 </div>
             </div>
-            <div>
-                <div>Right block</div>
-                <div>
+
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Work three</p>
+                    <p><span class="right-block-text-orange">Jan 2016 - Dec 2021</span></p>
+                </div>
+                <div class="text-about-rblock">
                     <h3>Третья работа</h3>
                     <p>Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего
                         мира могут быть преданы социально-демократической анафеме. Имеется спорная точка зрения,
@@ -175,7 +241,8 @@
         <!-- portfolio -->
         <section>
             <h2>Portfolio</h2>
-            <p>В целом, конечно, постоянный количественный рост и сфера нашей активности является качественно новой
+            <p class="text-before-header">В целом, конечно, постоянный количественный рост и сфера нашей активности
+                является качественно новой
                 ступенью поэтапного и последовательного развития общества.</p>
             <div>
                 <img src="" alt="">
@@ -218,7 +285,7 @@
         </section>
 
         <footer>
-            <p></p>
+            <p>ghjfhgfhg</p>
         </footer>
     </main>
 </body>
