@@ -22,23 +22,44 @@ section {
 }
 
 section.main {
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    width: 100%;
-    height: 100%;
+    padding: 7% 0 4% 5%;
     background-image: url(../image/main.jpg);
-    background-size: contain;
+    background-size: 100vw;
     background-repeat: no-repeat;
 }
 
 section.main div {
+    padding: 0 0 2em 0;
+    width: 100%;
     background-color: transparent;
-    margin: 10% 20% 5% 5%;
+
+}
+
+section.main h1 {
+    margin: 0;
+    font-family: "Balsamiq Sans";
+
+}
+
+.main span {
+    color: #FFB400;
+}
+
+.main p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.15em;
+    font-weight: bold;
 }
 
 h2,
 p.text-before-header {
     text-align: center;
-    margin: 0 10em 1em 10em;
+    margin: 0 8em 1em 8em;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
 }
 
 ul {
@@ -76,6 +97,9 @@ div.left-block {
 
 div.left-block p {
     padding: 0 2em 0 2em;
+    font-family: "Comfortaa", "Roboto", sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
 }
 
 p img {
@@ -92,8 +116,21 @@ div.text-about-rblock {
     width: 75%;
 }
 
-div.text-about-rblock p {
+div.text-about-rblock p,
+a {
     padding: 0 2em 0 0;
+    font-family: "Comfortaa", "Roboto", sans-serif;
+    font-size: 0.9em;
+    line-height: 1.7em;
+}
+
+div.text-about-rblock h3 {
+    font-family: "Montserrat", "Roboto", sans-serif;
+}
+
+.text-about-rblock img {
+    width: 70%;
+
 }
 
 span.left-block-text-orange {
@@ -131,16 +168,23 @@ span.right-block-text-orange {
 
 .feedb-blocks {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: center;
+    width: 80vw;
 }
 
 .feedb-blocks div {
-    padding: 2%;
+    margin: 0 1%;
     background-color: transparent;
 }
 
 .feedb-blocks div div {
-
     background-color: white;
+}
+
+.feedb-blocks h2 {
+    margin: 0 0 1em 0;
+}
+
+code {
+    color: #FFB400;
 }

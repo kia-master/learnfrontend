@@ -6,6 +6,9 @@
     <link rel="shortcut icon" href="" type="image/png">
     <link rel="stylesheet" href="assets/styles/normalize.css">
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
     <title>Irina Kulikova - frontend developer</title>
 </head>
 
@@ -18,7 +21,8 @@
                 <li><a href=""><img src="assets/svg/eduandwork-menu.svg" alt="education"></a></li>
                 <li><a href=""><img src="assets/svg/portfolio-menu.svg" alt="portfolio"></a></li>
                 <li><a href=""><img src="assets/svg/contact-menu.svg" alt="contacts"></a></li>
-                <li><a href=""><img src="assets/svg/github-menu.svg" alt="git"></a></li>
+                <li><a href="https://github.com/kia-master" target="_blank"><img src="assets/svg/github-menu.svg"
+                            alt="git"></a></li>
             </ul>
         </nav>
     </header>
@@ -27,19 +31,239 @@
         <!-- Main section after header -->
         <section class="main">
             <div>
-                <h1>I’m Irina Kulikova. Front-end Developer </h1>
+                <h1>I’m Irina Kulikova.<br><span>Front-end Developer</span></h1>
                 <p>Hi! I am studying front-end development at itgirlschool</p>
             </div>
             <div>
                 <ul>
-                    <li><a href=""><img src="assets/svg/facebook.svg" alt="fb"></a></li>
+                    <li><a href="https://www.facebook.com/irina.kul.kul/" target="_blank"><img
+                                src="assets/svg/facebook.svg" alt="fb"></a></li>
                     <li><a href=""><img src="assets/svg/instagram.svg" alt="insta"></a></li>
                     <li><a href=""><img src="assets/svg/linkeding.svg" alt="link"></a></li>
                     <li><a href=""><img src="assets/svg/youtube.svg" alt="yout"></a></li>
-                    <li><a href=""><img src="assets/svg/github.svg" alt="github"></a></li>
+                    <li><a href="https://github.com/kia-master" target="_blank"><img src="assets/svg/github.svg"
+                                alt="github"></a></li>
                 </ul>
             </div>
         </section>
+
+        <!-- Answer questions -->
+        <section>
+            <h2>Ответы на вопросы</h2>
+            <p class="text-before-header">Для удобства проверки и наглядности вставила сюда блок ответов на вопросы из
+                ДЗ четвертой недели. Затем этот блок просто "под кат" &#129315;&#129315;&#129315;
+            </p>
+
+            <!-- question 1 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Какими способами можно подключать CSS-стили? Найдите сами еще один способ, не указанный в уроке
+                    </p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Ответ</h3>
+                    <p>1. С помощью атрибута style для любого тега: &lt;элемент style="...правила стиля..."></p>
+                    <p>2. Использовать элемент &lt;style>. Этот тег помещается внутри тегов &lt;head>...&lt;/head></p>
+                    <p>3. С помощью элемента &lt;link> можно подключить внешние CSS-файлы. Внутри тегов
+                        &lt;head>...&lt;/head> добавляем &lt;link type = "text/css" href = "..." media = "..." /></p>
+                    <p>4. С помощью правила @import. Используется для импорта внешней таблицы стилей
+                        способом, аналогичным элементу &lt;link> <br>
+                        &lt;head> @import "URL"; &lt;/head> <br>
+                        или <br>
+                        &lt;head> @import url("URL"); &lt;/head>
+                    </p>
+                </div>
+            </div>
+
+            <!-- question 2 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Зачем нужен Normalize.css?</p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Ответ</h3>
+                    <p>
+                        В каждом браузере есть свой собственный набор стилей для html-элементов, задающий то, как они
+                        будут отображаться "по умолчанию"(user agent style), без их переопределения.
+                    </p>
+                    <p>
+                        Проблема состоит в том, что везде они разные - где-то margin/pading другие, где-то у элемента
+                        рисуется граница, а где-то и вообще размер и гарнитура шрифта другая.
+                    </p>
+                    <p>
+                        Каждый раз при верстке помнить об всех этих мелочах, и обязательно переопределять их - можно
+                        замучатся. И тут на помощь приходит Normalize.css - <strong>он приводит стили "по умолчанию" в
+                            браузерах к единому знаменателю, что собственно в итоге упрощает кроссбраузерную
+                            верстку.</strong>
+                    </p>
+                </div>
+            </div>
+
+            <!-- question 3 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Что такое CSS-директивы?</p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Ответ</h3>
+                    <p>Директивы (правила) — это конструкции, которые позволяет создавать в CSS инструкции для изменения
+                        отображения либо поведения элементов страницы. Директива начинается со знака @, за которым
+                        следует одно из служебных слов.</p>
+                    <p>Стандартный синтаксис: </p>
+                    <p>@[КЛЮЧЕВОЕ СЛОВО] (ПРАВИЛО);</p>
+                    <p><a href="https://frontender.info/the-at-rules-of-css/" target="_blank">Подробнее</a></p>
+                </div>
+            </div>
+
+            <!-- question 4 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>В чем разница между margin и padding?</p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Ответ</h3>
+                    <p><strong>padding</strong> – это отступ от содержимого до края блока.</p>
+                    <p><strong>margin</strong> – это расстояние от одного блока до другого, межблоковое пространство.
+                    </p>
+                    <p><img src="assets/image/margin-and-padding.png" alt="margin-and-padding"></p>
+                </div>
+            </div>
+
+            <!-- question 5 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Как в CSS определяются приоритеты? Какое из свойств будет приоритетнее - <code>#link .main</code>
+                        или <code>span #login</code> ?</p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Ответ</h3>
+                    <p>Существует 4 правила по которым вычисляется специфичность селекторов:</p>
+                    <p>1. Самый высокий приоритет имеет атрибут style. Это правило перекрывает все селекторы описанные в
+                        стилях.</p>
+                    <p>2. Второе место занимает присутствие ID в селекторе (#some-id).</p>
+                    <p>3. Далее идут все атрибуты (в том числе и атрибут class) и псевдоклассы (pseudo-classes) в
+                        селекторе.</p>
+                    <p>4. Самый низкий приоритет у селекторов с именами элементов и псевдоэлементами (pseudo-elements).
+                    </p>
+                    <p>Все 4 правила сводятся в одну систему a-b-c-d (где а - наивысший приоритет) и образуют
+                        специфичность.</p>
+                    <p><a href="https://specifishity.com/" target="_blank">Вот интересная визуализация</a>Особенно
+                        директива !important &#129315;
+                    </p>
+                    <p>Сравним два селектора #link .main и span #login</p>
+                    <p><img src="assets/image/prioritets.png" alt="prioritets"></p>
+                    <p>Победитель #link .main &#128079; &#127881; &#127881;</p>
+                </div>
+            </div>
+
+            <!-- question 6 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>В чем разница между CSS1 и CSS3?</p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Ответ</h3>
+                    <p>Вот 7 основных вещей, которые отличают CSS3 от CSS1:</p>
+                    <p>1. Поддержка адаптивного дизайа и обработки медиа-запросов. Медиа-запросы — это вызовы,
+                        выполняемые
+                        кодом для определения устройства и размера экрана.</p>
+                    <p>2. Одним из самых важных достижений является то, что CSS3 разделен на модули. Все старые
+                        спецификации CSS были перенесены в новую версию и разделены на более мелкие части, где также
+                        добавлены некоторые новые модули. Самый важный модуль - СЕЛЕКТОРЫ</p>
+                    <p>3. Поддержка веб-шрифтов.</p>
+                    <p>4. Позволяет быстрее разрабатывать и быстрее загружать.</p>
+                    <p>5. Создание 2D и 3D преобразований, анимации и переходов. Эти эффекты позволяют элементам на
+                        странице вращаться, увеличиваться, уменьшаться, переворачиваться или переводиться в другой цвет.
+                        Впервые элементы, созданные в CSS могут перемещаться по экрану без использования JavaScript или
+                        Flash-кода. </p>
+                    <p>6. Новые цвета и эффекты изображения. CSS3 поддерживает новые цвета (RGBA, HSL, HSLA) и цвета
+                        градиента, позволяет корректировать непрозрачность.</p>
+                    <p>7. Устранены некоторые проблемы с выравниванием</p>
+                    <p><a href="http://zornet.ru/forum/123-8123-1" target="_blank">Какая разница между CSS и CSS3</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- question 7 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Что такое псевдоклассы? А псевдоэлементы?</p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Ответ</h3>
+                    <p><em>Псевдокласс</em> — это селектор, который выбирает элементы, находящиеся в
+                        специфическом состоянии,
+                        например, они являются первым элементом своего типа, или на них наведён указатель мыши. Они
+                        обычно действуют так, как если бы вы применили класс к какой-то части вашего документа, что
+                        часто помогает сократить избыточные классы в разметке и даёт более гибкий, удобный в поддержке
+                        код.</p>
+                    <p>Псевдоклассы — это ключевые слова, которые начинаются с двоеточия [ :pseudo-class-name ]</p>
+                    <p><em>Псевдоэлементы</em> ведут себя сходным образом, однако они действуют так, как если бы вы
+                        добавили в
+                        разметку целый новый HTML-элемент, а не применили класс к существующим элементам. Псевдоэлементы
+                        начинаются с двойного двоеточия [ ::pseudo-element-name ]</p>
+                    <p><a href="https://developer.mozilla.org/ru/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements"
+                            target="_blank">Псевдоклассы, псевдоэлементы</a></p>
+                </div>
+            </div>
+
+            <!-- question 8 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Изучите <a href="https://msiter.ru/tutorials/html-srednego-urovnya/plokhie-tegi">статью</a> про
+                        "плохие" теги и пришлите список тегов, которые нежелательно использовать</p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Ответ</h3>
+                    <p><img src="assets/image/bad-tags.png" alt="bad-tags"></p>
+                    <p>Тэги-пустышки: &lt;u> &lt;center> &lt;layer> &lt;blink> &lt;marquee> &lt;font></p>
+                </div>
+            </div>
+
+            <!-- question 9 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Как можно подключать шрифты локально?</p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Ответ</h3>
+                    <p>Мы вынуждены отталкиваться от того, что базовый вектор развития выявляет срочную потребность форм
+                        воздействия. А также стремящиеся вытеснить традиционное производство, нанотехнологии могут быть
+                        функционально разнесены на независимые элементы. Господа, высококачественный прототип будущего
+                        проекта играет важную роль в формировании новых предложений.</p>
+                </div>
+            </div>
+
+            <!-- question 10 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Почему не стоит использовать сокращенную запись без необходимости? И если все же использовать,
+                        как это делать правильно?</p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Ответ</h3>
+                    <p>Мы вынуждены отталкиваться от того, что базовый вектор развития выявляет срочную потребность форм
+                        воздействия. А также стремящиеся вытеснить традиционное производство, нанотехнологии могут быть
+                        функционально разнесены на независимые элементы. Господа, высококачественный прототип будущего
+                        проекта играет важную роль в формировании новых предложений.</p>
+                </div>
+            </div>
+
+            <!-- question 11 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Разберитесь самостоятельно, как сделать анимацию через CSS</p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Ответ</h3>
+                    <p>Мы вынуждены отталкиваться от того, что базовый вектор развития выявляет срочную потребность форм
+                        воздействия. А также стремящиеся вытеснить традиционное производство, нанотехнологии могут быть
+                        функционально разнесены на независимые элементы. Господа, высококачественный прототип будущего
+                        проекта играет важную роль в формировании новых предложений.</p>
+                </div>
+            </div>
+        </section>
+
 
         <!-- About me -->
         <section>
@@ -307,7 +531,7 @@
                 </div>
 
                 <!-- contacts -->
-                <div style="background-color: transparent;">
+                <div>
                     <h2>Contact information</h2>
 
                     <div>

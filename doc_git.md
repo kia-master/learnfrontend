@@ -13,6 +13,10 @@ git rm -r --cached myFolder
 
 # GPG-key
 
+## gpg setup
+
+[here](https://codex.so/gpg-verification)
+
 ## How to understand the `gpg failed to sign the data` problem
 
 [sourse](https://gist.github.com/paolocarrasco/18ca8fe6e63490ae1be23e84a7039374)
