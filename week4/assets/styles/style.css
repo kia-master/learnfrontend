@@ -112,7 +112,7 @@ span.right-block-text-orange {
 
 .portf-bloks {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .portf-bloks div {
@@ -125,9 +125,22 @@ span.right-block-text-orange {
     margin: 0;
 }
 
+.portf-bloks img {
+    width: 100%;
+}
 
-
-.contact-blocks {
+.feedb-blocks {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.feedb-blocks div {
+    padding: 2%;
+    background-color: transparent;
+}
+
+.feedb-blocks div div {
+
+    background-color: white;
 }
