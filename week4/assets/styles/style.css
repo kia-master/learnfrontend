@@ -76,6 +76,7 @@ li {
 }
 
 li a {
+    display: block;
     text-decoration: none;
 }
 
@@ -187,4 +188,89 @@ span.right-block-text-orange {
 
 code {
     color: #FFB400;
+}
+
+/* menu navigation buttons */
+#home-menu {
+    width: 40px;
+    height: 40px;
+    background-image: url(../svg/home-menu.svg);
+    background-repeat: no-repeat;
+}
+
+#home-menu:hover {
+    width: 40px;
+    height: 40px;
+    background-image: url(../svg/home-menu-select.svg);
+    background-repeat: no-repeat;
+}
+
+#aboutme-menu {
+    width: 40px;
+    height: 40px;
+    background-image: url(../svg/blog-menu.svg);
+    background-repeat: no-repeat;
+}
+
+#aboutme-menu:hover {
+    width: 40px;
+    height: 40px;
+    background-image: url(../svg/blog-menu-select.svg);
+    background-repeat: no-repeat;
+}
+
+#eduandwork-menu {
+    width: 40px;
+    height: 40px;
+    background-image: url(../svg/eduandwork-menu.svg);
+    background-repeat: no-repeat;
+}
+
+#eduandwork-menu:hover {
+    width: 40px;
+    height: 40px;
+    background-image: url(../svg/eduandwork-menu-select.svg);
+    background-repeat: no-repeat;
+}
+
+#portfolio-menu {
+    width: 40px;
+    height: 40px;
+    background-image: url(../svg/portfolio-menu.svg);
+    background-repeat: no-repeat;
+}
+
+#portfolio-menu:hover {
+    width: 40px;
+    height: 40px;
+    background-image: url(../svg/portfolio-menu-select.svg);
+    background-repeat: no-repeat;
+}
+
+#contact-menu {
+    width: 40px;
+    height: 40px;
+    background-image: url(../svg/contact-menu.svg);
+    background-repeat: no-repeat;
+}
+
+#contact-menu:hover {
+    width: 40px;
+    height: 40px;
+    background-image: url(../svg/contact-menu-select.svg);
+    background-repeat: no-repeat;
+}
+
+#github-menu {
+    width: 40px;
+    height: 40px;
+    background-image: url(../svg/github-menu.svg);
+    background-repeat: no-repeat;
+}
+
+#github-menu:hover {
+    width: 40px;
+    height: 40px;
+    background-image: url(../svg/github-menu-select.svg);
+    background-repeat: no-repeat;
 }
