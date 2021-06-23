@@ -40,7 +40,7 @@ section.main div {
 
 section.main h1 {
     margin: 0;
-    font-family: "Balsamiq Sans";
+    font-family: "Balsamiq Sans", "Roboto", sans-serif;
 
 }
 
@@ -278,4 +278,34 @@ code {
     height: 40px;
     background-image: url(../svg/github-menu-select.svg);
     background-repeat: no-repeat;
+}
+
+/* keyframes */
+@keyframes change-background {
+    0% {
+        background: #ffc954;
+    }
+
+    25% {
+        background: #fdd681;
+    }
+
+    50% {
+        background: #ffe2a3;
+    }
+
+    100% {
+        background: #ffffff;
+    }
+}
+
+#anima {
+    animation-name: change-background;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+#anima:hover {
+    animation-play-state: paused;
 }
