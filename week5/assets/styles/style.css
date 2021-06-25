@@ -1,0 +1,101 @@
+* {
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* after delete */
+    background-color: #fac4a5;
+}
+
+.logo-header {
+    margin: 0.5em;
+    /* after delete */
+    background-color: #f7813c;
+}
+
+.navigation-header {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+    /* after delete */
+    background-color: #f8dbca;
+}
+
+.navigation-header div {
+    padding: 1em;
+    /* after delete */
+    border: solid 1px #f02727;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    /* after delete */
+    background-color: #7c7b7a;
+}
+
+footer div {
+    padding: 1em;
+    /* after delete */
+    background-color: #d4d5d6;
+}
+
+.main-container {
+    display: flex;
+    padding-left: 1%;
+    padding-right: 1%;
+    /* after delete */
+    background-color: #f6f86a;
+}
+
+.left-box-container {
+    /* container */
+    display: flex;
+    flex-wrap: wrap;
+    /* element */
+    flex: 0 1 70%;
+    /* after delete */
+    background-color: #84c1f7;
+}
+
+.element-description {
+    flex: 0 1 100%;
+    /* after delete */
+    background-color: #2898fa;
+}
+
+.element-week-1,
+.element-week-2,
+.element-week-3,
+.element-week-4 {
+    flex: 0 1 50%;
+    /* after delete */
+    border: solid 1px #2929f8;
+}
+
+.element-week-5 {
+    flex: 0 1 100%;
+    /* after delete */
+    background-color: #c8e3fa;
+}
+
+.right-box-container {
+    /* container */
+    display: flex;
+    flex-direction: column;
+    /* element */
+    flex: 0 1 30%;
+    /* after delete */
+    background-color: #87f5ab;
+}
+
+.right-box-container div {
+    border: solid 1px #104e0a;
+}
