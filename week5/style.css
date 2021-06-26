@@ -1,0 +1,188 @@
+@import url(/assets/styles/style.css);
+@import url(/styles/normalize.css);
+
+
+/* ---------------------------
+PAGE week5 answers and other 
+--------------------------- */
+
+.froggy-img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.answer {
+    font-size: 12pt;
+    color: #04754f;
+}
+
+ul,
+code,
+.table {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+}
+
+ul {
+    line-height: 1.5em;
+}
+
+.hr-dotted {
+    margin: 1.5em 0;
+    padding: 0;
+    height: 0;
+    border: none;
+    border-top: 2px dotted #a0a0a0;
+}
+
+code {
+
+    padding: 0 0.5em;
+    background-color: #fff8e5;
+    border-radius: 0.3em;
+}
+
+/* example display: table */
+.table {
+    display: table;
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #555;
+    empty-cells: show;
+}
+
+.table-caption {
+    display: table-caption;
+    padding: 10px;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+}
+
+.table-colgroup {
+    display: table-column-group;
+}
+
+.table-col {
+    display: table-column;
+}
+
+.table-thead {
+    display: table-header-group;
+}
+
+.table-tbody {
+    display: table-row-group;
+}
+
+.table-tfoot {
+    display: table-footer-group;
+}
+
+.table-tr {
+    display: table-row;
+}
+
+.table-th {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid #555;
+    font-weight: bold;
+    text-align: left;
+}
+
+.table-td {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid #555;
+}
+
+.table-thead .table-th,
+.table-thead .table-td {
+    background: #f9f9f9;
+}
+
+.table-tbody .table-th,
+.table-tbody .table-td {
+    background: #fff;
+}
+
+.table-tfoot .table-th,
+.table-tfoot .table-td {
+    background: #f4f6ff;
+}
+
+/* flex with automargin */
+
+.parent {
+    display: flex;
+    width: 400px;
+    height: 170px;
+    margin: 0 auto;
+    background-color: #caffed;
+    border-radius: 1em;
+}
+
+.child {
+    margin: auto;
+    padding: 1em;
+    background-color: #dcdbff;
+    border-radius: 1em;
+}
+
+/* question num. 8 */
+
+#alignment-blocks-q8 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 650px;
+    height: 120px;
+    margin: 0 auto;
+    padding: 0 0.7em;
+    background-color: #e6e6e6;
+    border-radius: 1em;
+}
+
+#alignment-blocks-q8 div {
+    width: 100px;
+    height: 100px;
+    border-radius: 1em;
+}
+
+#red {
+    background-color: red;
+}
+
+#green {
+    background-color: green;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#purple {
+    background-color: purple;
+}
+
+.two-blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* table ques.11 */
+
+table {
+    border-collapse: separate;
+    margin: 0 auto;
+}
+
+table.table-ques11 th,
+table.table-ques11 td {
+    padding: 0.2em 1em;
+    border: 1px solid #999898;
+    font-weight: normal;
+}

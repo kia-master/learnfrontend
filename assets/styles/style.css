@@ -51,9 +51,7 @@ header {
     padding: 0.5em 1em;
     min-width: 110px;
     max-width: 200px;
-
     text-align: center;
-
     background-color: #f8f8f8;
     border: none;
     border-radius: 0.3em;
@@ -72,11 +70,6 @@ header {
     background-color: #c5c5c5;
 }
 
-/* .navigation-header div a:visited {
-    color: #8f2626;
-} */
-
-
 footer {
     display: flex;
     justify-content: space-around;
@@ -86,7 +79,7 @@ footer {
 footer div {
     /* element */
     flex: 0 1 100%;
-    margin: 0.5em;
+    margin: 0.8em;
     padding: 1em;
     background-color: #fafafa;
     border: none;
@@ -95,7 +88,6 @@ footer div {
 
 .main-container {
     display: flex;
-    background-color: #f6f86a;
 }
 
 /*  */
@@ -103,10 +95,10 @@ footer div {
     /* container */
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     /* element */
     flex: 0 1 75%;
     padding: 1% 1%;
-
     background-color: #fff8e5;
 }
 
@@ -116,7 +108,6 @@ footer div {
     min-height: 100px;
     max-height: 300px;
     padding: 2.5em;
-
 }
 
 .element-week-1,
@@ -126,8 +117,8 @@ footer div {
 .element-week-5 {
     margin-top: 1em;
     padding: 1.5em;
-    min-height: 200px;
-    max-height: 300px;
+    min-width: 200px;
+    min-height: 300px;
     /*  */
     background-color: #fdeabd;
     border: none;
@@ -140,7 +131,6 @@ footer div {
 .element-week-4 {
     flex: 0 1 49%;
     margin-top: 1em;
-
 }
 
 .element-week-2,
@@ -155,7 +145,6 @@ footer div {
 
 .element-week-5 {
     flex: 0 1 100%;
-
 }
 
 /*  */
@@ -203,7 +192,7 @@ footer div {
 h2 {
     margin: 0;
     font-family: 'Oswald', sans-serif;
-    font-size: 14pt;
+    font-size: 16pt;
     letter-spacing: 0.05em;
 }
 
@@ -215,6 +204,7 @@ p {
     /* font-family: 'Montserrat Alternates', sans-serif; */
     font-family: 'Montserrat', sans-serif;
     font-size: 12pt;
+    line-height: 1.5em;
 }
 
 .ps-text-right {

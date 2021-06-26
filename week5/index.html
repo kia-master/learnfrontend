@@ -3,9 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>I learn frontend</title>
-    <link rel="stylesheet" href="/styles/normalize.css">
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>Week5 Homework</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -25,35 +24,284 @@
             <section class="left-box-container">
                 <div class="element-description">
                     <h2 class="description-left-box">Привет! Меня зовут Ирина Куликова</h2>
-                    <p>Я осваиваю фронтенд в школе itgirlschool. В рамках курса я научусь делать крутые проекты,
-                        используя HTML, CSS, JS и React!!!</p>
-                    <p>Уже была идея собрать все свои домашки и проекты в одном месте. Здесь и буду собирать,
-                        выкладывать, может рассказывать ...</p>
+                    <p>Давай ответим на вопросы домашки по пятой недели.</p>
                     <p class="ps-text-right">PS. Это не окончательный layout ...</p>
+                    <p class="ps-text-right">21.06 - 27.06 2021</p>
                 </div>
-                <div class="element-week-1">
-                    <h2>Неделя 1</h2>
-                    <p class="date-left-box">24.05 - 30.05 2021</p>
-                </div>
-                <div class="element-week-2">
-                    <h2>Неделя 2</h2>
-                    <p class="date-left-box">31.05 - 6.06 2021</p>
-                    <p></p>
-                </div>
-                <div class="element-week-3">
-                    <h2>Неделя 3</h2>
-                    <p class="date-left-box">7.06 - 13.06 2021</p>
-                    <p></p>
-                </div>
-                <div class="element-week-4">
-                    <h2>Неделя 4</h2>
-                    <p class="date-left-box">14.06 - 20.06 2021</p>
-                    <p></p>
-                </div>
+
                 <div class="element-week-5">
-                    <h2>Неделя 5</h2>
-                    <p class="date-left-box">21.06 - 27.06 2021</p>
+                    <h2>Игра Flexbox Froggy</h2>
                     <p></p>
+                    <img src="images/flexboxfroggy.png" alt="flexboxfroggy" class="froggy-img">
+                </div>
+
+                <div class="element-week-5">
+                    <h2>Ответы на вопросы</h2>
+
+                    <div>
+                        <p class="answer">1. Почему в большинстве ситуаций стоит использовать
+                            flexbox-позиционирование?</p>
+                        <p>Ответ</p>
+                        <ul>
+                            <li>можно очень просто и гибко расставить элементы в контейнере</li>
+                            <li>позволяет гораздо проще создавать адаптивный дизайн</li>
+                            <li>является самым простым и удобным вариантом создания позиционирования</li>
+                            <li>официально рекомендованный W3C вариант для позиционирования элементов</li>
+                        </ul>
+                    </div>
+                    <hr class="hr-dotted">
+
+                    <div>
+                        <p class="answer">2. Самостоятельно изучите способ позиционирования через display: table
+                            и ответьте на вопрос, для каких ситуаций оно лучше всего подходит? </p>
+                        <p>Ответ</p>
+                        <p>CSS-свойство <code>display: table</code> и другие, делают вывод группы элементов подобно
+                            таблице <code>&lt;table></code>, но с ограничением – объединения ячеек colspan и rowspan не
+                            поддерживаются.</p>
+                        <p>Со времен табличной верстки в <code>html</code> и <code>css</code> появилось множество
+                            улучшений, которые заменяют ее собой. Проблема табличной верстки в том, что с ней не
+                            добиться адаптивности (или весьма тяжело добиться). При изменении содержимого какой либо
+                            ячейки происходит пересчет всей
+                            таблицы (расходует ресурсы). Табличную верстку сложнее поддерживать.</p>
+                        <p>Таким образом использовать верстку на основе таблиц не рационально.</p>
+                        <p>Таблицы лучше использовать по их прямому назначению - для отображения таблиц. Табличную
+                            верстку можно применять, например, при печати странички.</p>
+
+                        <p>Пример таблицы</p>
+                        <div class="table">
+                            <div class="table-caption">Расчет приоритета</div>
+                            <div class="table-colgroup">
+                                <div class="table-col" width="30%"></div>
+                                <div class="table-col" width="30%"></div>
+                                <div class="table-col" width="30%"></div>
+                            </div>
+                            <div class="table-thead">
+                                <div class="table-tr">
+                                    <div class="table-th">Тип селектора</div>
+                                    <div class="table-th">#link .main</div>
+                                    <div class="table-th">span #login</div>
+                                </div>
+                            </div>
+                            <div class="table-tbody">
+                                <div class="table-tr">
+                                    <div class="table-th">Стиль подключается внешним файлом</div>
+                                    <div class="table-td">0</div>
+                                    <div class="table-td">0</div>
+                                </div>
+                                <div class="table-tr">
+                                    <div class="table-th">Индентификаторы</div>
+                                    <div class="table-td">1</div>
+                                    <div class="table-td">1</div>
+                                </div>
+                                <div class="table-tr">
+                                    <div class="table-th">Классы, псевдокалассы и селекторы атрибутов</div>
+                                    <div class="table-td">1</div>
+                                    <div class="table-td">0</div>
+                                </div>
+                                <div class="table-tr">
+                                    <div class="table-th">Селекторы типов элементов и псевдо-элементов</div>
+                                    <div class="table-td">0</div>
+                                    <div class="table-td">1</div>
+                                </div>
+                            </div>
+                            <div class="table-tfoot">
+                                <div class="table-tr">
+                                    <div class="table-th">В дестичной СИ</div>
+                                    <div class="table-th">6</div>
+                                    <div class="table-th">5</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hr-dotted">
+
+                    <div>
+                        <p class="answer">3. Какими способами можно сделать горизонтальное выравнивание по центру?
+                            Минимум 3 варианта, можно больше</p>
+                        <p>Ответ</p>
+                        <p>Если элемент блочный - с помощью свойства <code>margin: 0 auto;</code></p>
+                        <p>Для строчных элементов - свойство <code>text-align: center;</code></p>
+                        <p>Для блочных с использованием Flexbox - <code>justify-content: center;</code></p>
+                        <p>Для центрирования по горизонтали блочных элементов можно для контейнера указать
+                            <code>text-align: center;</code>, а для блоков <code>display: inline-block;</code></p>
+                    </div>
+                    <hr class="hr-dotted">
+
+                    <div>
+                        <p class="answer">4. Какие есть оси во флекс-верстке и как задается их направление?</p>
+                        <p>Ответ</p>
+                        <p><strong>Главная ось</strong> - направление слева направо. <strong>Поперечная ось</strong> -
+                            направление сверху вниз.</p>
+                    </div>
+                    <hr class="hr-dotted">
+
+                    <div>
+                        <p class="answer">5. Разберитесь, как работает свойство <code>margin: auto</code> во
+                            флекс-верстке, приведите пример использования</p>
+                        <p>Ответ</p>
+                        <p>Если применить автоматические внешние отступы на flex-элементе, то этот элемент
+                            автоматически заберет в отступ все дополнительное свободное пространство контейнера, в
+                            зависимости от направления, в котором применяется <code>auto-margin</code>.</p>
+                        <p>Например, если контейнеру задать параметр <code>flex</code>, а дочернему элементу
+                            <code>margin: auto;</code>, то элемент будет отцентрован по вертикали и горизонтали так, что
+                            центровка сохранится при
+                            изменении размеров элемента или контейнера</p>
+
+                        <div class="parent">
+                            <div class="child">
+                                <p>Block child</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr class="hr-dotted">
+
+                    <div>
+                        <p class="answer">6. В чем преимущества box-sizing?</p>
+                        <p>Ответ</p>
+                        <p>При установке размеров блока, помимио заданных размеров, добавляются размеры отступов
+                            (<code>margin</code> и <code>padding</code>) и размер <code>border</code>. Реальная
+                            ширина элемента увеличивается, что создает трудности при верстке страници и расположения
+                            элементов.</p>
+                        <p>Для изменения модели пожчета размера элемента используется свойство <code>box-sizing</code>
+                        </p>
+                        <p>Значение по умолчанию - <code>content-box</code></p>
+                        <p>Для изменения расчета размера блока используется значение <code>border-box</code>. Любые
+                            значения свойств <code>border</code> или <code>padding</code> включаются
+                            внутрь <code>width</code> и <code>height</code> элемента.</p>
+                        <p>Значение <code>margin</code> не учитыватся.</p>
+                    </div>
+                    <hr class="hr-dotted">
+
+                    <div>
+                        <p class="answer">7. Чем отличается <code>flex-grow</code> от <code>flex-shrink</code>?</p>
+                        <p>Ответ</p>
+                        <p>Свойство <code>flex-grow</code> - определяет возможность элемента увеличиваться в размере,
+                            при необходимости заполняя весь flex-контейнер.</p>
+                        <p>Свойство <code>flex-shrink</code> - определяет возможность элемента уменьшаться в размере,
+                            при необходимости заполняя весь flex-контейер.</p>
+                        <p>Принимает значения 0 и 1: 0 запрещено, 1 разрешено.</p>
+                    </div>
+                    <hr class="hr-dotted">
+
+                    <!-- question num. 8 -->
+                    <div>
+                        <p class="answer">8. Какими способами можно сделать горизонтальное выравнивание по центру?
+                            Минимум 3 варианта, можно больше</p>
+                        <p>Ответ</p>
+                        <p>
+                            Родителю задаем свойства: <code>display: flex;</code>,
+                            <code>justify-content: space-between;</code>, <code>align-items: center;</code>
+                        </p>
+
+                        <div id="alignment-blocks-q8">
+                            <div id="red"></div>
+                            <div id="green"></div>
+                            <div id="blue"></div>
+                            <div id="purple"></div>
+                        </div>
+
+                    </div>
+                    <hr class="hr-dotted">
+
+                    <!-- question num. 9 -->
+                    <div>
+                        <p class="answer">9. Какой в итоге будет размер у элемента (можно округлить)?</p>
+                        <div class="two-blocks">
+                            <div>
+                                <p>Ответ:</p>
+                                <p>width : 1.989 + 5 + 134.545 + 5 + 1.989 = 148,52 px</p>
+                                <p>height: 1.989 + 2 + 11.818 + 2 = 17,81 px</p>
+                                <p>Размеры блока: 148,52 X 17,81</p>
+                            </div>
+                            <div>
+                                <img src="images/ques-9.png" alt="ques-9">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hr-dotted">
+
+                    <!-- question num. 10 -->
+                    <div>
+                        <p class="answer">10. Самостоятельно разберитесь, зачем нужно свойство order?</p>
+                        <p>Ответ</p>
+                        <p>Cвойство <code>order</code> определяет порядок, используемый для размещения элементов в
+                            контейнере. Элементы располагаются в восходящем порядке по значению order. Элементы с
+                            одинаковым значением order располагаются в том порядке, в каком они находятся в исходном
+                            коде.</p>
+                        <p>Число может быть положительным и отрицательным и влияет на направления отсчета. Положительное
+                            число - по направленю оси, отрицательное - в противоположную сторону.</p>
+                        <p>
+                            Например, если элементы расположены горизонтально, в зависимости от значения свойства
+                            <code>order</code> (напр., <code>order: 3;</code> ), позиция самого элемента также будет
+                            учитываться в отсчете.
+                        </p>
+                    </div>
+                    <hr class="hr-dotted">
+
+                    <!-- question num. 11 -->
+                    <div>
+                        <p class="answer">11. Каким кодом можно сделать такую таблицу?</p>
+                        <p>Ответ</p>
+                        <p>Такую таблицу можно создать при помощи элемента <code>&lt;table>&lt;/table></code>, который
+                            является контейнером для элементов таблицы и все элементы должны находиться внутри него.</p>
+                        <div>
+                            <table class="table-ques11">
+                                <tr>
+                                    <th>Column 1</th>
+                                    <th>Column 2</th>
+                                    <th>Column 3</th>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">Row 1 Cell 1</td>
+                                    <td>Row 1 Cell 2</td>
+                                    <td>Row 1 Cell 3</td>
+                                </tr>
+                                <tr>
+                                    <td>Row 2 Cell 2</td>
+                                    <td>Row 2 Cell 3</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">Row 3 Cell 1</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <hr class="hr-dotted">
+
+                    <!-- question num. 12 -->
+                    <div>
+                        <p class="answer">12. Изучите материалы и найдите, для каких ситуаций подходит position: fixed?
+                        </p>
+                        <p>Ответ</p>
+                        <p>Фиксированное позиционирование элемента задаётся значением <code>fixed</code> свойства
+                            <code>position</code> и по
+                            своему действию похоже на абсолютное позиционирование. Но в отличие от него привязывается к
+                            указанной свойствами <code>left</code>, <code>top</code>, <code>right</code> и
+                            <code>bottom</code> точке на экране и не меняет своего положения
+                            при прокрутке веб-страницы.</p>
+                        <p>Применяется такой тип позиционирования для создания меню, вкладок, заголовков, в общем, любых
+                            элементов, которые должны быть закреплены на веб-странице и всегда видны посетителю.</p>
+                    </div>
+                    <hr class="hr-dotted">
+
+                    <!-- question num. 13 -->
+                    <div>
+                        <p class="answer">13. Каким способом лучше всего верстать большие блоки текста?</p>
+                        <p>Ответ</p>
+                        <p>Большие блоки текста лучше верстать с помощью блочной модели позиционирования.</p>
+                    </div>
+                    <hr class="hr-dotted">
+
+                    <!-- question num. 14 -->
+                    <div>
+                        <p class="answer">14. Как рассчитывается размер flex-контейнера?</p>
+                        <p>Ответ</p>
+                        <p>Размер контейнера состоит из размеров flex-элементов, которые рассчитываются как в обычной
+                            блочной модели (рамки + отступы + размеры содержания) и значений свойств:
+                            <code>flex-grow</code> и <code>flex-shrink</code></p>
+                    </div>
+
                 </div>
             </section>
 
