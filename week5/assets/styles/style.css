@@ -1,3 +1,16 @@
+/* h1 */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+/* h2 anywhere */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+/*  */
+
+/* all texts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+/* or */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
     box-sizing: inherit;
 }
@@ -10,14 +23,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* after delete */
-    background-color: #fac4a5;
+    background-color: #e1e1e1;
 }
 
 .logo-header {
     margin: 0.5em;
+    padding: 0.25em 0.5em;
+    /* fonts */
+    font-family: 'Patrick Hand', sans-serif, serif;
+    letter-spacing: 4px;
     /* after delete */
-    background-color: #f7813c;
+    background-color: #f8f8f8;
+    border: none;
+    border-radius: 0.4em;
 }
 
 .navigation-header {
@@ -25,77 +43,189 @@ header {
     align-items: center;
     margin-right: 1em;
     /* after delete */
-    background-color: #f8dbca;
+    /* background-color: #f8dbca; */
 }
 
 .navigation-header div {
-    padding: 1em;
-    /* after delete */
-    border: solid 1px #f02727;
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    min-width: 110px;
+    max-width: 200px;
+
+    text-align: center;
+
+    background-color: #f8f8f8;
+    border: none;
+    border-radius: 0.3em;
 }
+
+.navigation-header div a {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    color: #545454;
+    text-decoration: none;
+
+}
+
+.navigation-header div:hover {
+    background-color: #c5c5c5;
+}
+
+/* .navigation-header div a:visited {
+    color: #8f2626;
+} */
+
 
 footer {
     display: flex;
     justify-content: space-around;
-    /* after delete */
-    background-color: #7c7b7a;
+    background-color: #e1e1e1;
 }
 
 footer div {
+    /* element */
+    flex: 0 1 100%;
+    margin: 0.5em;
     padding: 1em;
-    /* after delete */
-    background-color: #d4d5d6;
+    background-color: #fafafa;
+    border: none;
+    border-radius: 0.3em;
 }
 
 .main-container {
     display: flex;
-    padding-left: 1%;
-    padding-right: 1%;
-    /* after delete */
     background-color: #f6f86a;
 }
 
+/*  */
 .left-box-container {
     /* container */
     display: flex;
     flex-wrap: wrap;
     /* element */
-    flex: 0 1 70%;
-    /* after delete */
-    background-color: #84c1f7;
+    flex: 0 1 75%;
+    padding: 1% 1%;
+
+    background-color: #fff8e5;
 }
 
+/* element for left-box */
 .element-description {
     flex: 0 1 100%;
-    /* after delete */
-    background-color: #2898fa;
+    min-height: 100px;
+    max-height: 300px;
+    padding: 2.5em;
+
+}
+
+.element-week-1,
+.element-week-2,
+.element-week-3,
+.element-week-4,
+.element-week-5 {
+    margin-top: 1em;
+    padding: 1.5em;
+    min-height: 200px;
+    max-height: 300px;
+    /*  */
+    background-color: #fdeabd;
+    border: none;
+    border-radius: 1em;
 }
 
 .element-week-1,
 .element-week-2,
 .element-week-3,
 .element-week-4 {
-    flex: 0 1 50%;
-    /* after delete */
-    border: solid 1px #2929f8;
+    flex: 0 1 49%;
+    margin-top: 1em;
+
+}
+
+.element-week-2,
+.element-week-4 {
+    margin-left: 1%;
+}
+
+.element-week-1,
+.element-week-3 {
+    margin-right: 1%;
 }
 
 .element-week-5 {
     flex: 0 1 100%;
-    /* after delete */
-    background-color: #c8e3fa;
+
 }
 
+/*  */
 .right-box-container {
     /* container */
     display: flex;
     flex-direction: column;
     /* element */
-    flex: 0 1 30%;
-    /* after delete */
-    background-color: #87f5ab;
+    flex: 0 1 25%;
+    background-color: #deeccd;
 }
 
+/* element for right-box */
 .right-box-container div {
-    border: solid 1px #104e0a;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 1em;
+    min-height: 200px;
+    background-color: #eff7eb;
+    border: none;
+    border-radius: 1em;
+}
+
+.right-box-img-hover {
+    flex: 0 1 100%;
+    width: 100%;
+    min-height: 200px;
+    background-image: url("../images/week-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.right-box-img-hover:hover {
+    background-image: url("../images/week-hover.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.right-box-container p {
+    font-size: 10pt;
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14pt;
+    letter-spacing: 0.05em;
+}
+
+.description-left-box {
+    font-size: 16pt;
+}
+
+p {
+    /* font-family: 'Montserrat Alternates', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+}
+
+.ps-text-right {
+    text-align: right;
+}
+
+.date-left-box {
+    margin-top: 0.2em;
+    font-size: 10pt;
+}
+
+footer p {
+    text-align: center;
 }
