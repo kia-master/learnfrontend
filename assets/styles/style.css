@@ -1,16 +1,3 @@
-/* h1 */
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-
-/* h2 anywhere */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
-
-/*  */
-
-/* all texts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
-/* or */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
 * {
     box-sizing: inherit;
 }
@@ -169,17 +156,32 @@ footer div {
     border-radius: 1em;
 }
 
-.right-box-img-hover {
+.right-box-img-hover,
+.right-box-img-hover-2,
+.right-box-img-hover-3 {
     flex: 0 1 100%;
     width: 100%;
-    min-height: 200px;
-    background-image: url("../images/week-1.png");
+    min-height: 150px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
-.right-box-img-hover:hover {
+.right-box-img-hover {
+    background-image: url("../images/week-1.png");
+}
+
+.right-box-img-hover-2 {
+    background-image: url("../images/page-blog.png");
+}
+
+.right-box-img-hover-3 {
+    background-image: url("../images/business-card.png");
+}
+
+.right-box-img-hover:hover,
+.right-box-img-hover-2:hover,
+.right-box-img-hover-3:hover {
     background-image: url("../images/week-hover.png");
     background-repeat: no-repeat;
     background-size: contain;
