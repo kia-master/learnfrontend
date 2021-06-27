@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="" type="image/png">
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Irina Kulikova - frontend developer</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="" id="home-menu"></a></li>
+                <li><a href="" id="aboutme-menu"></a></li>
+                <li><a href="" id="eduandwork-menu"></a></li>
+                <li><a href="" id="portfolio-menu"></a></li>
+                <li><a href="" id="contact-menu"></a></li>
+                <li><a href="https://github.com/kia-master" id="github-menu" target="_blank"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Main section after header -->
+        <section class="main">
+            <div>
+                <h1>I’m Irina Kulikova.<br><span>Front-end Developer</span></h1>
+                <p>Hi! I am studying front-end development at itgirlschool</p>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="https://www.facebook.com/irina.kul.kul/" target="_blank"><img
+                                src="assets/svg/facebook.svg" alt="fb"></a></li>
+                    <li><a href=""><img src="assets/svg/instagram.svg" alt="insta"></a></li>
+                    <li><a href=""><img src="assets/svg/linkeding.svg" alt="link"></a></li>
+                    <li><a href=""><img src="assets/svg/youtube.svg" alt="yout"></a></li>
+                    <li><a href="https://github.com/kia-master" target="_blank"><img src="assets/svg/github.svg"
+                                alt="github"></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Answer questions -->
+        <section>
+            <h2>Ответы на вопросы</h2>
+            <p class="text-before-header">Для удобства проверки и наглядности вставила сюда блок ответов на вопросы из
+                ДЗ четвертой недели. Затем этот блок просто "под кат" &#129315;&#129315;&#129315;
+            </p>
+
+            <!-- question 1 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Какими способами можно подключать CSS-стили? Найдите сами еще один способ, не указанный в уроке
+                    </p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Ответ</h3>
+                    <p>1. С помощью атрибута style для любого тега: &lt;элемент style="...правила стиля..."></p>
+                    <p>2. Использовать элемент &lt;style>. Этот тег помещается внутри тегов &lt;head>...&lt;/head></p>
+                    <p>3. С помощью элемента &lt;link> можно подключить внешние CSS-файлы. Внутри тегов
+                        &lt;head>...&lt;/head> добавляем &lt;link type = "text/css" href = "..." media = "..." /></p>
+                    <p>4. С помощью правила @import. Используется для импорта внешней таблицы стилей
+                        способом, аналогичным элементу &lt;link> <br>
+                        &lt;head> @import "URL"; &lt;/head> <br>
+                        или <br>
+                        &lt;head> @import url("URL"); &lt;/head>
+                    </p>
+                </div>
+            </div>
+
+            <!-- question 2 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Зачем нужен Normalize.css?</p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Ответ</h3>
+                    <p>
+                        В каждом браузере есть свой собственный набор стилей для html-элементов, задающий то, как они
+                        будут отображаться "по умолчанию"(user agent style), без их переопределения.
+                    </p>
+                    <p>
+                        Проблема состоит в том, что везде они разные - где-то margin/pading другие, где-то у элемента
+                        рисуется граница, а где-то и вообще размер и гарнитура шрифта другая.
+                    </p>
+                    <p>
+                        Каждый раз при верстке помнить об всех этих мелочах, и обязательно переопределять их - можно
+                        замучатся. И тут на помощь приходит Normalize.css - <strong>он приводит стили "по умолчанию" в
+                            браузерах к единому знаменателю, что собственно в итоге упрощает кроссбраузерную
+                            верстку.</strong>
+                    </p>
+                </div>
+            </div>
+
+            <!-- question 3 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Что такое CSS-директивы?</p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Ответ</h3>
+                    <p>Директивы (правила) — это конструкции, которые позволяет создавать в CSS инструкции для изменения
+                        отображения либо поведения элементов страницы. Директива начинается со знака @, за которым
+                        следует одно из служебных слов.</p>
+                    <p>Стандартный синтаксис: </p>
+                    <p>@[КЛЮЧЕВОЕ СЛОВО] (ПРАВИЛО);</p>
+                    <p><a href="https://frontender.info/the-at-rules-of-css/" target="_blank">Подробнее</a></p>
+                </div>
+            </div>
+
+            <!-- question 4 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>В чем разница между margin и padding?</p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Ответ</h3>
+                    <p>Между этими двумя свойствами существует ощутимая разница. Padding используется для задания
+                        пространства внутри контейнера HTML-элемента. Margin используется для задания пространства
+                        вокруг внешней границы элементов.</p>
+                    <p><strong>padding</strong> – это отступ от содержимого до края блока.</p>
+                    <p><strong>margin</strong> – это расстояние от одного блока до другого, межблоковое пространство.
+                    </p>
+                    <p><img class="zoom-img" src="assets/image/margin-and-padding.png" alt="margin-and-padding"></p>
+                </div>
+            </div>
+
+            <!-- question 5 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Как в CSS определяются приоритеты? Какое из свойств будет приоритетнее - <code>#link .main</code>
+                        или <code>span #login</code> ?</p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Ответ</h3>
+                    <p>Существует 4 правила по которым вычисляется специфичность селекторов:</p>
+                    <p>1. Самый высокий приоритет имеет атрибут style. Это правило перекрывает все селекторы описанные в
+                        стилях.</p>
+                    <p>2. Второе место занимает присутствие ID в селекторе (#some-id).</p>
+                    <p>3. Далее идут все атрибуты (в том числе и атрибут class) и псевдоклассы (pseudo-classes) в
+                        селекторе.</p>
+                    <p>4. Самый низкий приоритет у селекторов с именами элементов и псевдоэлементами (pseudo-elements).
+                    </p>
+                    <p>Все 4 правила сводятся в одну систему a-b-c-d (где а - наивысший приоритет) и образуют
+                        специфичность.</p>
+                    <p><a href="https://specifishity.com/" target="_blank">Вот интересная визуализация</a>Особенно
+                        директива !important &#129315;
+                    </p>
+                    <p>Сравним два селектора #link .main и span #login</p>
+                    <p><img src="assets/image/prioritets.png" alt="prioritets" class="zoom-img"></p>
+                    <p>Победитель #link .main &#128079; &#127881; &#127881;</p>
+                </div>
+            </div>
+
+            <!-- question 6 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>В чем разница между CSS1 и CSS3?</p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Ответ</h3>
+                    <p>Вот 7 основных вещей, которые отличают CSS3 от CSS1:</p>
+                    <p>1. Поддержка адаптивного дизайа и обработки медиа-запросов. Медиа-запросы — это вызовы,
+                        выполняемые
+                        кодом для определения устройства и размера экрана.</p>
+                    <p>2. Одним из самых важных достижений является то, что CSS3 разделен на модули. Все старые
+                        спецификации CSS были перенесены в новую версию и разделены на более мелкие части, где также
+                        добавлены некоторые новые модули. Самый важный модуль - СЕЛЕКТОРЫ</p>
+                    <p>3. Поддержка веб-шрифтов.</p>
+                    <p>4. Позволяет быстрее разрабатывать и быстрее загружать.</p>
+                    <p>5. Создание 2D и 3D преобразований, анимации и переходов. Эти эффекты позволяют элементам на
+                        странице вращаться, увеличиваться, уменьшаться, переворачиваться или переводиться в другой цвет.
+                        Впервые элементы, созданные в CSS могут перемещаться по экрану без использования JavaScript или
+                        Flash-кода. </p>
+                    <p>6. Новые цвета и эффекты изображения. CSS3 поддерживает новые цвета (RGBA, HSL, HSLA) и цвета
+                        градиента, позволяет корректировать непрозрачность.</p>
+                    <p>7. Устранены некоторые проблемы с выравниванием</p>
+                    <p><a href="http://zornet.ru/forum/123-8123-1" target="_blank">Какая разница между CSS и CSS3</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- question 7 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Что такое псевдоклассы? А псевдоэлементы?</p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Ответ</h3>
+                    <p><em>Псевдокласс</em> — это селектор, который выбирает элементы, находящиеся в
+                        специфическом состоянии,
+                        например, они являются первым элементом своего типа, или на них наведён указатель мыши. Они
+                        обычно действуют так, как если бы вы применили класс к какой-то части вашего документа, что
+                        часто помогает сократить избыточные классы в разметке и даёт более гибкий, удобный в поддержке
+                        код.</p>
+                    <p>Псевдоклассы — это ключевые слова, которые начинаются с двоеточия [ :pseudo-class-name ]</p>
+                    <p><em>Псевдоэлементы</em> ведут себя сходным образом, однако они действуют так, как если бы вы
+                        добавили в
+                        разметку целый новый HTML-элемент, а не применили класс к существующим элементам. Псевдоэлементы
+                        начинаются с двойного двоеточия [ ::pseudo-element-name ]</p>
+                    <p><a href="https://developer.mozilla.org/ru/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements"
+                            target="_blank">Псевдоклассы, псевдоэлементы</a></p>
+                </div>
+            </div>
+
+            <!-- question 8 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Изучите <a href="https://msiter.ru/tutorials/html-srednego-urovnya/plokhie-tegi">статью</a> про
+                        "плохие" теги и пришлите список тегов, которые нежелательно использовать</p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Ответ</h3>
+                    <p><img class="zoom-img" src="assets/image/bad-tags.png" alt="bad-tags"></p>
+                    <p>Тэги-пустышки: &lt;u> &lt;center> &lt;layer> &lt;blink> &lt;marquee> &lt;font></p>
+                </div>
+            </div>
+
+            <!-- question 9 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Как можно подключать шрифты локально?</p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Ответ</h3>
+                    <p>Директива <strong>@font-face src</strong> позволяет задать название локального шрифта, т.е. если
+                        на
+                        компьютере уже установлен нужный шрифт, то будет использоваться именно он, при этом существенно
+                        увеличится скорость загрузки и отрисовки страницы.</p>
+                    <p><img src="assets/image/local-fonts.png" alt="local-fonts" class="zoom-img"></p>
+                </div>
+            </div>
+
+            <!-- question 10 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Почему не стоит использовать сокращенную запись без необходимости? И если все же использовать,
+                        как это делать правильно?</p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Ответ</h3>
+                    <p>Сокращённые свойства удобно писать, но сложно комбинировать и понимать.</p>
+                    <p>При использовании сокращённой, записи, свойства, которые не были указаны, сбрасываются на
+                        значения по умолчанию.</p>
+                    <p>Например, если мы укажем классу:</p>
+                    <p>margin: 1px;<br>margin-bottom: 10px;</p>
+                    <p>Вторая строчка так и не сработает, т.к. первая установила все отступы в одно значение.</p>
+                    <p>Для избежания ошибок, лучше короткие записи не использовать.
+                        В случае применения, тогда лучше свойства группировать по смыслу, что позволит избегать и
+                        быстрее находить ошибки.
+                        Если нужно переопределить значения, то лучше убрать сокращённой запись, и переопределить
+                        значения.</p>
+                </div>
+            </div>
+
+            <!-- question 11 -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Разберитесь самостоятельно, как сделать анимацию через CSS</p>
+                </div>
+                <div class="text-about-rblock" id="anima">
+                    <h3>Ответ</h3>
+                    <p>Для объявления анимации и задания ключевых кадров используется правило
+                        <strong>@keyframes</strong>, после которого
+                        указывается название анимации.</p>
+                    <p>С помощью ключевых кадров можно задать нужное поведение для элементов на любом этапе.
+                        Кадры можно
+                        задавать в процентах: например, <strong>0%</strong> — это начало анимации, <strong>100%</strong>
+                        — её конец. Это не единственный
+                        способ — можно воспользоваться ключевыми словами <strong>from</strong> и <strong>to</strong>, но
+                        проценты позволяют задать любое
+                        промежуточное состояние.</p>
+                    <p>После создания анимации, ее необходимо подключить к элементу. Для этого используются специальные
+                        CSS-свойства.</p>
+                    <p>Вот некоторые свойства:</p>
+                    <p>- <strong>animation-name</strong> — название анимации.</p>
+                    <p>- <strong>animation-duration</strong> — длительность анимации. Измеряется в секундах или
+                        миллисекундах.</p>
+                    <p>- <strong>animation-delay</strong> — задержка анимации. Свойство позволяет установить время между
+                        тем
+                        моментом, когда анимация была присвоена элементу, и непосредственно началом анимации.</p>
+                    <p>- <strong>animation-fill-mode</strong> — состояние элемента до и после анимации. С помощью этого
+                        свойства
+                        можно
+                        контролировать, как будет себя вести элемент до начала анимации и после её завершения. </p>
+                    <p>Это только некоторые свойства, более подробно <a
+                            href="https://developer.mozilla.org/ru/docs/Web/CSS/animation" target="_blank">здесь</a></p>
+                    <p><img src="assets/image/code-animation.png" alt="code-animation"></p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About me -->
+        <section>
+            <h2>About me</h2>
+            <p class="text-before-header">Кстати, диаграммы связей, которые представляют собой яркий пример
+                континентально-европейского типа политической культуры, будут в равной степени предоставлены сами себе.
+            </p>
+
+            <!-- Block about me -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p><span class="left-block-text-orange">Age:</span><span class="left-block-text">30</span></p>
+                    <p><span class="left-block-text-orange">Residence:</span><span class="left-block-text">RU</span>
+                    </p>
+                    <p><span class="left-block-text-orange">Freelance:</span><span
+                            class="left-block-text">Available</span></p>
+                    <p><span class="left-block-text-orange">Address:</span><span
+                            class="left-block-text">St.Petersburg</span></p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>О себе</h3>
+                    <p>Мы вынуждены отталкиваться от того, что базовый вектор развития выявляет срочную потребность форм
+                        воздействия. А также стремящиеся вытеснить традиционное производство, нанотехнологии могут быть
+                        функционально разнесены на независимые элементы. Господа, высококачественный прототип будущего
+                        проекта играет важную роль в формировании новых предложений.</p>
+                </div>
+            </div>
+
+            <!-- Block Languages -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Russian<span class="left-block-text">100%</span>
+                        <img src="assets/svg/line-rus-lang.svg" alt="line-rus-lang"></p>
+                    <p>English<span class="left-block-text">40%</span>
+                        <img src="assets/svg/line-eng-lang.svg" alt="line-eng-lang"></p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Языки</h3>
+                    <p>Сложно сказать, почему тщательные исследования конкурентов, инициированные исключительно
+                        синтетически, разоблачены. Являясь всего лишь частью общей картины, явные признаки победы
+                        институционализации функционально разнесены на независимые элементы. В рамках спецификации
+                        современных стандартов, акционеры крупнейших компаний неоднозначны и будут обнародованы.</p>
+                </div>
+            </div>
+
+            <!-- Block Skills -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>HTML<span class="left-block-text">40%</span>
+                        <img src="assets/svg/line-40.svg" alt="line-40"></p>
+                    <p>CSS<span class="left-block-text">10%</span>
+                        <img src="assets/svg/line-10.svg" alt="line-10"></p>
+                    <p>JS<span class="left-block-text">10%</span>
+                        <img src="assets/svg/line-10.svg" alt="line-10"></p>
+                    <p>PYTHON<span class="left-block-text">60%</span>
+                        <img src="assets/svg/line-60.svg" alt="line-60"></p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Скилы</h3>
+                    <p>Банальные, но неопровержимые выводы, а также сторонники тоталитаризма в науке функционально
+                        разнесены
+                        на независимые элементы. Каждый из нас понимает очевидную вещь: синтетическое тестирование
+                        способствует повышению качества модели развития. Принимая во внимание показатели успешности,
+                        высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент
+                        проверки приоритизации разума над эмоциями.</p>
+                </div>
+            </div>
+
+            <!-- Block Extra and Soft skills -->
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p><img src="assets/svg/icon-soft.svg" alt="icon-soft" class="icon-for-left-block">Bootstrap,
+                        Materialize
+                    </p>
+                    <p><img src="assets/svg/icon-soft.svg" alt="icon-soft" class="icon-for-left-block">Stylus, Sass,
+                        Less</p>
+                    <p><img src="assets/svg/icon-soft.svg" alt="icon-soft" class="icon-for-left-block">Gulp, Webpack,
+                        Grunt</p>
+                    <p><img src="assets/svg/icon-soft.svg" alt="icon-soft" class="icon-for-left-block">GIT Knowledge</p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Экстра и софт скилы</h3>
+                    <p>Сложно сказать, почему диаграммы связей набирают популярность среди определенных слоев населения,
+                        а
+                        значит, должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.
+                        В
+                        рамках спецификации современных стандартов, элементы политического процесса и по сей день
+                        остаются
+                        уделом либералов, которые жаждут быть ограничены исключительно образом мышления. Значимость этих
+                        проблем настолько очевидна, что реализация намеченных плановых заданий не даёт нам иного выбора,
+                        кроме определения новых принципов формирования материально-технической и кадровой базы.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- education -->
+        <section>
+            <h2>Education</h2>
+            <p class="text-before-header">Являясь всего лишь частью общей картины, явные признаки победы
+                институционализации лишь добавляют
+                фракционных разногласий и объединены в целые кластеры себе подобных.</p>
+
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>University of Toronto</p>
+                    <p><span class="right-block-text-orange">Jan 2016 - Dec 2021</span></p>
+                </div>
+                <div class="text-about-rblock">
+                    <div>
+                        <h3>Универ</h3>
+                        <p>Диаграммы связей являются только методом политического участия и разоблачены. Современные
+                            технологии достигли такого уровня, что убеждённость некоторых оппонентов однозначно
+                            определяет
+                            каждого участника как способного принимать собственные решения касаемо переосмысления
+                            внешнеэкономических политик.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Programming Course</p>
+                    <p><span class="right-block-text-orange">Jan 2016 - Dec 2021</span></p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Курсы 1</h3>
+                    <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством
+                        простого факта: убеждённость некоторых оппонентов напрямую зависит от экономической
+                        целесообразности принимаемых решений. Как уже неоднократно упомянуто, сделанные на базе
+                        интернет-аналитики выводы своевременно верифицированы.</p>
+                </div>
+            </div>
+
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Web developer courses</p>
+                    <p><span class="right-block-text-orange">Jan 2016 - Dec 2021</span></p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Курсы 2</h3>
+                    <p>Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта представляет
+                        собой интересный эксперимент проверки форм воздействия. Банальные, но неопровержимые выводы, а
+                        также тщательные исследования конкурентов разоблачены.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- works -->
+        <section>
+            <h2>Works</h2>
+            <p class="text-before-header">Банальные, но неопровержимые выводы, а также многие известные личности преданы
+                социально-демократической
+                анафеме!</p>
+
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Work One</p>
+                    <p><span class="right-block-text-orange">Jan 2016 - Dec 2021</span></p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Первая работа</h3>
+                    <p>В рамках спецификации современных стандартов, элементы политического процесса могут быть
+                        объективно рассмотрены соответствующими инстанциями. Повышение уровня гражданского сознания
+                        требует определения и уточнения как самодостаточных, так и внешне зависимых концептуальных
+                        решений.</p>
+                </div>
+            </div>
+
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Work Two</p>
+                    <p><span class="right-block-text-orange">Jan 2016 - Dec 2021</span></p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Вторая работа</h3>
+                    <p>А ещё независимые государства формируют глобальную экономическую сеть и при этом - обнародованы.
+                        Идейные соображения высшего порядка, а также экономическая повестка сегодняшнего дня, в своём
+                        классическом представлении, допускает внедрение экономической целесообразности принимаемых
+                        решений.</p>
+                </div>
+            </div>
+
+            <div class="text-blocks">
+                <div class="left-block">
+                    <p>Work three</p>
+                    <p><span class="right-block-text-orange">Jan 2016 - Dec 2021</span></p>
+                </div>
+                <div class="text-about-rblock">
+                    <h3>Третья работа</h3>
+                    <p>Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего
+                        мира могут быть преданы социально-демократической анафеме. Имеется спорная точка зрения,
+                        гласящая примерно следующее: активно развивающиеся страны третьего мира могут быть своевременно
+                        верифицированы.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- portfolio -->
+        <section>
+            <h2>Portfolio</h2>
+            <p class="text-before-header">В целом, конечно, постоянный количественный рост и сфера нашей активности
+                является качественно новой
+                ступенью поэтапного и последовательного развития общества.</p>
+
+            <div class="portf-bloks">
+                <div>
+
+                    <img src="assets/image/project-1.jpg" alt="project-1">
+                    <h3>Project 1</h3>
+                    <p>Также как курс на социально-ориентированный национальный проект предполагает независимые
+                        способы
+                        реализации дальнейших направлений развития.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+
+                    <img src="assets/image/project-2.jpg" alt="project-2">
+                    <h3>Project 2</h3>
+                    <p>Как уже неоднократно упомянуто, действия представителей оппозиции, инициированные
+                        исключительно
+                        синтетически, ограничены исключительно образом мышления.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <img src="assets/image/project-3.jpg" alt="project-3">
+                    <h3>Project 3</h3>
+                    <p>Таким образом, новая модель организационной деятельности создаёт предпосылки для анализа
+                        существующих
+                        паттернов поведения.</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- contacts and feedback -->
+        <section>
+            <div class="feedb-blocks">
+                <!-- feedback -->
+                <div>
+                    <h2>Leave us your info</h2>
+                    <form>
+                        <div>
+                            <label for="name">Your Full Name ( Required)
+                                <input type="text" name="name" />
+                            </label>
+                        </div>
+                        <div>
+                            <label for="email">Your Email (Required)
+                                <input type="text" name="email" />
+                            </label>
+                        </div>
+                        <div>
+                            <label for="subject">Subject
+                                <input type="text" name="subject" />
+                            </label>
+                        </div>
+                        <div>
+                            <label for="message">Your Message
+                                <textarea name="message" rows="4"></textarea>
+                            </label>
+                        </div>
+                        <div><input type="button" value="SEND MESSAGE" /></div>
+                    </form>
+                </div>
+
+                <!-- contacts -->
+                <div>
+                    <h2>Contact information</h2>
+
+                    <div>
+                        <p>wdwd</p>
+                        <p>wdwd</p>
+                        <p>wdwd</p>
+                    </div>
+                    <div>
+                        <p>sddsd</p>
+                        <p>wdwd</p>
+                        <p>wdwd</p>
+                    </div>
+                    <div>
+                        <p>sdsdsd</p>
+                        <p>wdwd</p>
+                        <p>wdwd</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>ghjfhgfhg</p>
+        </footer>
+    </main>
+</body>
+
+</html>
