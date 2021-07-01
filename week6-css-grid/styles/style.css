@@ -4,9 +4,10 @@
 
 
 /* for question 2 */
+
 .grid-container-2 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 40px 40px;
     gap: 10px;
     margin: 0 10px;
@@ -27,4 +28,37 @@
 .grid-2-5 {
     background-color: #5579e0;
     border: #000000 2px solid;
+}
+
+/* for question 4 */
+
+.grid-container-4q {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 100px 30% 1fr;
+    grid-template-rows: 200px 100px;
+    margin: 0 5%;
+}
+
+.grid-container-4q div,
+.grid-container-5q div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8099df;
+    border: #000000 2px solid;
+    font-size: 16pt;
+    color: #eff4f8;
+}
+
+/* for question 5 */
+
+.grid-container-5q {
+    display: grid;
+    gap: 4px;
+    grid-template-columns: 100px 80px 100px;
+    grid-template-rows: 40px 80px 40px;
+    justify-content: space-between;
+    margin: 0 5%;
+    width: 400px;
 }
