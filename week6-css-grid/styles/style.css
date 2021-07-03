@@ -88,6 +88,8 @@ figcaption {
     margin-bottom: 1em;
     color: #cc6008;
     font-size: 12pt;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
 }
 
 .about-grid-area-img,
@@ -245,7 +247,6 @@ h2,
 .ps-text-right {
     text-align: right;
 }
-
 
 p {
     font-family: 'Montserrat', sans-serif;
