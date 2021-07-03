@@ -50,7 +50,6 @@
     padding: 1.5em;
     border-radius: 1em;
     background-color: #fdeabd;
-
 }
 
 .game-res {
@@ -59,14 +58,12 @@
     padding: 1.5em;
     border-radius: 1em;
     background-color: #fdeabd;
-
 }
 
 .asd {
     grid-area: asd;
     min-width: 24vw;
     background-color: #deeccd;
-
 }
 
 .footer {
@@ -75,12 +72,27 @@
     background-color: #e1e1e1;
 }
 
-.about-grid-area-img {
-    max-width: 50%;
+figure {
+    margin: 0;
+    text-align: center;
+    width: 100%;
 }
 
+.game-res figure {
+    margin: 2em 1em;
+    width: 100%;
+}
+
+figcaption {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #cc6008;
+    font-size: 12pt;
+}
+
+.about-grid-area-img,
 .about-grid-template-areas-img {
-    max-width: 50%;
+    max-width: 70%;
 }
 
 .lrb {
@@ -90,46 +102,29 @@
     height: 100%;
 }
 
+.textcode {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    padding: 0 0.5em;
+    margin: 1em 2em 2em 2em;
+    background-color: #fff8e5;
+    border-radius: 0.3em;
+    white-space: pre-wrap;
+}
+
 /* ----------------------------- */
 /* LAYOUT for homework's answers */
 /* ----------------------------- */
 
-/* for question 2 */
-
-.grid-container-2 {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 40px 40px;
-    gap: 10px;
-    width: 100%;
-    margin: 0 10px;
-    background-color: #cecece;
-}
-
-.desrip-2 {
-    grid-row: 1 / 2;
-    grid-column: 1/ 6;
-    background-color: #d0dbfa;
-    border: #000000 2px solid;
-}
-
-.grid-2-1,
-.grid-2-2,
-.grid-2-3,
-.grid-2-4,
-.grid-2-5 {
-    background-color: #5579e0;
-    border: #000000 2px solid;
-}
 
 /* for question 4 */
 
 .grid-container-4q {
     display: grid;
-    gap: 5px;
+    gap: 8px;
     grid-template-columns: 100px 30% 1fr;
     grid-template-rows: 200px 100px;
-    margin: 0 5%;
+    margin: 0 8%;
 }
 
 /* for question 5 */
@@ -149,8 +144,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #8099df;
-    border: #000000 2px solid;
+    background-color: #a0b2e2;
+    border-radius: 0.3em;
     font-size: 16pt;
     color: #eff4f8;
 }
@@ -227,14 +222,15 @@
     background-color: #fafafa;
     border: none;
     border-radius: 0.3em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
 }
 
 /* описание страницы */
 
 .element-description {
-    flex: 0 1 100%;
     min-height: 100px;
-    max-height: 300px;
+    max-height: 400px;
     padding: 4em 6em;
 }
 
@@ -315,7 +311,7 @@ p {
     font-size: 10pt;
 }
 
-/* amswers */
+/* answers */
 
 .answer {
     font-size: 12pt;
