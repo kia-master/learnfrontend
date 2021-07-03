@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>week 6</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="../assets/styles/normalize.css">
 </head>
@@ -11,20 +15,46 @@
 <body>
 
     <div class="main-container">
-        <header class="main-head">Шапка</header>
 
-        <section class="main-description">Верхний блок</section>
+        <header class="main-head">
+            <div class="header-beauty">
+                <h1 class="logo-header">I LEARN FRONTEND</h1>
+                <nav class="navigation-header">
+                    <div><a href="#">Недели</a></div>
+                    <div><a href="#">Проекты</a></div>
+                    <div><a href="https://github.com/kia-master" target="_blank">Github</a></div>
+                </nav>
+            </div>
+        </header>
 
-        <section class="leftb">Левый блок</section>
+        <section class="main-description">
+            <div class="element-description">
+                <h2 class="description-left-box">Привет! Меня зовут Ирина Куликова</h2>
+                <p>Давай ответим на вопросы домашки по шестой недели.</p>
+                <p class="ps-text-right">PS. Это не окончательный layout ...</p>
+                <p class="ps-text-right">28.06 - 4.07 2021</p>
+            </div>
+        </section>
 
-        <section class="rightb">Правый блок</section>
+        <section class="leftb">
+            <div class="lrb">
+                <h2>Левый блок</h2>
+            </div>
+        </section>
+
+        <section class="rightb">
+            <div class="lrb">
+                <h2>Правый блок</h2>
+                </di>
+        </section>
 
         <!-- Answers on questions -->
         <section class="answers">
             <h2>Ответы на вопросы</h2>
 
+            <!-- question 1 -->
             <div>
-                <p>1. Что за единица измерения - <code>fr</code>?</p>
+                <p class="answer">1. Что за единица измерения - <code>fr</code>?</p>
                 <p>Ответ</p>
                 <p><code>fr</code> (fraction) - это гибкая единица измерения в CSS Grid, которая рассчитывается
                     исходя из количества доступного пространства в grid-контейнере.</p>
@@ -33,9 +63,11 @@
                     распределяется поровну между тремя колонками.
                 </p>
             </div>
+            <hr class="hr-dotted">
 
+            <!-- question 2 -->
             <div>
-                <p>2. Как можно задать грид с 5 колонками шириной по 20%? Минимум 2 способа.</p>
+                <p class="answer">2. Как можно задать грид с 5 колонками шириной по 20%? Минимум 2 способа.</p>
                 <p>Ответ</p>
                 <p>1. display: grid;
                     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;</p>
@@ -50,9 +82,12 @@
                 <p>2. grid-template-columns: repeat(5, 1fr);</p>
                 <p>3. grid-template-columns: repeat(auto-fit, minmax(20%));</p>
             </div>
+            <hr class="hr-dotted">
 
+            <!-- question 3 -->
             <div>
-                <p>3. Самостоятельно разберитесь, что такое <code>auto-fill</code> и <code>auto-fit</code> ?</p>
+                <p class="answer">3. Самостоятельно разберитесь, что такое <code>auto-fill</code> и
+                    <code>auto-fit</code> ?</p>
                 <p>Ответ</p>
                 <p><code>auto-fill</code> и <code>auto-fit</code> - значения для указания ширины колонок в CSS Grid.
                     <p>
@@ -77,9 +112,12 @@
                     </p>
                 </p>
             </div>
+            <hr class="hr-dotted">
 
+            <!-- question 4 -->
             <div>
-                <p>4. Как сделать такую табличку? Параметры: первая колонка шириной 100 пикселей, вторая 30%. Первая
+                <p class="answer">4. Как сделать такую табличку? Параметры: первая колонка шириной 100 пикселей, вторая
+                    30%. Первая
                     строчка высотой 200 пикселей, вторая строчка 100 пикселей.</p>
                 <p>Ответ</p>
                 <p>
@@ -95,9 +133,11 @@
                     <div>6</div>
                 </div>
             </div>
+            <hr class="hr-dotted">
 
+            <!-- question 5 -->
             <div>
-                <p>5. Как сделать такое выравнивание в грид-контейнере? </p>
+                <p class="answer">5. Как сделать такое выравнивание в грид-контейнере? </p>
                 <p>Ответ</p>
                 <p>
                     .grid-container-5q {
@@ -122,9 +162,11 @@
                     <div>9</div>
                 </div>
             </div>
+            <hr class="hr-dotted">
 
+            <!-- question 6 -->
             <div>
-                <p>6. Что такое и как задается <em>grid area</em> ?</p>
+                <p class="answer">6. Что такое и как задается <em>grid area</em> ?</p>
                 <p>Ответ</p>
                 <p><code>grid-area</code> - это сокращённая форма записи для свойств <code>grid-row-start</code>,
                     <code>grid-column-start</code>,
@@ -139,9 +181,12 @@
                     <figcaption>Варианты значений</figcaption>
                 </figure>
             </div>
+            <hr class="hr-dotted">
 
+            <!-- question 7 -->
             <div>
-                <p>7. Приведите пример использования <code>grid-template-areas</code> (не копированием из этого
+                <p class="answer">7. Приведите пример использования <code>grid-template-areas</code> (не копированием из
+                    этого
                     урока 😉)</p>
                 <p>Ответ</p>
                 <p>Можно сделать так:</p>
@@ -162,17 +207,22 @@
                         class="about-grid-template-areas-img">
                 </figure>
             </div>
+            <hr class="hr-dotted">
 
+            <!-- question 8 -->
             <div>
-                <p>8. Каким свойством можно задать такое поведение элементов?</p>
+                <p class="answer">8. Каким свойством можно задать такое поведение элементов?</p>
                 <!-- <img src="http://css-live.ru/Primer/grid1/1-MyO6enrNZEL9HSzYmdA8VA.gif" alt="doit3"> -->
                 <p>Ответ</p>
                 <p>Свойством <code>auto-fit</code>, т.к. пустая область схлопывается, а элементы растягиваются по
                     доступному пространству</p>
             </div>
+            <hr class="hr-dotted">
 
+            <!-- question 9 -->
             <div>
-                <p>9. Самостоятельно разберитесь, как работают именованные линии? Есть ли какие-то рекомендованные
+                <p class="answer">9. Самостоятельно разберитесь, как работают именованные линии? Есть ли какие-то
+                    рекомендованные
                     правила наименований? Если да, то какие?</p>
                 <p>Ответ</p>
                 <p>Использование именованных линий позволяет размещать элементы по имени, а не по номеру.</p>
@@ -194,14 +244,17 @@
                     названия номер нужной линии по порядку </p>
                 <p><a href="https://habr.com/ru/post/478850/" target="_blank">Источник</a></p>
             </div>
+            <hr class="hr-dotted">
 
-            <div>
+            <!-- question 10 -->
+            <div class="answer">
                 <p>10. Как проще всего задать 12 одинаковых по ширине колонок?</p>
                 <p>Ответ</p>
                 <p>Вот так:</p>
                 <p><code>grid-template-columns: repeat(12, 1fr);</code>
                 </p>
             </div>
+            <hr class="hr-dotted">
 
         </section>
 
@@ -211,14 +264,45 @@
         </section>
 
         <aside class="asd">
-            Проект
+            <div class="right-box-container">
+                <div>
+                    <h2>Страничка про кота</h2>
+                    <p>Это первая работа. Первая неделя ... </p>
+                    <a href="https://kia-master.github.io/learnfrontend/week1/" class="right-box-img-hover"
+                        target="_blank">
+                    </a>
+                </div>
+                <div>
+                    <h2>Страница блогера</h2>
+                    <p>Проект для третьей недели учебы. Доработанный, с векторными и растровыми картинками</p>
+                    <a href="https://kia-master.github.io/learnfrontend/week3/" class="right-box-img-hover-2"
+                        target="_blank">
+                    </a>
+                </div>
+                <div>
+                    <h2>Сайт-визитка</h2>
+                    <p>Это окончательная верстка сайта-визитки с использованием позиционирования.</p>
+                    <a href="https://kia-master.github.io/learnfrontend/buscard/" class="right-box-img-hover-3"
+                        target="_blank">
+                    </a>
+                </div>
+                <div>
+                    <h2>Шаблон на гридах</h2>
+                    <p>Это окончательная верстка сайта-визитки с использованием позиционирования.</p>
+                    <a href="https://kia-master.github.io/learnfrontend/week6-css-grid/" class="right-box-img-hover-3"
+                        target="_blank">
+                    </a>
+                </div>
+            </div>
         </aside>
 
         <footer class="footer">
-            <div>Секция 1</div>
-            <div>Секция 2</div>
-            <div>Секция 3</div>
-            <div>Секция 4</div>
+            <div class="footer-beauty">
+                <div>Секция 1</div>
+                <div>Секция 2</div>
+                <div>Секция 3</div>
+                <div>Секция 4</div>
+            </div>
         </footer>
     </div>
 
