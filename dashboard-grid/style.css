@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Menlo', serif;
+}
+
 .container {
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -36,6 +41,15 @@
 .head-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+.nav-side div {
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem 0 2rem;
+    height: 8vh;
 }
 
 /* вложенный grid для main */
@@ -43,51 +57,95 @@
 .main-ingrid {
     display: grid;
     justify-content: stretch;
-    align-content: stretch;
+    align-items: stretch;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-gap: 1rem;
+    grid-gap: 1.5rem;
     min-height: 100vh;
+    padding-right: 1.5rem;
+    padding-left: 0.5rem;
 }
 
 .card-1 {
     grid-area: 1 / 1 / 2 / 4;
-    background-color: #00a2ff;
 }
 
 .card-2 {
     grid-area: 1 / 4 / 2 / 7;
-    background-color: #00a2ff;
 }
 
 .card-3 {
     grid-area: 1 / 7 / 2 / 10;
-    background-color: #00a2ff;
 }
 
 .card-4 {
     grid-area: 1 / 10 / 2 / 13;
-    background-color: #00a2ff;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .graph {
-    grid-area: 2 / 1 / 5 / 9;
-    background-color: #c2dff8;
+    grid-area: 2 / 1 / 5 / 13;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: stretch;
+}
+
+.graphik {
+    flex-basis: 70%;
+    padding: 0 2em 2em 2em;
 }
 
 .graph-descr {
-    grid-area: 2 / 9 / 5 / 13;
-    background-color: #c2dff8;
+    flex-basis: 30%;
+    border-left: 1px solid #DFE0EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+
 }
 
+.graph-descr div {
+    border-bottom: 1px solid #DFE0EB;
+    text-align: center;
+}
 
+.graph-descr div:last-child {
+    border-bottom: none;
+}
+
+.img-graph {
+    width: 80%;
+}
 
 .tickets {
     grid-area: 5 / 1 / 7 / 7;
-    background-color: #00ffff;
 }
 
 .tasks {
     grid-area: 5 / 7 / 7 / 13;
-    background-color: #00ffff;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.graph,
+.tickets,
+.tasks {
+    background-color: #ffffff;
+    border: 1px solid #DFE0EB;
+    border-radius: 8px;
 }
