@@ -158,7 +158,8 @@ footer div {
 
 .right-box-img-hover,
 .right-box-img-hover-2,
-.right-box-img-hover-3 {
+.right-box-img-hover-3,
+.right-box-img-hover-4 {
     flex: 0 1 100%;
     width: 100%;
     min-height: 150px;
@@ -168,21 +169,26 @@ footer div {
 }
 
 .right-box-img-hover {
-    background-image: url("../images/week-1.png");
+    background-image: url("../../assets/images/week-1.png");
 }
 
 .right-box-img-hover-2 {
-    background-image: url("../images/page-blog.png");
+    background-image: url("../../assets/images/page-blog.png");
 }
 
 .right-box-img-hover-3 {
-    background-image: url("../images/business-card.png");
+    background-image: url("../../assets/images/business-card.png");
+}
+
+.right-box-img-hover-4 {
+    background-image: url("../../assets/images/dashboard.png");
 }
 
 .right-box-img-hover:hover,
 .right-box-img-hover-2:hover,
-.right-box-img-hover-3:hover {
-    background-image: url("../images/week-hover.png");
+.right-box-img-hover-3:hover,
+.right-box-img-hover-4:hover {
+    background-image: url("../../assets/images/week-hover.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
