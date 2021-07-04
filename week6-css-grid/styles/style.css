@@ -279,7 +279,8 @@ p {
 
 .right-box-img-hover,
 .right-box-img-hover-2,
-.right-box-img-hover-3 {
+.right-box-img-hover-3,
+.right-box-img-hover-4 {
     flex: 0 1 100%;
     width: 100%;
     min-height: 150px;
@@ -300,9 +301,14 @@ p {
     background-image: url("../../assets/images/business-card.png");
 }
 
+.right-box-img-hover-4 {
+    background-image: url("../../assets/images/dashboard.png");
+}
+
 .right-box-img-hover:hover,
 .right-box-img-hover-2:hover,
-.right-box-img-hover-3:hover {
+.right-box-img-hover-3:hover,
+.right-box-img-hover-4:hover {
     background-image: url("../../assets/images/week-hover.png");
     background-repeat: no-repeat;
     background-size: contain;
