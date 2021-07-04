@@ -36,6 +36,14 @@
     grid-area: footer;
     min-height: 8vh;
     background-color: #F7F8FC;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.foot a {
+    text-decoration: none;
+    padding-right: 1rem;
 }
 
 .head-content {
