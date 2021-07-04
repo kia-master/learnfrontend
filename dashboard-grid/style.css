@@ -1,0 +1,93 @@
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:
+        "nav-right header"
+        "nav-right main  "
+        "nav-right footer";
+    grid-gap: 0 1rem;
+    background-color: #F7F8FC;
+}
+
+.head {
+    grid-area: header;
+    min-height: 8vh;
+    background-color: #F7F8FC;
+}
+
+.main {
+    grid-area: main;
+    min-height: 50vh;
+    background-color: #F7F8FC;
+}
+
+.nav-right {
+    grid-area: nav-right;
+    background-color: #3e3e74;
+    color: #cccbcb;
+}
+
+.foot {
+    grid-area: footer;
+    min-height: 8vh;
+    background-color: #F7F8FC;
+}
+
+.head-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* вложенный grid для main */
+
+.main-ingrid {
+    display: grid;
+    justify-content: stretch;
+    align-content: stretch;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 1rem;
+    min-height: 100vh;
+}
+
+.card-1 {
+    grid-area: 1 / 1 / 2 / 4;
+    background-color: #00a2ff;
+}
+
+.card-2 {
+    grid-area: 1 / 4 / 2 / 7;
+    background-color: #00a2ff;
+}
+
+.card-3 {
+    grid-area: 1 / 7 / 2 / 10;
+    background-color: #00a2ff;
+}
+
+.card-4 {
+    grid-area: 1 / 10 / 2 / 13;
+    background-color: #00a2ff;
+}
+
+.graph {
+    grid-area: 2 / 1 / 5 / 9;
+    background-color: #c2dff8;
+}
+
+.graph-descr {
+    grid-area: 2 / 9 / 5 / 13;
+    background-color: #c2dff8;
+}
+
+
+
+.tickets {
+    grid-area: 5 / 1 / 7 / 7;
+    background-color: #00ffff;
+}
+
+.tasks {
+    grid-area: 5 / 7 / 7 / 13;
+    background-color: #00ffff;
+}
