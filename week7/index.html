@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Week 7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap">
@@ -54,11 +55,15 @@
             <div>
                 <p class="answer">1. Как сделать так, чтобы при просмотре на телефоне текст стал читаемым, а картинка -
                     большой?</p>
-                <figure>
-                    <img src="images/que1.png" alt="img-for-question1" class="about-grid-area-img">
-                </figure>
-                <p>Ответ</p>
-                <p></p>
+                <div class="img-and-text">
+                    <figure>
+                        <img src="images/que1.png" alt="img-for-question1" class="about-grid-area-img">
+                    </figure>
+                    <div>
+                        <p>Ответ</p>
+                        <p>Достаточно для картинки в стиле указать <code>max-width: 100%;</code></p>
+                    </div>
+                </div>
             </div>
             <hr class="hr-dotted">
 
@@ -66,7 +71,15 @@
             <div>
                 <p class="answer">2. В чём разница между отзывчивым и адаптивным веб-дизайном?</p>
                 <p>Ответ</p>
-                <p></p>
+                <p>Отзывчивый - один макет на все экраны, адаптивный - много макетов, т.е. один макет на один экран.</p>
+                <p><code>Responsive Design (RWD)</code> — отзывчивый дизайн — проектирование сайта с определенными
+                    значениями свойств, например, гибкая сетка макета, которые позволяют одному макету работать на
+                    разных устройствах. Главная особенность отзывчивого веб-дизайна — за счёт подвижной сетки макет
+                    автоматически реагирует на изменение размеров экрана, раздуваясь или сужаясь, как воздушный шар.
+                </p>
+                <p><code>Adaptive Design (AWD)</code> — адаптивный дизайн, или динамический показ — проектирование сайта
+                    с условиями, которые изменяются в зависимости от устройства, базируясь на нескольких макетах
+                    фиксированной ширины.</p>
             </div>
             <hr class="hr-dotted">
 
@@ -74,7 +87,8 @@
             <div>
                 <p class="answer">3. Какие величины лучше использовать для шрифтов в гибком дизайне? </p>
                 <p>Ответ</p>
-                <p></p>
+                <p>Задавать размеры текста, различных отступов, которые должны уменьшаться/увеличиваться при изменении
+                    разрешения экрана, лучше с помощью единиц <code>em</code> и <code>rem</code> или <code>%</code></p>
             </div>
             <hr class="hr-dotted">
 
@@ -82,9 +96,16 @@
             <div>
                 <p class="answer">4. Какой вид верстки использован на этой картинке? К какой категории шаблонов он
                     относится?</p>
-                <p>Ответ</p>
-                <figure><img src="images/que4.png" alt="img-for-question4" class="about-grid-area-img"></figure>
-                <p></p>
+                <div class="img-and-text">
+                    <figure>
+                        <img src="images/que4.png" alt="img-for-question4" class="about-grid-area-img">
+                    </figure>
+                    <div>
+                        <p>Ответ</p>
+                        <p>Adaptive Design (AWD) — адаптивный дизайн. Категория шаблонов - Layout Shifter (Двигающийся
+                            макет)</p>
+                    </div>
+                </div>
             </div>
             <hr class="hr-dotted">
 
@@ -92,7 +113,10 @@
             <div>
                 <p class="answer">5. Как задать стили для экранов шириной от 800 до 1200 пикселей? </p>
                 <p>Ответ</p>
-                <p></p>
+                <p class="textcode">
+                    @media screen and (min-width: 800px) and (max-width: 1200px)
+                    { /* CSS-стили */ }
+                </p>
             </div>
             <hr class="hr-dotted">
 
@@ -100,7 +124,20 @@
             <div>
                 <p class="answer">6. Приведите минимум 2 примера как подключать медиазапросы? </p>
                 <p>Ответ</p>
-                <p></p>
+                <p>1. Можно применить в качестве значения атрибута media элемента link. Это позволит в зависимости от
+                    параметров устройства определить, какие файлы CSS необходимо подсоединить к странице, а какие нет.
+                    Обычно данный функционал используется тогда, когда к разным классам устройств необходимо применить
+                    различные стили CSS.</p>
+                <p>Стили xs-styles.css будут подсоединены к странице только на устройствах c шириной меньше 543
+                    пикселей (включительно):</p>
+                <p>
+                    <code>&lt;link rel="stylesheet" media="screen and (max-width: 543px)" href="styles-xs.css"></code>
+                </p>
+                <p>2. Можно также использовать в правиле @import, которое предназначено для импортирования стилей из
+                    других файлов CSS в текущий.</p>
+                <p>Импортирование стилей из файла styles-xs.css в текущий файл стилей только для устройств, которые
+                    предоставляют веб-странице viewport, имеющий ширину 543 пикселя или меньше:</p>
+                <p><code>@import url(styles-xs.css) (max-width: 543px);</code></p>
             </div>
             <hr class="hr-dotted">
 
@@ -108,17 +145,33 @@
             <div>
                 <p class="answer">7. Как можно задавать гибкие изображения?</p>
                 <p>Ответ</p>
-                <p></p>
+                <p>Использовать max-width:</p>
+                <p><code>img {max-width: 100%;}</code></p>
+                <p>Либо использовать элемент <code>&lt;picture></code>, чтобы определять разный размер каритинки для
+                    разных размеров экрана</p>
+                <p class="textcode">
+                    &lt;picture> 
+                    &lt;source srcset="img_smallflower.jpg" media="(max-width: 600px)"> 
+                    &lt;source srcset="img_flowers.jpg" media="(max-width: 1500px)"> 
+                    &lt;source srcset="flowers.jpg"> &lt;img src="img_smallflower.jpg" alt="Flowers">
+                    &lt;/picture>
+                </p>
             </div>
             <hr class="hr-dotted">
 
             <!-- question 8 -->
             <div>
                 <p class="answer">8. Как задать стили только для <code>landscape</code> поворота экрана? И что вообще
-                    такое <code>landscape</code>
-                    и чем он отличается от <code>portrait</code>?</p>
+                    такое <code>landscape</code> и чем он отличается от <code>portrait</code>?</p>
                 <p>Ответ</p>
-                <p></p>
+                <p>
+                    <code>landscape</code> (альбомный) - это режим, в котором ширина <code>viewport</code> больше её
+                    высоты <br>
+                    <code>portrait</code> (портретный) - это режим, в котором высота <code>viewport</code> больше
+                    ширины
+                </p>
+                <p>Задать изменения стиля только для альбомного режима:</p>
+                <p><code>@media (orientation: landscape) { }</code></p>
             </div>
             <hr class="hr-dotted">
 
@@ -127,7 +180,13 @@
                 <p class="answer">9. Назовите минимум 3 способа как можно тестировать, как выглядит сайт при разных
                     размерах экранов?</p>
                 <p>Ответ</p>
-                <p></p>
+                <p>1. В браузере, используя инструменты разработчика.</p>
+                <p>2. На реальных устройствах.</p>
+                <p>3. С помощью онлайн-сервисов. Например,
+                    <a href="http://iloveadaptive.com/ru/" target="_blank">iloveadaptive.com</a>,
+                    <a href="http://responsivetesttool.com/" target="_blank">responsivetesttool.com</a>,
+                    <a href="https://bluetree.ai/screenfly/" target="_blank">screenfly</a> и другие.
+                </p>
             </div>
             <hr class="hr-dotted">
 
@@ -136,7 +195,24 @@
                 <p class="answer">10. Самостоятельно изучите, как можно подключить несколько картинок разных размеров
                     через один тег <code>&lt;img></code> ?</p>
                 <p>Ответ</p>
-                <p></p>
+                <p>С использованием атрибута <code>srcset</code> и <code>sizes</code>. Например, делаем несколько копий
+                    под разные раширения экрана, а браузер выбирает сам:</p>
+                <p>В атрибуте <code>size</code> с помощью медиа-запросов описываем размер иллюстрации в CSS-пикселях в
+                    разных состояниях
+                    верстки. Если на десктопе картинка занимает 560px, а на мобильном 100% ширины экрана, то ровно это и
+                    надо рассказать браузеру с помощью sizes. </p>
+                <p class="textcode">
+                    &lt;img srcset="dog-640.jpg 640w,
+                    &#9;&#9;dog-920.jpg 920w,
+                    &#9;&#9;dog-1280.jpg 1280w,
+                    &#9;&#9;dog-1600.jpg 1600w"
+                    &#9;sizes="(max-width: 560px) 100vw, 560px" src="dog.jpg" alt="Пёсик">
+                </p>
+                <p>
+                    <a href="https://serpstat.com/ru/blog/kak-ispolzovat-atribut-srcset-tega-img/"
+                        target="_blank">Источник</a>
+                </p>
+
             </div>
 
         </section>
@@ -144,6 +220,7 @@
         <!-- Example habr results -->
         <section class="game-res">
             <h2>Примеры из <a href="https://habr.com/ru/company/edison/blog/344878/" target="_blank">статьи</a></h2>
+
         </section>
 
         <aside class="asd">
