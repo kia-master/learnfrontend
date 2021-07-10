@@ -5,7 +5,7 @@
 
 .container {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 0.15fr 0.85fr;
     grid-template-areas:
         "nav-right header"
         "nav-right main  "
@@ -32,6 +32,10 @@
     color: #cccbcb;
 }
 
+.nav-right>div>h1 {
+    padding-left: 0.7em;
+}
+
 .foot {
     grid-area: footer;
     min-height: 8vh;
@@ -50,15 +54,45 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 0.5rem;
+    align-content: stretch;
+    /* padding: 0 0.5rem; */
 }
 
-.nav-side div {
-    display: flex;
-    align-items: center;
-    padding: 0 0.5rem 0 2rem;
-    height: 8vh;
+.item-head-1 {
+    flex: 0 1 50%;
 }
+
+.item-head-2 {
+    flex: 0 1 auto;
+}
+
+.item-head-3 {
+    flex: 0 1 10%;
+    text-align: right;
+}
+
+.nav-side {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+}
+
+.nav-side>li {
+    list-style-type: none;
+    line-height: 4;
+    padding-left: 1.5em;
+}
+
+.nav-side>li:hover {
+    background-color: #58588d;
+}
+
+.nav-side>li>a {
+    text-decoration: none;
+    color: #cccbcb;
+}
+
 
 /* вложенный grid для main */
 
@@ -67,7 +101,7 @@
     justify-content: stretch;
     align-items: stretch;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    /* grid-template-rows: repeat(6, 1fr); */
     grid-gap: 1.5rem;
     min-height: 100vh;
     padding-right: 1.5rem;
@@ -98,20 +132,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 20vh;
 }
 
 .graph {
     grid-area: 2 / 1 / 5 / 13;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-content: stretch;
     align-items: stretch;
+    max-width: 100%;
 }
 
 .graphik {
     flex-basis: 70%;
-    padding: 0 2em 2em 2em;
+    padding: 1em 2em 2em 2em;
 }
 
 .graph-descr {
@@ -122,12 +157,20 @@
     justify-content: space-between;
     align-items: stretch;
     align-content: stretch;
-
 }
 
 .graph-descr div {
     border-bottom: 1px solid #DFE0EB;
+    min-height: 15vh;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    flex-direction: column;
+}
+
+.graph-descr>div>p {
+    margin: 0.3rem;
 }
 
 .graph-descr div:last-child {
@@ -135,7 +178,7 @@
 }
 
 .img-graph {
-    width: 80%;
+    max-width: 100%;
 }
 
 .tickets {
@@ -156,4 +199,28 @@
     background-color: #ffffff;
     border: 1px solid #DFE0EB;
     border-radius: 8px;
+}
+
+.tickets,
+.tasks {
+    padding: 0;
+}
+
+.head-tick-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.tickets>div,
+.tasks>div {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    border-bottom: 1px solid #DFE0EB;
+}
+
+.tickets>div:last-child,
+.tasks>div:last-child {
+    border-bottom: none;
 }

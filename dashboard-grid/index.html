@@ -13,14 +13,14 @@
     <div class="container">
         <header class="head">
             <div class="head-content">
-                <h1>Overveiw</h1>
-                <div>
+                <h1 class="item-head-1">Overveiw</h1>
+                <div class="item-head-2">
                     <label for="find">find
-                        <input type="text" id="find"></label>
+                        <input type="text" id="find">
+                    </label>
                 </div>
-                <div>
-                    Jonas
-                    <img src="" alt="">
+                <div class="item-head-3">
+                    Jonas <img src="" alt="">
                 </div>
             </div>
         </header>
@@ -29,21 +29,24 @@
             <div>
                 <h1>Logo</h1>
             </div>
-            <div class="nav-side">
-                <div>Overveiw</div>
-                <div>Tickets</div>
-                <div>Ideas</div>
-                <div>Contacts</div>
-                <div>Agents</div>
-                <div>Articles</div>
-                <hr>
-                <div>Settings</div>
-                <div>Subscription</div>
-            </div>
+            <ul class="nav-side">
+                <li><a href="#">Overveiw</a></li>
+                <li><a href="#">Tickets</a></li>
+                <li><a href="#">Ideas</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Agents</a></li>
+                <li><a href="#">Articles</a></li>
+            </ul>
+            <hr>
+            <ul class="nav-side">
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Subscription</a></li>
+            </ul>
         </nav>
 
         <main class="main">
             <div class="main-ingrid">
+
                 <div class="card-1">
                     <p>Unresolved</p>
                     <p>60</p>
@@ -63,10 +66,11 @@
 
                 <div class="graph">
                     <div class="graphik">
-                        <p>Today’s trends</p>
+                        <h2>Today’s trends</h2>
                         <p>as of 25 May 2019, 09:41 PM</p>
                         <img src="full-graph.jpg" alt="full-graph" class="img-graph">
                     </div>
+
                     <div class="graph-descr">
                         <div>
                             <p>Resolved</p>
@@ -91,8 +95,66 @@
                     </div>
                 </div>
 
-                <div class="tickets"></div>
-                <div class="tasks"></div>
+                <div class="tickets">
+                    <div class="head-tick-task">
+                        <div>
+                            <h2>Unresolved tickets</h2>
+                            <p>View details</p>
+                        </div>
+                        <p>Group: Support</p>
+                    </div>
+                    <div>
+                        <p>Waiting on Feature Request</p>
+                        <p>4238</p>
+                    </div>
+                    <div>
+                        <p>Awaiting Customer Response</p>
+                        <p>1005</p>
+                    </div>
+                    <div>
+                        <p>Awaiting Developer Fix</p>
+                        <p>914</p>
+                    </div>
+                    <div>
+                        <p>Pending</p>
+                        <p>218</p>
+                    </div>
+                </div>
+
+                <div class="tasks">
+                    <div class="head-tick-task">
+                        <div>
+                            <h2>Tasks</h2>
+                            <p>View all</p>
+                        </div>
+                        <p>Today</p>
+                    </div>
+                    <div>
+                        <p>Create new task</p>
+                        <p>+</p>
+                    </div>
+                    <div>
+                        <label for="upd_ftick">
+                            <input type="checkbox" id="upd_ftick" />
+                            Finish ticket update
+                        </label>
+                        <p>Urgent</p>
+                    </div>
+                    <div>
+                        <label for="crea_tick">
+                            <input type="checkbox" id="crea_tick" />
+                            Create new ticket example
+                        </label>
+                        <p>New</p>
+                    </div>
+                    <div>
+                        <label for="upd_rtick">
+                            <input type="checkbox" id="upd_rtick" />
+                            Update ticket report
+                        </label>
+                        <p>Default</p>
+                    </div>
+                </div>
             </div>
         </main>
 
