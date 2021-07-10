@@ -61,11 +61,12 @@ footer {
     background-color: #e1e1e1;
 }
 
-footer div {
+footer>div {
     /* element */
     flex: 0 1 100%;
+    max-width: 100%;
     margin: 0.8em;
-    padding: 1em;
+    padding: 0.1em;
     background-color: #fafafa;
     border: none;
     border-radius: 0.3em;
@@ -83,7 +84,7 @@ footer div {
     justify-content: flex-start;
     /* element */
     flex: 0 1 75%;
-    padding: 1% 1%;
+    padding: 1%;
     background-color: #fff8e5;
 }
 
