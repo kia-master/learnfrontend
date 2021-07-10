@@ -10,3 +10,7 @@
 .img-and-text p {
     margin-top: 0;
 }
+
+video {
+    max-width: 100%;
+}
