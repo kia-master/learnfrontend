@@ -18,7 +18,8 @@ header {
     padding: 0.25em 0.5em;
     /* fonts */
     font-family: 'Patrick Hand', sans-serif, serif;
-    letter-spacing: 4px;
+    font-size: 2.2em;
+    letter-spacing: 0.25em;
     /* after delete */
     background-color: #f8f8f8;
     border: none;
@@ -29,15 +30,12 @@ header {
     display: flex;
     align-items: center;
     margin-right: 1em;
-    /* after delete */
-    /* background-color: #f8dbca; */
 }
 
 .navigation-header div {
     margin: 0.5em;
     padding: 0.5em 1em;
-    min-width: 110px;
-    max-width: 200px;
+    max-width: 100%;
     text-align: center;
     background-color: #f8f8f8;
     border: none;
@@ -46,7 +44,7 @@ header {
 
 .navigation-header div a {
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 16pt;
+    font-size: 1.5em;
     font-weight: bold;
     color: #545454;
     text-decoration: none;
@@ -92,8 +90,9 @@ footer div {
 /* element for left-box */
 .element-description {
     flex: 0 1 100%;
-    min-height: 100px;
-    max-height: 300px;
+    /* min-height: 10%; */
+    max-height: 30%;
+    max-width: 100%;
     padding: 2.5em;
 }
 
@@ -105,7 +104,7 @@ footer div {
     margin-top: 1em;
     padding: 1.5em;
     min-width: 200px;
-    min-height: 300px;
+    min-height: 250px;
     /*  */
     background-color: #fdeabd;
     border: none;
@@ -151,6 +150,7 @@ footer div {
     margin: 1em;
     padding: 1em;
     min-height: 200px;
+    max-width: 100%;
     background-color: #eff7eb;
     border: none;
     border-radius: 1em;
@@ -161,7 +161,7 @@ footer div {
 .right-box-img-hover-3,
 .right-box-img-hover-4 {
     flex: 0 1 100%;
-    width: 100%;
+    max-width: 100%;
     min-height: 150px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -194,24 +194,24 @@ footer div {
 }
 
 .right-box-container p {
-    font-size: 10pt;
+    font-size: 1em;
 }
 
 h2 {
     margin: 0;
     font-family: 'Oswald', sans-serif;
-    font-size: 16pt;
+    font-size: 1.5em;
     letter-spacing: 0.05em;
 }
 
 .description-left-box {
-    font-size: 16pt;
+    font-size: 2em;
 }
 
 p {
     /* font-family: 'Montserrat Alternates', sans-serif; */
     font-family: 'Montserrat', sans-serif;
-    font-size: 12pt;
+    font-size: 1.2em;
     line-height: 1.5em;
 }
 
@@ -221,7 +221,9 @@ p {
 
 .date-left-box {
     margin-top: 0.2em;
-    font-size: 10pt;
+    font-size: 1em;
+    text-align: right;
+    color: #078618;
 }
 
 footer p {

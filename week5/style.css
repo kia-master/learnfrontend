@@ -1,5 +1,4 @@
 @import url(../assets/styles/style.css);
-@import url(../styles/normalize.css);
 
 
 /* ---------------------------
@@ -13,15 +12,14 @@ PAGE week5 answers and other
 }
 
 .answer {
-    font-size: 12pt;
+    font-size: 1.3em;
     color: #04754f;
 }
 
 ul,
-code,
-.table {
+code {
     font-family: 'Montserrat', sans-serif;
-    font-size: 12pt;
+    font-size: 1.2em;
 }
 
 ul {
@@ -33,11 +31,10 @@ ul {
     padding: 0;
     height: 0;
     border: none;
-    border-top: 2px dotted #a0a0a0;
+    border-top: 0.2em dotted #a0a0a0;
 }
 
 code {
-
     padding: 0 0.5em;
     background-color: #fff8e5;
     border-radius: 0.3em;
@@ -49,15 +46,17 @@ code {
     width: 80%;
     margin: 0 auto;
     border-collapse: collapse;
-    border: 1px solid #555;
+    border: 0.05em solid #555;
     empty-cells: show;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
 }
 
 .table-caption {
     display: table-caption;
-    padding: 10px;
+    padding: 2%;
     color: #333;
-    font-size: 16px;
+    font-size: 1em;
     text-align: center;
 }
 
@@ -87,16 +86,16 @@ code {
 
 .table-th {
     display: table-cell;
-    padding: 10px;
-    border: 1px solid #555;
+    padding: 1%;
+    border: 0.05em solid #555;
     font-weight: bold;
     text-align: left;
 }
 
 .table-td {
     display: table-cell;
-    padding: 10px;
-    border: 1px solid #555;
+    padding: 1%;
+    border: 0.05em solid #555;
 }
 
 .table-thead .table-th,
@@ -118,8 +117,8 @@ code {
 
 .parent {
     display: flex;
-    width: 400px;
-    height: 170px;
+    max-width: 36%;
+    min-height: 12vw;
     margin: 0 auto;
     background-color: #caffed;
     border-radius: 1em;
@@ -138,18 +137,21 @@ code {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 650px;
-    height: 120px;
+    flex-wrap: wrap;
+    max-width: 80%;
+    min-height: 10rem;
     margin: 0 auto;
-    padding: 0 0.7em;
+    padding: 0.5em 0.7em;
     background-color: #e6e6e6;
     border-radius: 1em;
 }
 
 #alignment-blocks-q8 div {
-    width: 100px;
-    height: 100px;
+    width: 8rem;
+    height: 8rem;
     border-radius: 1em;
+    text-align: center;
+    color: #a0a0a0;
 }
 
 #red {
@@ -183,6 +185,6 @@ table {
 table.table-ques11 th,
 table.table-ques11 td {
     padding: 0.2em 1em;
-    border: 1px solid #999898;
+    border: 0.08em solid #999898;
     font-weight: normal;
 }
