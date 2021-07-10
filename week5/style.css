@@ -137,21 +137,19 @@ code {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     max-width: 80%;
-    min-height: 10rem;
+    min-height: 30vh;
     margin: 0 auto;
-    padding: 0.5em 0.7em;
+    padding: 0.7em 0.7em;
     background-color: #e6e6e6;
     border-radius: 1em;
 }
 
 #alignment-blocks-q8 div {
-    width: 8rem;
-    height: 8rem;
+    width: 100px;
+    height: 100px;
     border-radius: 1em;
-    text-align: center;
-    color: #a0a0a0;
 }
 
 #red {
@@ -175,6 +173,10 @@ code {
     justify-content: space-between;
 }
 
+.two-blocks>div>img {
+    max-width: 100%;
+}
+
 /* table ques.11 */
 
 table {
@@ -187,4 +189,80 @@ table.table-ques11 td {
     padding: 0.2em 1em;
     border: 0.08em solid #999898;
     font-weight: normal;
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer>div {
+        margin: 0.3em;
+        padding: 0;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .right-box-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .right-box-container div {
+        margin: 0.3em;
+        /* max-width: 100%; */
+        flex: 0 1 48%;
+        align-content: stretch;
+    }
+
+    .right-box-container>div>p {
+        display: none;
+    }
+
+    .right-box-img-hover,
+    .right-box-img-hover-2,
+    .right-box-img-hover-3,
+    .right-box-img-hover-4 {
+        max-width: 90%;
+    }
+
+    .table {
+        max-width: 100%;
+    }
+
+    /* flex with automargin */
+
+    .parent {
+        max-width: 48%;
+        min-height: 32vw;
+    }
+
+    #alignment-blocks-q8 div {
+        width: 70px;
+        height: 70px;
+    }
+
+    .two-blocks {
+        flex-direction: column-reverse;
+    }
 }
