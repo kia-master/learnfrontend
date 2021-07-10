@@ -8,7 +8,7 @@
         "answ   answ   answ   answ   asd   "
         "game   game   game   game   asd   "
         "foot   foot   foot   foot   foot  ";
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     grid-template-columns: repeat(5, 1fr);
     /* grid-template-rows: 25% 15vh repeat(2, 10vh) 1fr 30% 25%; */
@@ -49,6 +49,7 @@
     padding: 1.5em;
     border-radius: 1em;
     background-color: #fdeabd;
+    max-width: 100%;
 }
 
 .game-res {
@@ -85,9 +86,8 @@ figcaption {
     margin-top: 1em;
     margin-bottom: 1em;
     color: #cc6008;
-    font-size: 12pt;
+    font-size: 1.2em;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12pt;
 }
 
 .about-grid-area-img,
@@ -104,7 +104,7 @@ figcaption {
 
 .textcode {
     font-family: 'Montserrat', sans-serif;
-    font-size: 12pt;
+    font-size: 1.2em;
     padding: 0 0.5em;
     margin: 1em 2em 2em 2em;
     background-color: #fff8e5;
@@ -194,7 +194,7 @@ figcaption {
 
 .navigation-header div a {
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 16pt;
+    font-size: 1.5em;
     font-weight: bold;
     color: #545454;
     text-decoration: none;
@@ -223,18 +223,16 @@ figcaption {
     border: none;
     border-radius: 0.3em;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12pt;
+    font-size: 1.1em;
 }
 
 /* описание страницы */
-
-
 
 h2,
 .description-left-box {
     margin: 0;
     font-family: 'Oswald', sans-serif;
-    font-size: 16pt;
+    font-size: 1.8em;
     letter-spacing: 0.05em;
 }
 
@@ -244,7 +242,7 @@ h2,
 
 p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 12pt;
+    font-size: 1.2em;
     line-height: 1.5em;
 }
 
@@ -309,19 +307,19 @@ p {
 }
 
 .right-box-container p {
-    font-size: 10pt;
+    font-size: 1em;
 }
 
 /* answers */
 
 .answer {
-    font-size: 12pt;
+    font-size: 1.2em;
     color: #04754f;
 }
 
 code {
     font-family: 'Montserrat', sans-serif;
-    font-size: 12pt;
+    font-size: 1.2em;
     padding: 0 0.5em;
     background-color: #fff8e5;
     border-radius: 0.3em;
