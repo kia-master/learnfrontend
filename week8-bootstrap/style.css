@@ -1,0 +1,14 @@
+* {
+    border: 0.5px red solid;
+}
+
+.col {
+    border: 1px red solid;
+    margin: 0.5em;
+    background-color: #f7b8d5;
+}
+
+.row {
+    background-color: #77bbfa;
+    margin: 0.5em;
+}
