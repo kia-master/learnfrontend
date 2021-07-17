@@ -2,9 +2,41 @@
     border: 0.5px red solid;
 } */
 
+.head,
+.foot {
+    background-color: #e1e1e1;
+}
+
+.main-color {
+    background-color: #fff8e5;
+}
+
+.aside-color {
+    background-color: #deeccd;
+}
+
+.aside-color>.card {
+    background-color: #eff7eb;
+    border-radius: 1em;
+}
+
+.card-color {
+    background-color: #fdeabd;
+    border-radius: 1em;
+}
+
+.accordion-button.collapsed {
+    background-color: #fdeabd;
+}
+
+
 .question3-col {
     background-color: #4976bf;
     color: #dce5f2;
+}
+
+i {
+    max-width: 100%;
 }
 
 pre {
