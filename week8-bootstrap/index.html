@@ -11,22 +11,30 @@
 </head>
 
 <body>
-    <header>
+    <header class="head">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row p-3">
                 <div class="col navbar-brand">
-                    <a class="navbar-brand" href="/">I LEARN FRONTEND</a>
+                    <div class="btn btn-light rounded-3">
+                        <a class="navbar-brand text-dark" href="/">I LEARN FRONTEND</a>
+                    </div>
                 </div>
                 <div class="col">
                     <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Недели</a>
+                        <li class="nav-item pe-3">
+                            <div class="btn btn-light ">
+                                <a class="nav-link text-dark" href="#">Недели</a>
+                            </div>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <div class="btn btn-light">
+                                <a class="nav-link text-dark" href="#">Проекты</a>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Проекты</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Githab</a>
+                            <div class="btn btn-light">
+                                <a class="nav-link text-dark" href="#">Githab</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -38,12 +46,12 @@
         <div class="container-fluid">
             <div class="row">
 
-                <div class="col-md-9">
+                <div class="col-md-9 main-color">
                     <!-- Text about week -->
-                    <section class="text-blocks">
-                        <h2>Привет! Меня зовут Ирина Куликова</h2>
-                        <p>Давай ответим на вопросы домашки по восьмой недели. Тема недели - Bootstrap</p>
-                        <div>
+                    <section class="text-blocks p-5">
+                        <h2 class="pb-4">Привет! Меня зовут Ирина Куликова</h2>
+                        <p class="fs-5">Давай ответим на вопросы домашки по восьмой недели. Тема недели - Bootstrap</p>
+                        <div class="text-end">
                             <p class="card-text"><small class="text-muted">PS. Это не окончательный layout ...</small>
                             </p>
                             <p class="card-text"><small class="text-muted">5.07 - 11.07 2021</small></p>
@@ -51,51 +59,66 @@
                     </section>
 
                     <!-- Cards -->
-                    <div class="row ">
+                    <div class="row-cols-2 d-flex">
                         <!-- card 1 layout -->
-                        <div class="col-md-6 d-flex align-items-stretch">
-                            <div class="card rounded-3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <div class="d-flex align-items-stretch p-4">
+                            <div class="card h-100 border-0 card-color">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title">Layout by Bootstrap 5</h5>
+                                    <p class="card-text">Сделать макет с применением Bootstrap по образу и подобию</p>
+                                    <img src="images/task-1.png" class="card-img-bottom h-75 rounded-3"
+                                        alt="img-task-1">
                                 </div>
-                                <img src="images/task-1.png" class="card-img-bottom" alt="img-task-1">
+                                <div class="card-footer pt-3 pb-3 bg-transparent text-center">
+                                    <a href="https://kia-master.github.io/learnfrontend/week8-bootstrap/example-bootstrap/"
+                                        target=_blank class="btn btn-outline-secondary me-3">Page</a>
+                                    <a href="https://github.com/kia-master/learnfrontend/blob/main/week8-bootstrap/example-bootstrap/index.html"
+                                        target=_blank class="btn btn-outline-secondary ms-3">Code</a>
+                                </div>
                             </div>
                         </div>
 
                         <!-- card 2 figma's layout -->
-                        <div class="col-md-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <div class="d-flex align-items-stretch p-4">
+                            <div class="card h-100 border-0 card-color">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title">Layout by BEM</h5>
+                                    <p class="card-text">Сверстать <a
+                                            href="https://www.figma.com/file/Furcf4cCqnxLTrNDjykGtg/VR_Colors"
+                                            target="_blank" class="link-primary text-decoration-none">страницу</a> по
+                                        макету Figma по методологии БЭМ
+                                    </p>
+                                    <img src="images/task-2.png" class="card-img-bottom h-75 rounded-3"
+                                        alt="img-task-2">
                                 </div>
-                                <img src="images/task-2.png" class="card-img-bottom" alt="img-task-2">
+
+                                <div class="card-footer pt-3 pb-3 bg-transparent text-center">
+                                    <a href="https://kia-master.github.io/learnfrontend/week8-bootstrap/example-bootstrap/"
+                                        target=_blank class="btn btn-outline-secondary me-3">Page</a>
+                                    <a href="https://github.com/kia-master/learnfrontend/blob/main/week8-bootstrap/example-bootstrap/index.html"
+                                        target=_blank class="btn btn-outline-secondary ms-3">Code</a>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Answers -->
-                    <section class="col-md-12">
+                    <section class="col-md-12 p-4">
                         <div>
-                            <h2 class="pb-2 border-bottom">Ответы на вопросы</h2>
+                            <h2 class="border-bottom border-warning p-2">Ответы на вопросы</h2>
                         </div>
-                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion pt-4 accordion-flush" id="accordionFlushExample">
                             <!-- Question 1 -->
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <h2 class="accordion-header" id="panelsStayClose-headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
-                                        aria-controls="panelsStayOpen-collapseOne">
+                                        data-bs-target="#panelsStayClose-collapseOne" aria-expanded="false"
+                                        aria-controls="panelsStayClose-collapseOne">
                                         1. Какие основные преимущества Bootstrap?
                                     </button>
                                 </h2>
-                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
-                                    aria-labelledby="panelsStayOpen-headingOne">
+                                <div id="panelsStayClose-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayClose-headingOne">
                                     <div class="accordion-body">
                                         <ul>
                                             <li><strong>высокая скорость</strong> создания качественной адаптивной
@@ -128,7 +151,6 @@
                                                 хорошо разобраться в фреймворке, но и найти ответы практически на любые
                                                 вопросы.</li>
                                         </ul>
-
                                     </div>
                                 </div>
                             </div>
@@ -165,9 +187,41 @@
                                 </h2>
                                 <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="panelsStayOpen-headingThree">
-                                    <div class="accordion-body p-5">
+                                    <div class="accordion-body">
 
-                                        <div class="container overflow-hidden">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-link text-decoration-none"
+                                            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                            Посмотреть код
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="staticBackdropLabel">
+                                                            Layout's code
+                                                        </h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <img src="images/code.png" class="w-100" alt="code">
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- layout blue blocks -->
+                                        <div class="container overflow-hidden p-5">
                                             <div class="row g-2">
                                                 <div
                                                     class="col-7 d-flex justify-content-center align-items-center question3-col">
@@ -195,8 +249,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
 
+                                    </div>
                                 </div>
                             </div>
 
@@ -448,40 +502,44 @@
                 </div>
 
                 <!-- aside -->
-                <div class="col-md-3">
-                    <div class="card">
+                <div class="col-md-3 p-3 aside-color">
+                    <div class="card mb-3 border-0">
                         <div class="card-body">
                             <h5 class="card-title">Страничка про кота</h5>
                             <p class="card-text">Это первая работа. Первая неделя ... </p>
+                            <a href="#"><img src="images/week-1.png" class="card-img-top rounded-3"
+                                    alt="card-week-1"></a>
                         </div>
-                        <a href="#"><img src="images/week-1.png" class="card-img-top" alt="card-week-1"></a>
                     </div>
 
-                    <div class="card">
+                    <div class="card mb-3 border-0">
                         <div class="card-body">
                             <h5 class="card-title">Страница блогера</h5>
                             <p class="card-text">Проект для третьей недели учебы. Доработанный, с векторными и
                                 растровыми картинками</p>
+                            <a href="#"><img src="images/page-blog.png" class="card-img-top rounded-3"
+                                    alt="card-blog"></a>
                         </div>
-                        <a href="#"><img src="images/page-blog.png" class="card-img-top" alt="card-blog"></a>
                     </div>
 
-                    <div class="card">
+                    <div class="card mb-3 border-0">
                         <div class="card-body">
                             <h5 class="card-title">Сайт-визитка</h5>
                             <p class="card-text">Это окончательная верстка сайта-визитки с использованием
                                 позиционирования.</p>
+                            <a href="#"><img src="images/business-card.png" class="card-img-top rounded-3"
+                                    alt="card-business"></a>
                         </div>
-                        <a href="#"><img src="images/business-card.png" class="card-img-top" alt="card-business"></a>
                     </div>
 
-                    <div class="card">
+                    <div class="card mb-3 border-0">
                         <div class="card-body">
                             <h5 class="card-title">Шаблон на гридах</h5>
                             <p class="card-text">За основу был взят шаблон Figma - Dashboard. Небольшая разметка макета.
                             </p>
+                            <a href="#"><img src="images/dashboard.png" class="card-img-top rounded-3"
+                                    alt="card-dash"></a>
                         </div>
-                        <a href="#"><img src="images/dashboard.png" class="card-img-top" alt="card-dash"></a>
                     </div>
                 </div>
 
@@ -490,20 +548,27 @@
     </main>
 
 
-    <footer>
+    <footer class="foot">
         <div class="container-fluid">
-            <div class="row footer mt-auto py-3">
-                <div class="col-md-3">
-                    <span class="text-muted">Что-то будет</span>
+            <div class="row-cols-4 footer d-flex justify-content-start p-1">
+                <div class="col w-auto m-3">
+                    <a href="https://www.instagram.com/" target="_blank" class="btn btn-outline-secondary border-0"><i
+                            class="fab fa-instagram fa-3x"></i></a>
                 </div>
-                <div class="col-md-3">
-                    <span class="text-muted">Что-то будет</span>
+                <div class="col w-auto m-3">
+                    <a href="https://www.facebook.com/irina.kul.kul" target="_blank"
+                        class="btn btn-outline-secondary border-0"><i class="fab fa-facebook fa-3x"></i></a>
                 </div>
-                <div class="col-md-3">
-                    <span class="text-muted">Что-то будет</span>
+                <div class="col w-auto m-3">
+                    <a href="https://tlgg.ru/iri_kul" target="_blank" class="btn btn-outline-secondary border-0"><i
+                            class="fab fa-telegram fa-3x"></i></a>
                 </div>
-                <div class="col-md-3">
-                    <span class="text-muted">Что-то будет</span>
+                <div class="col w-auto m-3">
+                    <a href="https://github.com/kia-master" target="_blank"
+                        class="btn btn-outline-secondary border-0"><i class="fab fa-github fa-3x"></i></a>
+                </div>
+                <div class="col w-auto align-self-center ms-auto">
+                    Copyright © kia-master 2021
                 </div>
             </div>
         </div>
