@@ -37,6 +37,7 @@
     <main>
         <div class="container-fluid">
             <div class="row">
+
                 <div class="col-md-9">
                     <!-- Text about week -->
                     <section class="text-blocks">
@@ -156,29 +157,42 @@
                             <!-- Question 3 -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                                         aria-controls="panelsStayOpen-collapseThree">
                                         3. Каким кодом можно сделать такую сетку?
                                     </button>
                                 </h2>
-                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show"
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="panelsStayOpen-headingThree">
-                                    <div class="accordion-body">
+                                    <div class="accordion-body p-5">
 
-                                        <div class="container">
-                                            <div class="row g-2 text-center">
-                                                <div class="col-7 align-self-center">
+                                        <div class="container overflow-hidden">
+                                            <div class="row g-2">
+                                                <div
+                                                    class="col-7 d-flex justify-content-center align-items-center question3-col">
                                                     <p>Gallery</p>
                                                 </div>
-                                                <div class="col-5">
-                                                    <div class="row g-2">
-                                                        <div class="col-12 align-self-center">Title</div>
-                                                        <div class="col-12 align-self-center">Buy box</div>
+                                                <div class="col-5" style="padding: 0 0 0 0.5rem;">
+                                                    <div class="row-cols-1 d-flex flex-column" style="height: 40vh;">
+                                                        <div class="col-12 d-flex justify-content-center align-items-center question3-col"
+                                                            style="margin-bottom: 0.5rem;">
+                                                            <p>Title</p>
+                                                        </div>
+                                                        <div
+                                                            class="col-12 d-flex justify-content-center align-items-center flex-grow-1 question3-col">
+                                                            <p>Buy box</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12">Description</div>
-                                                <div class="col-12">Related</div>
+                                                <div class="col-12 d-flex justify-content-center align-items-center question3-col"
+                                                    style="height: 10vh;">
+                                                    <p>Description</p>
+                                                </div>
+                                                <div class="col-12 d-flex justify-content-center align-items-center question3-col"
+                                                    style="height: 10vh;">
+                                                    <p>Related</>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -186,26 +200,36 @@
                                 </div>
                             </div>
 
-
                             <!-- Question 4 -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="panelsStayOpen-headingFour">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
                                         aria-controls="panelsStayOpen-collapseFour">
-                                        Аккордеонный элемент #3
+                                        4. Каким компонентом Bootstrap можно задать такой элемент?
                                     </button>
                                 </h2>
                                 <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
                                     aria-labelledby="panelsStayOpen-headingFour">
                                     <div class="accordion-body">
-                                        <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт,
-                                        пока плагин свертывания не добавит соответствующие классы, которые мы используем
-                                        для стилизации каждого элемента. Эти классы управляют общим внешним видом, а
-                                        также отображением и скрытием с помощью переходов CSS. Вы можете изменить все
-                                        это с помощью собственного CSS или переопределить наши переменные по умолчанию.
-                                        Также стоит отметить, что практически любой HTML может быть помещен в
-                                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                        <div class="progress mb-4">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                        </div>
+                                        <pre>
+                                                <code class="guestion4-code">
+&lt;div class="progress">
+    &lt;div class="progress-bar" 
+                role="progressbar" 
+                style="width: 25%;"
+                aria-valuenow="25" 
+                aria-valuemin="0" 
+                aria-valuemax="100">
+                25%
+    &lt;/div>
+&lt;/div>
+                                                </code>
+                                            </pre>
                                     </div>
                                 </div>
                             </div>
@@ -216,19 +240,14 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
                                         aria-controls="panelsStayOpen-collapseFive">
-                                        Аккордеонный элемент #3
+                                        5. Как убрать поля между колонками?
                                     </button>
                                 </h2>
                                 <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
                                     aria-labelledby="panelsStayOpen-headingFive">
                                     <div class="accordion-body">
-                                        <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт,
-                                        пока плагин свертывания не добавит соответствующие классы, которые мы используем
-                                        для стилизации каждого элемента. Эти классы управляют общим внешним видом, а
-                                        также отображением и скрытием с помощью переходов CSS. Вы можете изменить все
-                                        это с помощью собственного CSS или переопределить наши переменные по умолчанию.
-                                        Также стоит отметить, что практически любой HTML может быть помещен в
-                                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                        Необходимо у элемента <code>row</code> задать дополнительный класс
+                                        <code>.no-gutters</code>
                                     </div>
                                 </div>
                             </div>
@@ -239,19 +258,33 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
                                         aria-controls="panelsStayOpen-collapseSix">
-                                        Аккордеонный элемент #3
+                                        6. Как сделать навигацию на Bootstrap?
                                     </button>
                                 </h2>
                                 <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
                                     aria-labelledby="panelsStayOpen-headingSix">
                                     <div class="accordion-body">
-                                        <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт,
-                                        пока плагин свертывания не добавит соответствующие классы, которые мы используем
-                                        для стилизации каждого элемента. Эти классы управляют общим внешним видом, а
-                                        также отображением и скрытием с помощью переходов CSS. Вы можете изменить все
-                                        это с помощью собственного CSS или переопределить наши переменные по умолчанию.
-                                        Также стоит отметить, что практически любой HTML может быть помещен в
-                                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                        <p>
+                                            Навигационное меню от Bootstrap можно создать на базовом компоненте
+                                            <code>.nav</code>, который создан на флексбоксе, что обеспечивает хорошую
+                                            базу
+                                            для создания всех типов навигационных компонентов: брендинг, навигация и
+                                            прочие, включая поддержку выпадающих списков.
+                                        </p>
+                                        <p>
+                                            В навбарах присутствуют встроенная поддержка многих вложенных компонентов.
+                                            Например:
+                                        </p>
+                                        <ul>
+                                            <li><code>.navbar-brand</code> для названия вашей компании, продукта или
+                                                имени проекта</li>
+                                            <li><code>.navbar-nav</code> для навигации полной высоты (включая выпадающие
+                                                элементы)</li>
+                                            <li><code>.form-inline</code> для любых органов контроля форм и действий с
+                                                ними</li>
+                                            <li><code>.navbar-text</code> для добавления вертикально центрированных
+                                                строк текста и пр.</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -262,19 +295,18 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
                                         aria-controls="panelsStayOpen-collapseSeven">
-                                        Аккордеонный элемент #3
+                                        7. Что такое колонка auto-layout ?
                                     </button>
                                 </h2>
                                 <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
                                     aria-labelledby="panelsStayOpen-headingSeven">
                                     <div class="accordion-body">
-                                        <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт,
-                                        пока плагин свертывания не добавит соответствующие классы, которые мы используем
-                                        для стилизации каждого элемента. Эти классы управляют общим внешним видом, а
-                                        также отображением и скрытием с помощью переходов CSS. Вы можете изменить все
-                                        это с помощью собственного CSS или переопределить наши переменные по умолчанию.
-                                        Также стоит отметить, что практически любой HTML может быть помещен в
-                                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                        <p>
+                                            Если при верстки сайта не хватает стандартных 12-ти колонок сетки Bootstrap,
+                                            то можно использовать безразмерные колонки <code>auto-layout</code>.
+                                        </p>
+                                        <p>Обычно обозначаются без указания количества колонок:</p>
+                                        <p>либо просто <code>.col</code>, либо <code>.col-auto</code></p>
                                     </div>
                                 </div>
                             </div>
@@ -282,22 +314,39 @@
                             <!-- Question 8 -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="panelsStayOpen-headingEight">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false"
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="true"
                                         aria-controls="panelsStayOpen-collapseEight">
-                                        Аккордеонный элемент #3
+                                        8. Как сделать центрирование содержимого по горизонтали? А по вертикали?
                                     </button>
                                 </h2>
-                                <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse"
+                                <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse show"
                                     aria-labelledby="panelsStayOpen-headingEight">
                                     <div class="accordion-body">
-                                        <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт,
-                                        пока плагин свертывания не добавит соответствующие классы, которые мы используем
-                                        для стилизации каждого элемента. Эти классы управляют общим внешним видом, а
-                                        также отображением и скрытием с помощью переходов CSS. Вы можете изменить все
-                                        это с помощью собственного CSS или переопределить наши переменные по умолчанию.
-                                        Также стоит отметить, что практически любой HTML может быть помещен в
-                                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                        <p>Так как Bootstrap основан на флексах, выравнивание полностью наследуется из
+                                            Flexbox.</p>
+                                        <p><strong>Вертикальное выравнивание</strong></p>
+                                        <ul>
+                                            <li>Для родителя row:
+                                                <p><code>&lt;div class="row align-items-start"></code></p>
+                                            </li>
+                                            <li>Для дочерних элементов:
+                                                <p><code>&lt;div class="col align-self-start">&lt;/div></code><br>
+                                                    <code>&lt;div class="col align-self-center">&lt;/div></code><br>
+                                                    <code>&lt;div class="col align-self-end">&lt;/div></code></p>
+                                            </li>
+                                        </ul>
+                                        <p><strong>Горизонтальное выравнивание</strong></p>
+                                        <ul>
+                                            <li>
+                                                <p>При помощи префикса <code>justify-content-</code> у родителя
+                                                    <code>row</code></p>
+                                                <p><code>&lt;div class="row justify-content-start"></code><br>
+                                                    <code>&lt;div class="row justify-content-center"></code><br>
+                                                    <code>&lt;div class="row justify-content-between"></code> и т.д.</p>
+                                            </li>
+                                        </ul>
+
                                     </div>
                                 </div>
                             </div>
@@ -308,19 +357,17 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false"
                                         aria-controls="panelsStayOpen-collapseNine">
-                                        Аккордеонный элемент #3
+                                        9. Как задать адаптивность для колонки шириной в 50%, чтобы при ширине экрана
+                                        меньше 768px она становилась шириной на весь экран?
                                     </button>
                                 </h2>
                                 <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse"
                                     aria-labelledby="panelsStayOpen-headingNine">
                                     <div class="accordion-body">
-                                        <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт,
-                                        пока плагин свертывания не добавит соответствующие классы, которые мы используем
-                                        для стилизации каждого элемента. Эти классы управляют общим внешним видом, а
-                                        также отображением и скрытием с помощью переходов CSS. Вы можете изменить все
-                                        это с помощью собственного CSS или переопределить наши переменные по умолчанию.
-                                        Также стоит отметить, что практически любой HTML может быть помещен в
-                                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                        <p><code>&lt;div class="col-sm-6">Column&lt;/div></code></p>
+                                        <p>По дефолту на экранах больше 768px колонка будет занимать 50% ширины
+                                            (<code>.col-12</code>), но как только экран станет меньше, чем 768px, то
+                                            колонка займет ширину 100%.</p>
                                     </div>
                                 </div>
                             </div>
@@ -331,19 +378,15 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false"
                                         aria-controls="panelsStayOpen-collapseTen">
-                                        Аккордеонный элемент #3
+                                        10. Что произойдет, если колонок станет больше 12?
                                     </button>
                                 </h2>
                                 <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse"
                                     aria-labelledby="panelsStayOpen-headingTen">
                                     <div class="accordion-body">
-                                        <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт,
-                                        пока плагин свертывания не добавит соответствующие классы, которые мы используем
-                                        для стилизации каждого элемента. Эти классы управляют общим внешним видом, а
-                                        также отображением и скрытием с помощью переходов CSS. Вы можете изменить все
-                                        это с помощью собственного CSS или переопределить наши переменные по умолчанию.
-                                        Также стоит отметить, что практически любой HTML может быть помещен в
-                                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                        <p>Когда колонок в строке становится больше 12, то начиная с 13-ой колонки
+                                            встают вертикально вниз - вертикальное сталкивание ("<strong>враппинг
+                                                колонок</strong>").</p>
                                     </div>
                                 </div>
                             </div>
@@ -354,19 +397,29 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="false"
                                         aria-controls="panelsStayOpen-collapseEleven">
-                                        Аккордеонный элемент #3
+                                        11. Как задать иконку инстаграм через font awasome?
                                     </button>
                                 </h2>
                                 <div id="panelsStayOpen-collapseEleven" class="accordion-collapse collapse"
                                     aria-labelledby="panelsStayOpen-headingEleven">
                                     <div class="accordion-body">
-                                        <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт,
-                                        пока плагин свертывания не добавит соответствующие классы, которые мы используем
-                                        для стилизации каждого элемента. Эти классы управляют общим внешним видом, а
-                                        также отображением и скрытием с помощью переходов CSS. Вы можете изменить все
-                                        это с помощью собственного CSS или переопределить наши переменные по умолчанию.
-                                        Также стоит отметить, что практически любой HTML может быть помещен в
-                                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                        <i class="fab fa-instagram fa-4x"></i>
+                                        <p>Необходимо сделать следующее:</p>
+                                        <ol>
+                                            <li>На сайте <a
+                                                    href="https://fontawesome.com/kits/d5e794d4d8/use?welcome=yes"
+                                                    target="_blank">fontawesome.com</a> взять ссылку на ресурсы и
+                                                добавить в конце тега <code>&lt;body></code>:
+                                                <p><code>&lt;script defer
+                                                        src="https://use.fontawesome.com/releases/v5.10.2/js/all.js">&lt;/script></code>
+                                                </p>
+                                                <p><a href="https://oddler.ru/blog/i1490" target="_blank">Источник</a> -
+                                                    хороший человек!</p>
+                                            </li>
+                                            <li>С помощью тега <code>&lt;i>&lt/i></code> указать в классе название
+                                                иконки для Инстаграма:</li>
+                                            <p><code>&lt;i class="fab fa-instagram fa-4x">&lt;/i></code></p>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
@@ -377,19 +430,15 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#panelsStayOpen-collapseTwelve" aria-expanded="false"
                                         aria-controls="panelsStayOpen-collapseTwelve">
-                                        Аккордеонный элемент #3
+                                        12. Чем отличается container от container-fluid?
                                     </button>
                                 </h2>
                                 <div id="panelsStayOpen-collapseTwelve" class="accordion-collapse collapse"
                                     aria-labelledby="panelsStayOpen-headingTwelve">
                                     <div class="accordion-body">
-                                        <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт,
-                                        пока плагин свертывания не добавит соответствующие классы, которые мы используем
-                                        для стилизации каждого элемента. Эти классы управляют общим внешним видом, а
-                                        также отображением и скрытием с помощью переходов CSS. Вы можете изменить все
-                                        это с помощью собственного CSS или переопределить наши переменные по умолчанию.
-                                        Также стоит отметить, что практически любой HTML может быть помещен в
-                                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                        <p><code>container</code> - это контейнер фиксированной ширины с отцентровкой по
+                                            середине шаблона</p>
+                                        <p><code>container-fluid</code> - это контейнер с шириной во весь экран</p>
                                     </div>
                                 </div>
                             </div>
@@ -467,6 +516,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
         integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
     </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.10.2/js/all.js"></script>
 </body>
 
 </html>
