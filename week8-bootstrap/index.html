@@ -11,98 +11,455 @@
 </head>
 
 <body>
-    <main>
+    <header>
         <div class="container-fluid">
-
-            <header class="row">
+            <div class="row">
                 <div class="col navbar-brand">
-                    <a class="navbar-brand" href="#">I LEARN FRONTEND</a>
+                    <a class="navbar-brand" href="/">I LEARN FRONTEND</a>
                 </div>
                 <div class="col">
                     <ul class="nav justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Active</a>
+                            <a class="nav-link" href="#">Недели</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Проекты</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            <a class="nav-link" href="#">Githab</a>
                         </li>
                     </ul>
                 </div>
-            </header>
+            </div>
+        </div>
+    </header>
 
+    <main>
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-9">
                     <!-- Text about week -->
                     <section class="text-blocks">
-                        <h2>sldcjlksdclksdclsjc</h2>
+                        <h2>Привет! Меня зовут Ирина Куликова</h2>
+                        <p>Давай ответим на вопросы домашки по восьмой недели. Тема недели - Bootstrap</p>
+                        <div>
+                            <p class="card-text"><small class="text-muted">PS. Это не окончательный layout ...</small>
+                            </p>
+                            <p class="card-text"><small class="text-muted">5.07 - 11.07 2021</small></p>
+                        </div>
                     </section>
 
+                    <!-- Cards -->
                     <div class="row ">
                         <!-- card 1 layout -->
-                        <div class="col-md-6">
-                            Задание 1
+                        <div class="col-md-6 d-flex align-items-stretch">
+                            <div class="card rounded-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                                <img src="images/task-1.png" class="card-img-bottom" alt="img-task-1">
+                            </div>
                         </div>
 
                         <!-- card 2 figma's layout -->
                         <div class="col-md-6">
-                            Задание 2
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                                <img src="images/task-2.png" class="card-img-bottom" alt="img-task-2">
+                            </div>
                         </div>
                     </div>
 
                     <!-- Answers -->
                     <section class="col-md-12">
-                        <div>Вопрос 1</div>
-                        <div>Вопрос 2</div>
-                        <div>Вопрос 3</div>
-                        <div>Вопрос 4</div>
-                        <div>Вопрос 5</div>
-                        <div>Вопрос 6</div>
-                        <div>Вопрос 7</div>
-                        <div>Вопрос 8</div>
-                        <div>Вопрос 9</div>
-                        <div>Вопрос 10</div>
-                        <div>Вопрос 11</div>
-                        <div>Вопрос 12</div>
+                        <div>
+                            <h2 class="pb-2 border-bottom">Ответы на вопросы</h2>
+                        </div>
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <!-- Question 1 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseOne">
+                                        1. Какие основные преимущества Bootstrap?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>высокая скорость</strong> создания качественной адаптивной
+                                                вёрстки даже
+                                                начинающими веб-разработчиками (достигается это благодаря использованию
+                                                готовых компонентов, созданных профессионалами);</li>
+                                            <li><strong>кроссбраузерность и кроссплатформеннось</strong> (корректное
+                                                отображение и работа
+                                                сайта во всех поддерживаемых этим фреймворком браузерах и операционных
+                                                системах);</li>
+                                            <li><strong>наличие большого количество готовых хорошо продуманных
+                                                    компонентов</strong>,
+                                                протестированных огромным сообществом веб-разработчиков на различных
+                                                устройствах;</li>
+                                            <li><strong>возможность настройки под свой проект</strong>, достигается это
+                                                посредством
+                                                изменения SCSS переменных и использования Bootstrap миксинов (можно
+                                                изменить количество колонок, цвета, радиуса скруглений углов элементов,
+                                                отступы между колонками и многое другое);</li>
+                                            <li><strong>низкий порог вхождения</strong>; для работы с фреймворком не
+                                                обязательно иметь
+                                                глубокие знания по HTML, CSS, JavaScript и jQuery (достаточно знать
+                                                только основы вышеперечисленных технологий);</li>
+                                            <li><strong>наличие хорошо продуманного дизайна компонентов и
+                                                    согласованности</strong> (в
+                                                Bootstrap все компоненты выполнены в едином стиле);</li>
+                                            <li><strong>наличие огромного сообщества, большого количества статей,
+                                                    рецептов и видеоматериалов</strong>>; всё это при желании поможет не
+                                                только
+                                                хорошо разобраться в фреймворке, но и найти ответы практически на любые
+                                                вопросы.</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 2 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseTwo">
+                                        2. Как сделать желтую кнопку с помощью Bootstrap?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingTwo">
+                                    <div class="accordion-body">
+                                        <p>Вот так:</p>
+                                        <p class="text-center">
+                                            <code>&lt;button type="button" class="btn
+                                                btn-warning">Warning&lt;/button></code>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 3 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseThree">
+                                        3. Каким кодом можно сделать такую сетку?
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show"
+                                    aria-labelledby="panelsStayOpen-headingThree">
+                                    <div class="accordion-body">
+
+                                        <div class="container">
+                                            <div class="row g-2 text-center">
+                                                <div class="col-7 align-self-center">
+                                                    <p>Gallery</p>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div class="row g-2">
+                                                        <div class="col-12 align-self-center">Title</div>
+                                                        <div class="col-12 align-self-center">Buy box</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">Description</div>
+                                                <div class="col-12">Related</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <!-- Question 4 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseFour">
+                                        Аккордеонный элемент #3
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingFour">
+                                    <div class="accordion-body">
+                                        <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт,
+                                        пока плагин свертывания не добавит соответствующие классы, которые мы используем
+                                        для стилизации каждого элемента. Эти классы управляют общим внешним видом, а
+                                        также отображением и скрытием с помощью переходов CSS. Вы можете изменить все
+                                        это с помощью собственного CSS или переопределить наши переменные по умолчанию.
+                                        Также стоит отметить, что практически любой HTML может быть помещен в
+                                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 5 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseFive">
+                                        Аккордеонный элемент #3
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingFive">
+                                    <div class="accordion-body">
+                                        <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт,
+                                        пока плагин свертывания не добавит соответствующие классы, которые мы используем
+                                        для стилизации каждого элемента. Эти классы управляют общим внешним видом, а
+                                        также отображением и скрытием с помощью переходов CSS. Вы можете изменить все
+                                        это с помощью собственного CSS или переопределить наши переменные по умолчанию.
+                                        Также стоит отметить, что практически любой HTML может быть помещен в
+                                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 6 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseSix">
+                                        Аккордеонный элемент #3
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingSix">
+                                    <div class="accordion-body">
+                                        <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт,
+                                        пока плагин свертывания не добавит соответствующие классы, которые мы используем
+                                        для стилизации каждого элемента. Эти классы управляют общим внешним видом, а
+                                        также отображением и скрытием с помощью переходов CSS. Вы можете изменить все
+                                        это с помощью собственного CSS или переопределить наши переменные по умолчанию.
+                                        Также стоит отметить, что практически любой HTML может быть помещен в
+                                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 7 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseSeven">
+                                        Аккордеонный элемент #3
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingSeven">
+                                    <div class="accordion-body">
+                                        <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт,
+                                        пока плагин свертывания не добавит соответствующие классы, которые мы используем
+                                        для стилизации каждого элемента. Эти классы управляют общим внешним видом, а
+                                        также отображением и скрытием с помощью переходов CSS. Вы можете изменить все
+                                        это с помощью собственного CSS или переопределить наши переменные по умолчанию.
+                                        Также стоит отметить, что практически любой HTML может быть помещен в
+                                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 8 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseEight">
+                                        Аккордеонный элемент #3
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingEight">
+                                    <div class="accordion-body">
+                                        <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт,
+                                        пока плагин свертывания не добавит соответствующие классы, которые мы используем
+                                        для стилизации каждого элемента. Эти классы управляют общим внешним видом, а
+                                        также отображением и скрытием с помощью переходов CSS. Вы можете изменить все
+                                        это с помощью собственного CSS или переопределить наши переменные по умолчанию.
+                                        Также стоит отметить, что практически любой HTML может быть помещен в
+                                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 9 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingNine">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseNine">
+                                        Аккордеонный элемент #3
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingNine">
+                                    <div class="accordion-body">
+                                        <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт,
+                                        пока плагин свертывания не добавит соответствующие классы, которые мы используем
+                                        для стилизации каждого элемента. Эти классы управляют общим внешним видом, а
+                                        также отображением и скрытием с помощью переходов CSS. Вы можете изменить все
+                                        это с помощью собственного CSS или переопределить наши переменные по умолчанию.
+                                        Также стоит отметить, что практически любой HTML может быть помещен в
+                                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 10 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingTen">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseTen">
+                                        Аккордеонный элемент #3
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingTen">
+                                    <div class="accordion-body">
+                                        <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт,
+                                        пока плагин свертывания не добавит соответствующие классы, которые мы используем
+                                        для стилизации каждого элемента. Эти классы управляют общим внешним видом, а
+                                        также отображением и скрытием с помощью переходов CSS. Вы можете изменить все
+                                        это с помощью собственного CSS или переопределить наши переменные по умолчанию.
+                                        Также стоит отметить, что практически любой HTML может быть помещен в
+                                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 11 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingEleven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseEleven">
+                                        Аккордеонный элемент #3
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseEleven" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingEleven">
+                                    <div class="accordion-body">
+                                        <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт,
+                                        пока плагин свертывания не добавит соответствующие классы, которые мы используем
+                                        для стилизации каждого элемента. Эти классы управляют общим внешним видом, а
+                                        также отображением и скрытием с помощью переходов CSS. Вы можете изменить все
+                                        это с помощью собственного CSS или переопределить наши переменные по умолчанию.
+                                        Также стоит отметить, что практически любой HTML может быть помещен в
+                                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 12 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingTwelve">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseTwelve" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseTwelve">
+                                        Аккордеонный элемент #3
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwelve" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingTwelve">
+                                    <div class="accordion-body">
+                                        <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт,
+                                        пока плагин свертывания не добавит соответствующие классы, которые мы используем
+                                        для стилизации каждого элемента. Эти классы управляют общим внешним видом, а
+                                        также отображением и скрытием с помощью переходов CSS. Вы можете изменить все
+                                        это с помощью собственного CSS или переопределить наши переменные по умолчанию.
+                                        Также стоит отметить, что практически любой HTML может быть помещен в
+                                        <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </section>
-
                 </div>
 
+                <!-- aside -->
                 <div class="col-md-3">
-                    <aside>
-                        <div>Проект 1</div>
-                        <div>Проект 2</div>
-                        <div>Проект 3</div>
-                        <div>Проект 4</div>
-                    </aside>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Страничка про кота</h5>
+                            <p class="card-text">Это первая работа. Первая неделя ... </p>
+                        </div>
+                        <a href="#"><img src="images/week-1.png" class="card-img-top" alt="card-week-1"></a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Страница блогера</h5>
+                            <p class="card-text">Проект для третьей недели учебы. Доработанный, с векторными и
+                                растровыми картинками</p>
+                        </div>
+                        <a href="#"><img src="images/page-blog.png" class="card-img-top" alt="card-blog"></a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Сайт-визитка</h5>
+                            <p class="card-text">Это окончательная верстка сайта-визитки с использованием
+                                позиционирования.</p>
+                        </div>
+                        <a href="#"><img src="images/business-card.png" class="card-img-top" alt="card-business"></a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Шаблон на гридах</h5>
+                            <p class="card-text">За основу был взят шаблон Figma - Dashboard. Небольшая разметка макета.
+                            </p>
+                        </div>
+                        <a href="#"><img src="images/dashboard.png" class="card-img-top" alt="card-dash"></a>
+                    </div>
                 </div>
+
             </div>
-
-
-
-            <footer class="row footer mt-auto py-3">
-                <div class="col-md-3">
-                    <span class="text-muted">Что-то будет</span>
-                </div>
-                <div class="col-md-3">
-                    <span class="text-muted">Что-то будет</span>
-                </div>
-                <div class="col-md-3">
-                    <span class="text-muted">Что-то будет</span>
-                </div>
-                <div class="col-md-3">
-                    <span class="text-muted">Что-то будет</span>
-                </div>
-            </footer>
-
-
         </div>
     </main>
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row footer mt-auto py-3">
+                <div class="col-md-3">
+                    <span class="text-muted">Что-то будет</span>
+                </div>
+                <div class="col-md-3">
+                    <span class="text-muted">Что-то будет</span>
+                </div>
+                <div class="col-md-3">
+                    <span class="text-muted">Что-то будет</span>
+                </div>
+                <div class="col-md-3">
+                    <span class="text-muted">Что-то будет</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
