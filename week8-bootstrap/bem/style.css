@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+}
+
+.header__logo {}
+
+.header__headline {}
+
+
+.btn {
+    background-color: #5222D0;
+    color: #ffffff;
+}
+
+.btn--icon {
+    max-width: 100%;
+}
+
+.btn--big {}
+
+.icon {}
+
+
+.caption {}
+
+
+.card {}
+
+.card__img {}
+
+.card__title {}
+
+.card__text {}
+
+
+.subscribe {}
+
+.subscribe__header {}
+
+.subscribe__email {}
+
+
+.footer {}
+
+.footer__list {}
+
+.footer__item {}
