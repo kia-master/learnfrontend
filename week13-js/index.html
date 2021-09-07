@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>week 6</title>
+    <title>week 13</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap">
@@ -37,13 +37,65 @@
 
         <section class="leftb">
             <div class="lrb">
-                <h2>Левый блок</h2>
+                <h2>Практическое задание 1</h2>
+                <p>Приветствие</p>
+                <button onclick="getName()" class="btn">Click me!</button>
+                <script>
+                    function getName() {
+                        let name = prompt('Как тебя зовут?');
+                        alert(`Добро пожаловать ${name}!`);
+                    }
+                </script>
             </div>
         </section>
 
         <section class="rightb">
             <div class="lrb">
-                <h2>Правый блок</h2>
+                <h2>Практическое задание 2</h2>
+                <p>Калькулятор</p>
+                <button onclick="calcSum()" class="btn">Сложить</button>
+                <button onclick="calcSubtract()" class="btn">Вычесть</button>
+                <button onclick="calcDivide()" class="btn">Поделить</button>
+                <button onclick="calcMultiply()" class="btn">Умножить</button>
+                <script>
+                    function getNumberOne() {
+                        let first_num = prompt('Введите первое число: ');
+                        return Number(first_num);
+                    }
+
+                    function getNumberTwo() {
+                        let second_num = prompt('Введите второе число: ')
+                        return Number(second_num);
+                    }
+
+                    function calcSum() {
+                        let a = getNumberOne(),
+                            b = getNumberTwo();
+                        let n = a + b;
+                        alert(`${a} + ${b} = ${n}`);
+                    }
+
+                    function calcSubtract() {
+                        let a = getNumberOne(),
+                            b = getNumberTwo();
+                        let n = a - b;
+                        alert(`${a} - ${b} = ${n}`);
+                    }
+
+                    function calcDivide() {
+                        let a = getNumberOne(),
+                            b = getNumberTwo();
+                        let n = a / b;
+                        alert(`${a} / ${b} = ${n}`);
+                    }
+
+                    function calcMultiply() {
+                        let a = getNumberOne(),
+                            b = getNumberTwo();
+                        let n = a * b;
+                        alert(`${a} * ${b} = ${n}`);
+                    }
+                </script>
             </div>
         </section>
 
@@ -53,199 +105,233 @@
 
             <!-- question 1 -->
             <div>
-                <p class="answer">1. Что за единица измерения - <code>fr</code>?</p>
+                <p class="answer">1. Какие бывают варианты объявления переменных?</p>
                 <p>Ответ</p>
-                <p><code>fr</code> (fraction) - это гибкая единица измерения в CSS Grid, которая рассчитывается
-                    исходя из количества доступного пространства в grid-контейнере.</p>
-                <p>Например, если задать с помощью свойства три колонки (треки)
-                    <code>grid-template-columns: 1fr 1fr 1fr</code>, то доступное пространство делится на 3 и
-                    распределяется поровну между тремя колонками.
-                </p>
+                <p>1. С помощью служебного слова <code>let</code>:</p>
+                <p><code>let message;</code></p>
+                <p>2. С помощью служебного слова <code>var</code> (в более старых скриптах):</p>
+                <p><code>var message;</code></p>
             </div>
             <hr class="hr-dotted">
 
             <!-- question 2 -->
             <div>
-                <p class="answer">2. Как можно задать грид с 5 колонками шириной по 20%? Минимум 2 способа.</p>
-                <p>Ответ</p>
-                <p>1. <code>grid-template-columns: 1fr 1fr 1fr 1fr 1fr;</code></p>
-                <p>2. <code>grid-template-columns: repeat(5, 1fr);</code></p>
-                <p>3. <code>grid-template-columns: repeat(auto-fit, minmax(20%));</code></p>
+                <p class="answer">2. Что выведет этот скрипт?</p>
+                <figure>
+                    <img src="assets/images/que2.png" alt="grid-area" class="about-grid-area-img">
+                </figure>
+                <p>
+                    <button onclick="showAnswer2()" class="btn">Ответ</button>
+                    <script>
+                        function showAnswer2() {
+                            let name = "Ilya";
+                            alert(`hello ${1}`);
+                            alert(`hello ${"name"}`);
+                            alert(`hello ${name}`);
+                        }
+                    </script>
+                </p>
             </div>
             <hr class="hr-dotted">
 
             <!-- question 3 -->
             <div>
-                <p class="answer">3. Самостоятельно разберитесь, что такое <code>auto-fill</code> и
-                    <code>auto-fit</code> ?</p>
-                <p>Ответ</p>
-                <p><code>auto-fill</code> и <code>auto-fit</code> - значения для указания ширины колонок в CSS Grid.
-                    <p>
-                        <code>auto-fill</code> автоматически заполняет строку таким количеством колонок, как это
-                        возможно с учетом заданной ширины”. <code>auto-fill</code> используется в связке с
-                        <code>repeat()</code> таким образом: <br>
-                        <code>grid-template-columns: repeat(auto-fill, 100px);</code>
-                        <br>Каждая строка будет заполнена возможным количеством колонок, учитывая их длину в 100px.
-                        Когда в строке не остается места, то элементы переходят на следующую строку.
-                    </p>
-                    <p>
-                        <code>auto-fit</code> практически аналогичен <code>auto-fill</code>, но явное различие
-                        появится тогда, когда мы указываем что делать с оставшимся местом в строке.
-                        <code>auto-fit</code> будет вести себя почти как <code>auto-fill</code>, но если есть только
-                        одна строка и есть место для дополнительных колонок, но нет элементов, которые можно вставить в
-                        эти колонки, то тогда
-                        он сделает ширину пустых колонок равную нулю. А если выставить максимальную ширину колонок на
-                        <code>1fr</code>, то браузер разделит оставшееся место поровну между ними.
-                    </p>
+                <p class="answer">3. Какое значение будет в z?</p>
+                <p class="textcode">
+                    var x = 5;
+                    var y = 2;
+                    var z = x + y;
+                    alert(z);
+                </p>
+                <p>
+                    <button onclick="showAnswer3()" class="btn">Ответ</button>
+                    <script>
+                        function showAnswer3() {
+                            var x = 5;
+                            var y = 2;
+                            var z = x + y;
+                            alert(z);
+                        }
+                    </script>
                 </p>
             </div>
             <hr class="hr-dotted">
 
             <!-- question 4 -->
             <div>
-                <p class="answer">4. Как сделать такую табличку? Параметры: первая колонка шириной 100 пикселей, вторая
-                    30%. Первая строчка высотой 200 пикселей, вторая строчка 100 пикселей.</p>
+                <p class="answer">4. Какими тремя способами можно подключить JavaScript код?</p>
                 <p>Ответ</p>
-                <p class="textcode">
-                    grid-template-columns: 100px 30% 1fr;
-                    grid-template-rows: 200px 100px;
-                </p>
-                <div class="grid-container-4q">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
-                </div>
+                <p>1. Внутри html-кода с помощью тэга <code>&lt;script&gt;</code></p>
+                <p>2. Подключить через внешний файл</p>
+                <p><code>&lt;script src="путь_к_файлу_скрипта/script.js"&lt;/script></code></p>
+                <p>3. Использовать строковую запись прямо внутри тега вместе с событием, по наступлению которого этот
+                    код должен выполниться (здесь это событие onClick - нажатие на кнопку):</p>
+                <p><code>&lt;button onClick="alert('Привет!')">Нажми меня&lt;/button></code></p>
             </div>
             <hr class="hr-dotted">
 
             <!-- question 5 -->
             <div>
-                <p class="answer">5. Как сделать такое выравнивание в грид-контейнере? </p>
+                <p class="answer">5. Есть ли какая-то разница между записями <code>typeof str</code> и
+                    <code>typeof(str)</code>? </p>
                 <p>Ответ</p>
-                <p class="textcode">.containier {
-                    display: grid;
-                    gap: 4px;
-                    grid-template-columns: 100px 80px 100px;
-                    grid-template-rows: 40px 80px 40px;
-                    justify-content: space-between;
-                    margin: 0 5%;
-                    width: 400px;
-                    }
-                </p>
-                <div class="grid-container-5q">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
-                    <div>7</div>
-                    <div>8</div>
-                    <div>9</div>
-                </div>
+                <p>Разницы нет. Просто два варианта записи.</p>
             </div>
             <hr class="hr-dotted">
 
             <!-- question 6 -->
             <div>
-                <p class="answer">6. Что такое и как задается <em>grid area</em> ?</p>
-                <p>Ответ</p>
-                <p><code>grid-area</code> - это сокращённая форма записи для свойств <code>grid-row-start</code>,
-                    <code>grid-column-start</code>,
-                    <code>grid-row-end</code> и <code>grid-column-end</code>. Определяет размер и местоположение
-                    грид-элемента в пределах grid row. Задаёт края грид-области грид-элемента.</p>
-                <p><code>grid-column-start / grid-row-start</code> — это линия с которой начинается
-                    элемент</p>
-                <p><code>grid-column-end / grid-row-end</code> — это линия на которой элемент
-                    заканчивается</p>
-                <figure>
-                    <img src="assets/images/grid-area-q6.png" alt="grid-area" class="about-grid-area-img">
-                    <figcaption>Варианты значений</figcaption>
-                </figure>
+                <p class="answer">6. Что вернет код?</p>
+                <p class="textcode">
+                    function showX(x)
+                    {
+                    &nbsp;&nbsp;&nbsp;&nbsp;return x;
+                    }
+                    alert(showX(28));
+                </p>
+                <p>
+                    <button onclick="showAnswer5()" class="btn">Ответ</button>
+                    <script>
+                        function showX(x) {
+                            return x;
+                        }
+
+                        function showAnswer5() {
+                            alert(showX(28));
+                        }
+                    </script>
+                </p>
             </div>
             <hr class="hr-dotted">
 
             <!-- question 7 -->
             <div>
-                <p class="answer">7. Приведите пример использования <code>grid-template-areas</code> (не копированием из
-                    этого
-                    урока 😉)</p>
-                <p>Ответ</p>
-                <p>Можно сделать так:</p>
-                <p class="textcode">.container {
-                    display: grid;
-                    gap: 20px;
-                    height: 100vh;
+                <p class="answer">7. Какой результат будет у выражений ниже?</p>
+                <p class="textcode">
+                    "" + 1 + 0
+                    "" - 1 + 0
+                    true + false
+                    6 / "3"
+                    "2" * "3"
+                    4 + 5 + "px"
+                    "$" + 4 + 5
+                    "4" - 2
+                    "4px" - 2
+                    7 / 0
+                    " -9 " + 5
+                    " -9 " - 5
+                    null + 1
+                    undefined + 1
+                    " \t \n" - 2
+                </p>
+                <p>
+                    <button onclick="showAnswer7()" class="btn">Ответ</button>
+                    <script>
+                        let
+                            v1 = "" + 1 + 0,
+                            v2 = "" - 1 + 0,
+                            v3 = true + false,
+                            v4 = 6 / "3",
+                            v5 = "2" * "3",
+                            v6 = 4 + 5 + "px",
+                            v7 = "$" + 4 + 5,
+                            v8 = "4" - 2,
+                            v9 = "4px" - 2,
+                            v10 = 7 / 0,
+                            v11 = " -9 " + 5,
+                            v12 = " -9 " - 5,
+                            v13 = null + 1,
+                            v14 = undefined + 1,
+                            v15 = " \t \n" - 2
 
-                    grid-template-areas:
-                    "A A A A A A A A A A A A"
-                    "B B B B B B B B B B C C"
-                    "B B B B B B B B B B C C";
-                    }</p>
-                <figure>
-                    <figcaption>Будет так. Более подробно <a href="https://morioh.com/p/421684981fe8">здесь</a>
-                    </figcaption>
-                    <img src="assets/images/grid-temp-area-q7.png" alt="grid-temp-area-q7"
-                        class="about-grid-template-areas-img">
-                </figure>
+                        function showAnswer7() {
+                            alert(
+                                `${v1}\n${v2}\n${v3}\n${v4}\n${v5}\n${v6}\n${v7}\n${v8}\n${v9}\n${v10}\n${v11}\n${v12}\n${v13}\n${v14}\n${v15}`
+                            );
+                        }
+                    </script>
+                </p>
             </div>
             <hr class="hr-dotted">
 
             <!-- question 8 -->
             <div>
-                <p class="answer">8. Каким свойством можно задать такое поведение элементов?</p>
-                <!-- <img src="http://css-live.ru/Primer/grid1/1-MyO6enrNZEL9HSzYmdA8VA.gif" alt="doit3"> -->
-                <p>Ответ</p>
-                <p>Свойством <code>auto-fit</code>, т.к. пустая область схлопывается, а элементы растягиваются по
-                    доступному пространству</p>
+                <p class="answer">8. Ниже приведён код, который запрашивает у пользователя два числа и показывает их
+                    сумму. <br>Он работает неправильно. Код в примере выводит `12` (для значения полей по умолчанию).
+                    В чём ошибка? <br>Исправьте её. Результат должен быть `3`.</p>
+                <p class="textcode">
+                    let a = prompt("Первое число?", 1);
+                    let b = prompt("Второе число?", 2);
+
+                    alert(a + b); // возвращает 12
+                </p>
+                <p>
+                    <button onclick="showAnswer8()" class="btn">Ответ</button>
+                    <script>
+                        function showAnswer8() {
+                            let a = prompt("Первое число?", 1);
+                            let b = prompt("Второе число?", 2);
+
+                            alert(Number(a) + Number(b)); // возвращает 12
+                        }
+                    </script>
+                </p>
+                <p>Правильный скрипт</p>
+                <p class="textcode">
+                    let a = prompt("Первое число?", 1);
+                    let b = prompt("Второе число?", 2);
+
+                    alert(Number(a) + Number(b)); // возвращает 3 по умолчанию
+                </p>
             </div>
             <hr class="hr-dotted">
 
             <!-- question 9 -->
             <div>
-                <p class="answer">9. Самостоятельно разберитесь, как работают именованные линии? Есть ли какие-то
-                    рекомендованные
-                    правила наименований? Если да, то какие?</p>
-                <p>Ответ</p>
-                <p>Использование именованных линий позволяет размещать элементы по имени, а не по номеру.</p>
-                <p>Если необходимо, имена линиям можно задать внутри квадратных скобок в списке треков. Здесь важно
-                    помнить, что вы именуете линию, а не трек, который следует после неё. Назвав линии, вы можете
-                    использовать их имена вместо номеров при позиционировании элементов на сетке.</p>
-                <p>Имя может быть любым, кроме ключевого слова <code>span</code>. Хорошей практикой является
-                    именование с использованием суффикса <code>-start</code> для начальных
-                    линий (не важно, это линия строки или колонки), и <code>-end</code> для конечных. Например,
-                    <code>main-start</code> и <code>main-end</code> или <code>sidebar-start</code> и
-                    <code>sidebar-end</code>.</p>
-                <p>Основные правила: </p>
-                <p>Можно использовать почти любое имя (кроме ключевого слова <code>span</code>), однако можно
-                    использовать и
-                    область, созданную из этих линий, если их имена заканчиваются на <code>-start</code> и
-                    <code>-end</code></p>
-                <p>Линии могут иметь несколько имён, заданных внутри квадратных скобок и разделённых пробелом</p>
-                <p>Несколько линий могут иметь одинаковое имя; если нужна определённая, просто добавьте после
-                    названия номер нужной линии по порядку </p>
-                <p><a href="https://habr.com/ru/post/478850/" target="_blank">Источник</a></p>
+                <p class="answer">9. Что будет в x?</p>
+                <p class="textcode">
+                    x = 5;
+                    x++;
+                    x -= 2;
+                    alert(x);
+                </p>
+                <p>
+                    <button onclick="showAnswer9()" class="btn">Ответ</button>
+                    <script>
+                        function showAnswer9() {
+                            x = 5;
+                            x++;
+                            x -= 2;
+                            alert(x);
+                        }
+                    </script>
+                </p>
             </div>
             <hr class="hr-dotted">
 
             <!-- question 10 -->
             <div>
-                <p class="answer">10. Как проще всего задать 12 одинаковых по ширине колонок?</p>
-                <p>Ответ</p>
-                <p>Вот так:</p>
-                <p><code>grid-template-columns: repeat(12, 1fr);</code>
+                <p class="answer">10. Что выведет этот код?</p>
+                <p class="textcode">
+                    function sum(x, y=0) {
+                    &nbsp;&nbsp;&nbsp;&nbsp;return x+y;
+                    }
+                    alert(sum(5));
+                </p>
+                <p>
+                    <button onclick="showAnswer10()" class="btn">Ответ</button>
+                    <script>
+                        function sum(x, y = 0) {
+                            return x + y;
+                        }
+
+                        function showAnswer10() {
+                            alert(sum(5));
+                        }
+                    </script>
                 </p>
             </div>
 
-        </section>
-
-        <!-- Game results -->
-        <section class="game-res">
-            <h2>Результаты игры <a href="https://cssgridgarden.com/#ru" target="_blank">Grid Garden</a></h2>
-            <figure><img src="assets/images/grid-garden.png" alt="grid-garden" class="about-grid-area-img"></figur>
         </section>
 
         <aside class="asd">
