@@ -1,0 +1,334 @@
+.main-container {
+    display: grid;
+    grid-template-areas:
+        "header header header header header"
+        "descr  descr  descr  descr  asd   "
+        "leftb  leftb  rightb rightb asd   "
+        "leftb  leftb  rightb rightb asd   "
+        "answ   answ   answ   answ   asd   "
+        "game   game   game   game   asd   "
+        "foot   foot   foot   foot   foot  ";
+    max-width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: 25% 15vh repeat(2, 10vh) 1fr 30% 25%; */
+    background-color: #fff8e5;
+}
+
+.main-head {
+    grid-area: header;
+    background-color: #e1e1e1;
+}
+
+.main-description {
+    grid-area: descr;
+    margin: 3em 3em 2em 3em;
+    background-color: #fff8e5;
+}
+
+.leftb {
+    grid-area: leftb;
+}
+
+.rightb {
+    grid-area: rightb;
+}
+
+.leftb,
+.rightb {
+    min-height: 20vh;
+    margin: 1em;
+    padding: 1.5em;
+    background-color: #fdeabd;
+    border-radius: 1em;
+}
+
+.answers {
+    grid-area: answ;
+    margin: 1em;
+    padding: 1.5em;
+    border-radius: 1em;
+    background-color: #fdeabd;
+    max-width: 100%;
+}
+
+.game-res {
+    grid-area: game;
+    margin: 1em;
+    padding: 1.5em;
+    border-radius: 1em;
+    background-color: #fdeabd;
+}
+
+.asd {
+    grid-area: asd;
+    min-width: 24vw;
+    background-color: #deeccd;
+}
+
+.footer {
+    grid-area: foot;
+    background-color: #e1e1e1;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.game-res figure {
+    margin: 2em 1em;
+    width: 100%;
+}
+
+figcaption {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #cc6008;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-grid-area-img,
+.about-grid-template-areas-img {
+    max-width: 70%;
+}
+
+.lrb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.textcode {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    padding: 0 0.5em;
+    margin: 1em 2em 2em 2em;
+    background-color: #fff8e5;
+    border-radius: 0.3em;
+    white-space: pre-wrap;
+}
+
+/* ----------------------------- */
+/* LAYOUT for homework's answers */
+/* ----------------------------- */
+
+
+/* for question 4 */
+
+.grid-container-4q {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 100px 30% 1fr;
+    grid-template-rows: 200px 100px;
+    margin: 0 8%;
+}
+
+/* for question 5 */
+
+.grid-container-5q {
+    display: grid;
+    gap: 4px;
+    grid-template-columns: 100px 80px 100px;
+    grid-template-rows: 40px 80px 40px;
+    justify-content: space-between;
+    margin: 0 5%;
+    width: 400px;
+}
+
+.grid-container-4q div,
+.grid-container-5q div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a0b2e2;
+    border-radius: 0.3em;
+    font-size: 16pt;
+    color: #eff4f8;
+}
+
+/* -------------------------------------- */
+/* одинаковое, можно вынести в отдельную  */
+/* -------------------------------------- */
+
+/* оформление header и navigation */
+
+.header-beauty {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: #e1e1e1;
+}
+
+.logo-header {
+    margin: 0.5em;
+    padding: 0.25em 0.5em;
+    /* fonts */
+    font-family: 'Patrick Hand', sans-serif, serif;
+    letter-spacing: 4px;
+    background-color: #f8f8f8;
+    border: none;
+    border-radius: 0.4em;
+}
+
+.navigation-header {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.navigation-header div {
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    min-width: 110px;
+    max-width: 200px;
+    text-align: center;
+    background-color: #f8f8f8;
+    border: none;
+    border-radius: 0.3em;
+}
+
+.navigation-header div a {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #545454;
+    text-decoration: none;
+}
+
+.navigation-header div:hover {
+    background-color: #c5c5c5;
+}
+
+/* FOOTER */
+/* дать имя классу на других страницах */
+
+.footer-beauty {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    background-color: #e1e1e1;
+}
+
+.footer-beauty div {
+    /* element */
+    flex: 0 1 100%;
+    margin: 0.8em;
+    padding: 1em;
+    background-color: #fafafa;
+    border: none;
+    border-radius: 0.3em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+}
+
+/* описание страницы */
+
+h2,
+.description-left-box {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8em;
+    letter-spacing: 0.05em;
+}
+
+.ps-text-right {
+    text-align: right;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+/* ASIDE */
+
+.right-box-container {
+    /* container */
+    display: flex;
+    flex-direction: column;
+    /* element */
+    flex: 0 1 25%;
+    background-color: #deeccd;
+}
+
+/* element for right-box */
+.right-box-container div {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 1em;
+    min-height: 200px;
+    background-color: #eff7eb;
+    border: none;
+    border-radius: 1em;
+}
+
+.right-box-img-hover,
+.right-box-img-hover-2,
+.right-box-img-hover-3,
+.right-box-img-hover-4 {
+    flex: 0 1 100%;
+    width: 100%;
+    min-height: 150px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.right-box-img-hover {
+    background-image: url("../../assets/images/week-1.png");
+}
+
+.right-box-img-hover-2 {
+    background-image: url("../../assets/images/page-blog.png");
+}
+
+.right-box-img-hover-3 {
+    background-image: url("../../assets/images/business-card.png");
+}
+
+.right-box-img-hover-4 {
+    background-image: url("../../assets/images/dashboard.png");
+}
+
+.right-box-img-hover:hover,
+.right-box-img-hover-2:hover,
+.right-box-img-hover-3:hover,
+.right-box-img-hover-4:hover {
+    background-image: url("../../assets/images/week-hover.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.right-box-container p {
+    font-size: 1em;
+}
+
+/* answers */
+
+.answer {
+    font-size: 1.2em;
+    color: #04754f;
+}
+
+code {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    padding: 0 0.5em;
+    background-color: #fff8e5;
+    border-radius: 0.3em;
+}
+
+.hr-dotted {
+    margin: 1.5em 0;
+    padding: 0;
+    height: 0;
+    border: none;
+    border-top: 2px dotted #a0a0a0;
+}
