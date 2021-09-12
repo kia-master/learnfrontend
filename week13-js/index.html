@@ -120,8 +120,8 @@
                 <figure>
                     <img src="assets/images/que2.png" alt="grid-area" class="about-grid-area-img">
                 </figure>
-                <p>
-                    <button onclick="showAnswer2()" class="btn">Ответ</button>
+                <div class="answer-btn">
+                    <button onclick="showAnswer2()" class="btn btn-answ">Ответ</button>
                     <script>
                         function showAnswer2() {
                             let name = "Ilya";
@@ -130,7 +130,7 @@
                             alert(`hello ${name}`);
                         }
                     </script>
-                </p>
+                </div>
             </div>
             <hr class="hr-dotted">
 
@@ -143,8 +143,8 @@
                     var z = x + y;
                     alert(z);
                 </p>
-                <p>
-                    <button onclick="showAnswer3()" class="btn">Ответ</button>
+                <div class="answer-btn">
+                    <button onclick="showAnswer3()" class="btn btn-answ">Ответ</button>
                     <script>
                         function showAnswer3() {
                             var x = 5;
@@ -153,7 +153,7 @@
                             alert(z);
                         }
                     </script>
-                </p>
+                </div>
             </div>
             <hr class="hr-dotted">
 
@@ -189,8 +189,8 @@
                     }
                     alert(showX(28));
                 </p>
-                <p>
-                    <button onclick="showAnswer5()" class="btn">Ответ</button>
+                <div class="answer-btn">
+                    <button onclick="showAnswer5()" class="btn btn-answ">Ответ</button>
                     <script>
                         function showX(x) {
                             return x;
@@ -200,7 +200,7 @@
                             alert(showX(28));
                         }
                     </script>
-                </p>
+                </div>
             </div>
             <hr class="hr-dotted">
 
@@ -224,8 +224,8 @@
                     undefined + 1
                     " \t \n" - 2
                 </p>
-                <p>
-                    <button onclick="showAnswer7()" class="btn">Ответ</button>
+                <div class="answer-btn">
+                    <button onclick="showAnswer7()" class="btn btn-answ">Ответ</button>
                     <script>
                         let
                             v1 = "" + 1 + 0,
@@ -250,7 +250,7 @@
                             );
                         }
                     </script>
-                </p>
+                </div>
             </div>
             <hr class="hr-dotted">
 
@@ -265,8 +265,8 @@
 
                     alert(a + b); // возвращает 12
                 </p>
-                <p>
-                    <button onclick="showAnswer8()" class="btn">Ответ</button>
+                <div class="answer-btn">
+                    <button onclick="showAnswer8()" class="btn btn-answ">Ответ</button>
                     <script>
                         function showAnswer8() {
                             let a = prompt("Первое число?", 1);
@@ -275,7 +275,7 @@
                             alert(Number(a) + Number(b)); // возвращает 12
                         }
                     </script>
-                </p>
+                </div>
                 <p>Правильный скрипт</p>
                 <p class="textcode">
                     let a = prompt("Первое число?", 1);
@@ -295,8 +295,8 @@
                     x -= 2;
                     alert(x);
                 </p>
-                <p>
-                    <button onclick="showAnswer9()" class="btn">Ответ</button>
+                <div class="answer-btn">
+                    <button onclick="showAnswer9()" class="btn btn-answ">Ответ</button>
                     <script>
                         function showAnswer9() {
                             x = 5;
@@ -305,7 +305,7 @@
                             alert(x);
                         }
                     </script>
-                </p>
+                </div>
             </div>
             <hr class="hr-dotted">
 
@@ -318,8 +318,8 @@
                     }
                     alert(sum(5));
                 </p>
-                <p>
-                    <button onclick="showAnswer10()" class="btn">Ответ</button>
+                <div class="answer-btn">
+                    <button onclick="showAnswer10()" class="btn btn-answ">Ответ</button>
                     <script>
                         function sum(x, y = 0) {
                             return x + y;
@@ -329,7 +329,7 @@
                             alert(sum(5));
                         }
                     </script>
-                </p>
+                </div>
             </div>
 
         </section>
