@@ -6,7 +6,6 @@
         "leftb  leftb  rightb rightb asd   "
         "leftb  leftb  rightb rightb asd   "
         "answ   answ   answ   answ   asd   "
-        "game   game   game   game   asd   "
         "foot   foot   foot   foot   foot  ";
     max-width: 100%;
     height: 100%;
@@ -50,14 +49,6 @@
     border-radius: 1em;
     background-color: #fdeabd;
     max-width: 100%;
-}
-
-.game-res {
-    grid-area: game;
-    margin: 1em;
-    padding: 1.5em;
-    border-radius: 1em;
-    background-color: #fdeabd;
 }
 
 .asd {
@@ -298,11 +289,16 @@ code {
     border: #04754f;
 } */
 
+.answer-btn {
+    display: flex;
+    justify-content: center;
+}
+
 .btn {
     display: inline-block;
     box-sizing: border-box;
     padding: 0 24px;
-    margin: 0 15px 15px 0;
+    margin: 0 0 15px 0;
     outline: none;
     border: none;
     border-radius: 3px;
@@ -319,4 +315,9 @@ code {
 
 .btn:hover {
     box-shadow: 0 1px 1px 0 #cfcfcf, 0 2px 5px 0 #cfcfcf;
+}
+
+.btn-answ {
+    min-width: 40%;
+    margin: 15px 0 0 0;
 }
