@@ -245,7 +245,7 @@ h2,
 
 p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 12pt;
+    font-size: 1rem;
     line-height: 1.5em;
 }
 
@@ -316,7 +316,7 @@ p {
 /* answers */
 
 .answer {
-    font-size: 12pt;
+    font-size: 1rem;
     color: #04754f;
 }
 
