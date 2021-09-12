@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>week 14</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <link rel="stylesheet" href="../assets/styles/week_style.css">
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-480px.css" media="screen and (max-width : 480px)" />
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <header class="main-head">
+            <div class="header-beauty">
+                <h1 class="logo-header">I LEARN FRONTEND</h1>
+                <nav class="navigation-header">
+                    <div><a href="#">Недели</a></div>
+                    <div><a href="#">Проекты</a></div>
+                    <div><a href="https://github.com/kia-master" target="_blank">Github</a></div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="main-description">
+            <h2 class="description-left-box">Привет! Меня зовут Ирина Куликова</h2>
+            <p>Давай ответим на вопросы домашки по шестой недели.</p>
+            <p class="ps-text-right">PS. Это не окончательный layout ...</p>
+            <p class="ps-text-right">36.09 - 12.09 2021</p>
+        </section>
+
+        <section class="leftb">
+            <div class="lrb">
+                <h2>Практическое задание 1</h2>
+                <p>Приветствие</p>
+                <button onclick="getName()" class="btn">Click me!</button>
+                <script>
+                    function getName() {
+                        let name = prompt('Как тебя зовут?');
+                        alert(`Добро пожаловать ${name}!`);
+                    }
+                </script>
+            </div>
+        </section>
+
+        <section class="rightb">
+            <div class="lrb">
+                <h2>Практическое задание 2</h2>
+                <p>Меняем цвет по клику на div</p>
+                <p>Калькулятор</p>
+                <button onclick="calcSum()" class="btn">Сложить</button>
+                <button onclick="calcSubtract()" class="btn">Вычесть</button>
+                <button onclick="calcDivide()" class="btn">Поделить</button>
+                <button onclick="calcMultiply()" class="btn">Умножить</button>
+                <script>
+                    function getNumberOne() {
+                        let first_num = prompt('Введите первое число: ');
+                        return Number(first_num);
+                    }
+
+                    function getNumberTwo() {
+                        let second_num = prompt('Введите второе число: ')
+                        return Number(second_num);
+                    }
+
+                    function calcSum() {
+                        let a = getNumberOne(),
+                            b = getNumberTwo();
+                        let n = a + b;
+                        alert(`${a} + ${b} = ${n}`);
+                    }
+
+                    function calcSubtract() {
+                        let a = getNumberOne(),
+                            b = getNumberTwo();
+                        let n = a - b;
+                        alert(`${a} - ${b} = ${n}`);
+                    }
+
+                    function calcDivide() {
+                        let a = getNumberOne(),
+                            b = getNumberTwo();
+                        let n = a / b;
+                        alert(`${a} / ${b} = ${n}`);
+                    }
+
+                    function calcMultiply() {
+                        let a = getNumberOne(),
+                            b = getNumberTwo();
+                        let n = a * b;
+                        alert(`${a} * ${b} = ${n}`);
+                    }
+                </script>
+            </div>
+        </section>
+
+        <section class="task3 answers">
+            <h2>Практическое задание 3</h2>
+        </section>
+
+        <!-- Answers on questions -->
+        <section class="answers">
+            <h2>Ответы на вопросы</h2>
+
+            <!-- question 1 -->
+            <div>
+                <p class="answer">1. Какие есть способы объявления функций?</p>
+                <p>Ответ</p>
+                <p>1. С помощью служебного слова <code>let</code>:</p>
+                <p><code>let message;</code></p>
+                <p>2. С помощью служебного слова <code>var</code> (в более старых скриптах):</p>
+                <p><code>var message;</code></p>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 2 -->
+            <div>
+                <p class="answer">2. Приведите примеры вызова одной и той же функции всеми известными вам способами.</p>
+                <figure>
+                    <img src="assets/images/que2.png" alt="grid-area" class="about-grid-area-img">
+                </figure>
+                <div class="answer-btn">
+                    <button onclick="showAnswer2()" class="btn btn-answ">Ответ</button>
+                    <script>
+                        function showAnswer2() {
+                            let name = "Ilya";
+                            alert(`hello ${1}`);
+                            alert(`hello ${"name"}`);
+                            alert(`hello ${name}`);
+                        }
+                    </script>
+                </div>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 3 -->
+            <div>
+                <p class="answer">3. В чем разница между тестированием и отладкой (дебаггингом)? А что такое
+                    логирование?</p>
+                <p class="textcode">
+                    var x = 5;
+                    var y = 2;
+                    var z = x + y;
+                    alert(z);
+                </p>
+                <div class="answer-btn">
+                    <button onclick="showAnswer3()" class="btn btn-answ">Ответ</button>
+                    <script>
+                        function showAnswer3() {
+                            var x = 5;
+                            var y = 2;
+                            var z = x + y;
+                            alert(z);
+                        }
+                    </script>
+                </div>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 4 -->
+            <div>
+                <p class="answer">4. В чем разница между Function Expression и Function Declaration? </p>
+                <p>Ответ</p>
+                <p>1. Внутри html-кода с помощью тэга <code>&lt;script&gt;</code></p>
+                <p>2. Подключить через внешний файл</p>
+                <p><code>&lt;script src="путь_к_файлу_скрипта/script.js"&lt;/script></code></p>
+                <p>3. Использовать строковую запись прямо внутри тега вместе с событием, по наступлению которого этот
+                    код должен выполниться (здесь это событие onClick - нажатие на кнопку):</p>
+                <p><code>&lt;button onClick="alert('Привет!')">Нажми меня&lt;/button></code></p>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 5 -->
+            <div>
+                <p class="answer">5. Что делает функция <code>console.log()</code> ? </p>
+                <p>Ответ</p>
+                <p>Разницы нет. Просто два варианта записи.</p>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 6 -->
+            <div>
+                <p class="answer">6. Что такое BOM и DOM?</p>
+                <p class="textcode">
+                    function showX(x)
+                    {
+                    &nbsp;&nbsp;&nbsp;&nbsp;return x;
+                    }
+                    alert(showX(28));
+                </p>
+                <div class="answer-btn">
+                    <button onclick="showAnswer5()" class="btn btn-answ">Ответ</button>
+                    <script>
+                        function showX(x) {
+                            return x;
+                        }
+
+                        function showAnswer5() {
+                            alert(showX(28));
+                        }
+                    </script>
+                </div>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 7 -->
+            <div>
+                <p class="answer">7. Есть вот такая страница:</p>
+                <p class="textcode">
+                    "" + 1 + 0
+                    "" - 1 + 0
+                    true + false
+                    6 / "3"
+                    "2" * "3"
+                    4 + 5 + "px"
+                    "$" + 4 + 5
+                    "4" - 2
+                    "4px" - 2
+                    7 / 0
+                    " -9 " + 5
+                    " -9 " - 5
+                    null + 1
+                    undefined + 1
+                    " \t \n" - 2
+                </p>
+                <div class="answer-btn">
+                    <button onclick="showAnswer7()" class="btn btn-answ">Ответ</button>
+                    <script>
+                        let
+                            v1 = "" + 1 + 0,
+                            v2 = "" - 1 + 0,
+                            v3 = true + false,
+                            v4 = 6 / "3",
+                            v5 = "2" * "3",
+                            v6 = 4 + 5 + "px",
+                            v7 = "$" + 4 + 5,
+                            v8 = "4" - 2,
+                            v9 = "4px" - 2,
+                            v10 = 7 / 0,
+                            v11 = " -9 " + 5,
+                            v12 = " -9 " - 5,
+                            v13 = null + 1,
+                            v14 = undefined + 1,
+                            v15 = " \t \n" - 2
+
+                        function showAnswer7() {
+                            alert(
+                                `${v1}\n${v2}\n${v3}\n${v4}\n${v5}\n${v6}\n${v7}\n${v8}\n${v9}\n${v10}\n${v11}\n${v12}\n${v13}\n${v14}\n${v15}`
+                            );
+                        }
+                    </script>
+                </div>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 8 -->
+            <div>
+                <p class="answer">8. Как сделать переход на другую страницу при клике на кнопку (без <code>&lt;a
+                        href=...></code>, только средствами JavaScript)?</p>
+                <p class="textcode">
+                    let a = prompt("Первое число?", 1);
+                    let b = prompt("Второе число?", 2);
+
+                    alert(a + b); // возвращает 12
+                </p>
+                <div class="answer-btn">
+                    <button onclick="showAnswer8()" class="btn btn-answ">Ответ</button>
+                    <script>
+                        function showAnswer8() {
+                            let a = prompt("Первое число?", 1);
+                            let b = prompt("Второе число?", 2);
+
+                            alert(Number(a) + Number(b)); // возвращает 12
+                        }
+                    </script>
+                </div>
+                <p>Правильный скрипт</p>
+                <p class="textcode">
+                    let a = prompt("Первое число?", 1);
+                    let b = prompt("Второе число?", 2);
+
+                    alert(Number(a) + Number(b)); // возвращает 3 по умолчанию
+                </p>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 9 -->
+            <div>
+                <p class="answer">9. Как можно обнулить (очистить) значение внутри input?</p>
+                <p class="textcode">
+                    x = 5;
+                    x++;
+                    x -= 2;
+                    alert(x);
+                </p>
+                <div class="answer-btn">
+                    <button onclick="showAnswer9()" class="btn btn-answ">Ответ</button>
+                    <script>
+                        function showAnswer9() {
+                            x = 5;
+                            x++;
+                            x -= 2;
+                            alert(x);
+                        }
+                    </script>
+                </div>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 10 -->
+            <div>
+                <p class="answer">10. Как будет выглядеть ваша функция приветствия из прошлого домашнего задания, если
+                    ее переписать в стрелочном формате?</p>
+                <p class="textcode">
+                    function sum(x, y=0) {
+                    &nbsp;&nbsp;&nbsp;&nbsp;return x+y;
+                    }
+                    alert(sum(5));
+                </p>
+                <div class="answer-btn">
+                    <button onclick="showAnswer10()" class="btn btn-answ">Ответ</button>
+                    <script>
+                        function sum(x, y = 0) {
+                            return x + y;
+                        }
+
+                        function showAnswer10() {
+                            alert(sum(5));
+                        }
+                    </script>
+                </div>
+            </div>
+
+        </section>
+
+        <aside class="asd">
+            <div class="right-box-container">
+                <div>
+                    <h2>Страничка про кота</h2>
+                    <p>Это первая работа. Первая неделя ... </p>
+                    <a href="https://kia-master.github.io/learnfrontend/week1/" class="right-box-img-hover"
+                        target="_blank">
+                    </a>
+                </div>
+                <div>
+                    <h2>Страница блогера</h2>
+                    <p>Проект для третьей недели учебы. Доработанный, с векторными и растровыми картинками</p>
+                    <a href="https://kia-master.github.io/learnfrontend/week3/" class="right-box-img-hover-2"
+                        target="_blank">
+                    </a>
+                </div>
+                <div>
+                    <h2>Сайт-визитка</h2>
+                    <p>Это окончательная верстка сайта-визитки с использованием позиционирования.</p>
+                    <a href="https://kia-master.github.io/learnfrontend/buscard/" class="right-box-img-hover-3"
+                        target="_blank">
+                    </a>
+                </div>
+                <div>
+                    <h2>Шаблон на гридах</h2>
+                    <p>За основу был взят шаблон Figma - Dashboard. Небольшая разметка макета.</p>
+                    <a href="https://kia-master.github.io/learnfrontend/dashboard-grid/" class="right-box-img-hover-4"
+                        target="_blank">
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <footer class="footer">
+            <div class="footer-beauty">
+                <div>Секция 1</div>
+                <div>Секция 2</div>
+                <div>Секция 3</div>
+                <div>Секция 4</div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
