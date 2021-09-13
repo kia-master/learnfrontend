@@ -40,7 +40,7 @@
             <div class="lrb">
                 <h2>Практическое задание 1</h2>
                 <p>Приветствие</p>
-                <button onclick="getName()" class="btn">Click me!</button>
+                <button onclick="getName()" class="btn btn-answ">Click me!</button>
                 <script>
                     function getName() {
                         let name = prompt('Как тебя зовут?');
@@ -54,55 +54,30 @@
             <div class="lrb">
                 <h2>Практическое задание 2</h2>
                 <p>Меняем цвет по клику на div</p>
-                <p>Калькулятор</p>
-                <button onclick="calcSum()" class="btn">Сложить</button>
-                <button onclick="calcSubtract()" class="btn">Вычесть</button>
-                <button onclick="calcDivide()" class="btn">Поделить</button>
-                <button onclick="calcMultiply()" class="btn">Умножить</button>
-                <script>
-                    function getNumberOne() {
-                        let first_num = prompt('Введите первое число: ');
-                        return Number(first_num);
-                    }
-
-                    function getNumberTwo() {
-                        let second_num = prompt('Введите второе число: ')
-                        return Number(second_num);
-                    }
-
-                    function calcSum() {
-                        let a = getNumberOne(),
-                            b = getNumberTwo();
-                        let n = a + b;
-                        alert(`${a} + ${b} = ${n}`);
-                    }
-
-                    function calcSubtract() {
-                        let a = getNumberOne(),
-                            b = getNumberTwo();
-                        let n = a - b;
-                        alert(`${a} - ${b} = ${n}`);
-                    }
-
-                    function calcDivide() {
-                        let a = getNumberOne(),
-                            b = getNumberTwo();
-                        let n = a / b;
-                        alert(`${a} / ${b} = ${n}`);
-                    }
-
-                    function calcMultiply() {
-                        let a = getNumberOne(),
-                            b = getNumberTwo();
-                        let n = a * b;
-                        alert(`${a} * ${b} = ${n}`);
-                    }
-                </script>
+                <div class="color">
+                    <div id="color-red" onclick="changeColorRed()">
+                        <p id="text-red">Red</p>
+                    </div>
+                    <div id="color-green" onclick="changeColorGreen()">
+                        <p id="text-green">Green</p>
+                    </div>
+                    <div id="color-blue" onclick="changeColorBlue()">
+                        <p id="text-blue">Blue</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="task3 answers">
             <h2>Практическое задание 3</h2>
+            <p>Простая галерея</p>
+            <div class="gallery-image">
+                <img src="assets/images/img1.jpg" alt="gallery-img1">
+            </div>
+            <div class="gallery-btn">
+                <button onclick="getPreviousImg()" class="btn">Назад</button>
+                <button onclick="getNextImg()" class="btn">Вперед</button>
+            </div>
         </section>
 
         <!-- Answers on questions -->
@@ -113,30 +88,30 @@
             <div>
                 <p class="answer">1. Какие есть способы объявления функций?</p>
                 <p>Ответ</p>
-                <p>1. С помощью служебного слова <code>let</code>:</p>
-                <p><code>let message;</code></p>
-                <p>2. С помощью служебного слова <code>var</code> (в более старых скриптах):</p>
-                <p><code>var message;</code></p>
+                <p>1. Function Declaration (основной)</p>
+                <p>2. Function Expression</p>
+                <p>3. Стрелочные функции (самый новый)</p>
             </div>
             <hr class="hr-dotted">
 
             <!-- question 2 -->
             <div>
                 <p class="answer">2. Приведите примеры вызова одной и той же функции всеми известными вам способами.</p>
-                <figure>
-                    <img src="assets/images/que2.png" alt="grid-area" class="about-grid-area-img">
-                </figure>
-                <div class="answer-btn">
-                    <button onclick="showAnswer2()" class="btn btn-answ">Ответ</button>
-                    <script>
-                        function showAnswer2() {
-                            let name = "Ilya";
-                            alert(`hello ${1}`);
-                            alert(`hello ${"name"}`);
-                            alert(`hello ${name}`);
-                        }
-                    </script>
-                </div>
+                <p>Ответ</p>
+                <p>Function Declaration</p>
+                <p class="textcode">
+                    function sum(a, b) {
+                    return a + b; }
+                </p>
+                <p>Function Expression</p>
+                <p class="textcode">
+                    var sum = function(a, b) {
+                    return a + b; };
+                </p>
+                <p>Arrow functions</p>
+                <p class="textcode">
+                    let sum = (a, b) => a + b;
+                </p>
             </div>
             <hr class="hr-dotted">
 
@@ -144,23 +119,12 @@
             <div>
                 <p class="answer">3. В чем разница между тестированием и отладкой (дебаггингом)? А что такое
                     логирование?</p>
-                <p class="textcode">
-                    var x = 5;
-                    var y = 2;
-                    var z = x + y;
-                    alert(z);
-                </p>
-                <div class="answer-btn">
-                    <button onclick="showAnswer3()" class="btn btn-answ">Ответ</button>
-                    <script>
-                        function showAnswer3() {
-                            var x = 5;
-                            var y = 2;
-                            var z = x + y;
-                            alert(z);
-                        }
-                    </script>
-                </div>
+                <p>Ответ</p>
+                <p>Когда проводят тестирование - тестируют продукт (сайт) - выявляют ошибки. Когда проводят отладку,
+                    исправляют ошибки, которые были выявлены в ходе тестирования.</p>
+                <p>Логирование - это также отладочный инструмент, который позволяет вывести необходимую информацию в
+                    консоль или файл.</p>
+
             </div>
             <hr class="hr-dotted">
 
@@ -168,12 +132,12 @@
             <div>
                 <p class="answer">4. В чем разница между Function Expression и Function Declaration? </p>
                 <p>Ответ</p>
-                <p>1. Внутри html-кода с помощью тэга <code>&lt;script&gt;</code></p>
-                <p>2. Подключить через внешний файл</p>
-                <p><code>&lt;script src="путь_к_файлу_скрипта/script.js"&lt;/script></code></p>
-                <p>3. Использовать строковую запись прямо внутри тега вместе с событием, по наступлению которого этот
-                    код должен выполниться (здесь это событие onClick - нажатие на кнопку):</p>
-                <p><code>&lt;button onClick="alert('Привет!')">Нажми меня&lt;/button></code></p>
+                <p>1. В объявлении</p>
+                <p>2. С помощью Function Expression результаты функции можно сразу присвоить переменной.</p>
+                <p>3. Function Expression создаётся, когда выполнение доходит до него, и затем уже может использоваться.
+                    <br> Function Declaration можно использовать во всем скрипте (или блоке кода, если функция объявлена
+                    в блоке).
+                </p>
             </div>
             <hr class="hr-dotted">
 
@@ -181,82 +145,47 @@
             <div>
                 <p class="answer">5. Что делает функция <code>console.log()</code> ? </p>
                 <p>Ответ</p>
-                <p>Разницы нет. Просто два варианта записи.</p>
+                <p>Для вывод информации в консоль. Например, <code>console.log(text)</code>, выведет в консоль
+                    содержимое
+                    переменной <code>text</code></p>
             </div>
             <hr class="hr-dotted">
 
             <!-- question 6 -->
             <div>
                 <p class="answer">6. Что такое BOM и DOM?</p>
-                <p class="textcode">
-                    function showX(x)
-                    {
-                    &nbsp;&nbsp;&nbsp;&nbsp;return x;
-                    }
-                    alert(showX(28));
-                </p>
-                <div class="answer-btn">
-                    <button onclick="showAnswer5()" class="btn btn-answ">Ответ</button>
-                    <script>
-                        function showX(x) {
-                            return x;
-                        }
-
-                        function showAnswer5() {
-                            alert(showX(28));
-                        }
-                    </script>
-                </div>
+                <p>Ответ</p>
+                <p><b>Document Object Model</b>, сокращённо <b>DOM</b> – объектная модель документа, которая
+                    представляет все содержимое страницы в виде объектов, которые можно менять. В модели DOM каждый
+                    HTML-тег является объектом. Вложенные теги являются «детьми» родительского элемента. Текст, который
+                    находится внутри тега, также является объектом.</p>
+                <p><b>Browser Object Model</b>, <b>BOM</b> (Объектная модель браузера) – это дополнительные объекты,
+                    предоставляемые браузером (окружением), чтобы работать со всем, кроме документа, например,
+                    информация о самом браузере и операционной системе, получение текущего URL и т.п.</p>
             </div>
             <hr class="hr-dotted">
 
             <!-- question 7 -->
             <div>
                 <p class="answer">7. Есть вот такая страница:</p>
+                <figure>
+                    <img src="assets/images/que7.png" alt="code-page" class="about-grid-area-img">
+                </figure>
+                <p>Как найти в ней?…</p>
+                <p>1. Таблицу с <code>id="age-table"</code></p>
                 <p class="textcode">
-                    "" + 1 + 0
-                    "" - 1 + 0
-                    true + false
-                    6 / "3"
-                    "2" * "3"
-                    4 + 5 + "px"
-                    "$" + 4 + 5
-                    "4" - 2
-                    "4px" - 2
-                    7 / 0
-                    " -9 " + 5
-                    " -9 " - 5
-                    null + 1
-                    undefined + 1
-                    " \t \n" - 2
+                    let table = document.getElementById('age-table');
                 </p>
-                <div class="answer-btn">
-                    <button onclick="showAnswer7()" class="btn btn-answ">Ответ</button>
-                    <script>
-                        let
-                            v1 = "" + 1 + 0,
-                            v2 = "" - 1 + 0,
-                            v3 = true + false,
-                            v4 = 6 / "3",
-                            v5 = "2" * "3",
-                            v6 = 4 + 5 + "px",
-                            v7 = "$" + 4 + 5,
-                            v8 = "4" - 2,
-                            v9 = "4px" - 2,
-                            v10 = 7 / 0,
-                            v11 = " -9 " + 5,
-                            v12 = " -9 " - 5,
-                            v13 = null + 1,
-                            v14 = undefined + 1,
-                            v15 = " \t \n" - 2
-
-                        function showAnswer7() {
-                            alert(
-                                `${v1}\n${v2}\n${v3}\n${v4}\n${v5}\n${v6}\n${v7}\n${v8}\n${v9}\n${v10}\n${v11}\n${v12}\n${v13}\n${v14}\n${v15}`
-                            );
-                        }
-                    </script>
-                </div>
+                <p>2. Все элементы <code>label</code> внутри этой таблицы (их три)</p>
+                <p class="textcode">
+                    table.getElementsByTagName('label');
+                    // или
+                    let label = document.querySelectorAll('#age-table label');
+                </p>
+                <p>3. Форму <code>form</code> с именем <code>name="search"</code></p>
+                <p class="textcode">
+                    let form = document.querySelector('form[name="search"]');
+                </p>
             </div>
             <hr class="hr-dotted">
 
@@ -264,53 +193,27 @@
             <div>
                 <p class="answer">8. Как сделать переход на другую страницу при клике на кнопку (без <code>&lt;a
                         href=...></code>, только средствами JavaScript)?</p>
+                <p>Ответ</p>
+                <p>С помощью BOM-объекта <code>location</code> :</p>
                 <p class="textcode">
-                    let a = prompt("Первое число?", 1);
-                    let b = prompt("Второе число?", 2);
-
-                    alert(a + b); // возвращает 12
+                    &lt;button onclick="window.location='https://www.google.com'"> Click Me &lt;/button>
                 </p>
-                <div class="answer-btn">
-                    <button onclick="showAnswer8()" class="btn btn-answ">Ответ</button>
-                    <script>
-                        function showAnswer8() {
-                            let a = prompt("Первое число?", 1);
-                            let b = prompt("Второе число?", 2);
 
-                            alert(Number(a) + Number(b)); // возвращает 12
-                        }
-                    </script>
-                </div>
-                <p>Правильный скрипт</p>
-                <p class="textcode">
-                    let a = prompt("Первое число?", 1);
-                    let b = prompt("Второе число?", 2);
-
-                    alert(Number(a) + Number(b)); // возвращает 3 по умолчанию
-                </p>
             </div>
             <hr class="hr-dotted">
 
             <!-- question 9 -->
             <div>
                 <p class="answer">9. Как можно обнулить (очистить) значение внутри input?</p>
+                <p>Ответ</p>
                 <p class="textcode">
-                    x = 5;
-                    x++;
-                    x -= 2;
-                    alert(x);
+                    let input = form.getElementsByTagName('input');
+                    input.value = '';
+
+                    // или
+
+                    input.reset();
                 </p>
-                <div class="answer-btn">
-                    <button onclick="showAnswer9()" class="btn btn-answ">Ответ</button>
-                    <script>
-                        function showAnswer9() {
-                            x = 5;
-                            x++;
-                            x -= 2;
-                            alert(x);
-                        }
-                    </script>
-                </div>
             </div>
             <hr class="hr-dotted">
 
@@ -318,26 +221,19 @@
             <div>
                 <p class="answer">10. Как будет выглядеть ваша функция приветствия из прошлого домашнего задания, если
                     ее переписать в стрелочном формате?</p>
+                <p>Ответ</p>
+                <p>Function Declaration</p>
                 <p class="textcode">
-                    function sum(x, y=0) {
-                    &nbsp;&nbsp;&nbsp;&nbsp;return x+y;
+                    function getName() {
+                    let name = prompt('Как тебя зовут?');
+                    alert(`Добро пожаловать ${name}!`);
                     }
-                    alert(sum(5));
                 </p>
-                <div class="answer-btn">
-                    <button onclick="showAnswer10()" class="btn btn-answ">Ответ</button>
-                    <script>
-                        function sum(x, y = 0) {
-                            return x + y;
-                        }
-
-                        function showAnswer10() {
-                            alert(sum(5));
-                        }
-                    </script>
-                </div>
+                <p>Arrow function</p>
+                <p class="textcode">
+                    let getName = () => alert(`Добро пожаловать ${prompt('Как тебя зовут?')}!`);
+                </p>
             </div>
-
         </section>
 
         <aside class="asd">
@@ -382,6 +278,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="scripts/script.js"></script>
 
 </body>
 
