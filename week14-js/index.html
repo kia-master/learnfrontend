@@ -39,14 +39,20 @@
         <section class="leftb">
             <div class="lrb">
                 <h2>Практическое задание 1</h2>
-                <p>Приветствие</p>
-                <button onclick="getName()" class="btn btn-answ">Click me!</button>
-                <script>
-                    function getName() {
-                        let name = prompt('Как тебя зовут?');
-                        alert(`Добро пожаловать ${name}!`);
-                    }
-                </script>
+                <p>Калькулятор</p>
+
+                <input id="num1" class="input-number" type="text" placeholder="Введите первое число">
+                <input id="num2" class="input-number" type="text" placeholder="Введите второе число">
+                <p>Выберите действие:</p>
+                <div class="calc-btn">
+                    <button onclick="sum()">&#43;</button>
+                    <button onclick="subtract()">&#8722;</button>
+                    <button onclick="multiply()">&#8727;</button>
+                    <button onclick="divide()">&#247;</button>
+                </div>
+                <div id="result">
+                    <p>Здесь будет результат</p>
+                </div>
             </div>
         </section>
 
