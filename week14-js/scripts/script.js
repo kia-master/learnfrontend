@@ -32,3 +32,19 @@ function getNextImg() {
 function getPreviousImg() {
     img.setAttribute("src", "assets/images/img3.jpg")
 }
+
+// calculator
+
+let num1 = Number(document.getElementById('num1').value);
+let num2 = Number(document.getElementById('num2').value);
+let result = document.querySelector('#result > p');
+
+let sum = () => result.innerHTML = num1 + num2;
+let subtract = () => result.innerHTML = num1 - num2;
+let multiply = () => result.innerHTML = num1 * num2;
+let divide = () => result.innerHTML = num1 / num2;
+
+// function resetInputCalc() {
+//     document.getElementById('num1').value = '';
+//     document.getElementById('num2').value = '';
+// }
