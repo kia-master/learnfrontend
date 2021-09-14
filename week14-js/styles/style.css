@@ -121,3 +121,23 @@
     width: 100%;
     gap: 1rem;
 }
+
+/* calculater */
+
+.input-number {
+    margin: 0.5rem 0 0.5rem 0;
+    max-width: 40%;
+    text-align: center;
+}
+
+::placeholder {
+    color: #302e2f;
+    font-size: 0.8rem;
+    /* text-transform: uppercase; */
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff8e5;
+}
+
+.calc-btn>button {
+    min-width: 2rem;
+}
