@@ -141,3 +141,7 @@
 .calc-btn>button {
     min-width: 2rem;
 }
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+}
