@@ -35,16 +35,25 @@ function getPreviousImg() {
 
 // calculator
 
-let num1 = Number(document.getElementById('num1').value);
-let num2 = Number(document.getElementById('num2').value);
+function getNumberOne() {
+    let num1 = Number(document.getElementById('num1').value);
+    return num1;
+}
+
+function getNumberTwo() {
+    let num2 = Number(document.getElementById('num2').value);
+    return num2;
+}
+
 let result = document.querySelector('#result > p');
 
-let sum = () => result.innerHTML = num1 + num2;
-let subtract = () => result.innerHTML = num1 - num2;
-let multiply = () => result.innerHTML = num1 * num2;
-let divide = () => result.innerHTML = num1 / num2;
+let sum = () => result.textContent = getNumberOne() + getNumberTwo();
+let subtract = () => result.innerHTML = getNumberOne() - getNumberTwo();
+let multiply = () => result.innerHTML = getNumberOne() * getNumberTwo();
+let divide = () => result.innerHTML = getNumberOne() / getNumberTwo();
 
-// function resetInputCalc() {
-//     document.getElementById('num1').value = '';
-//     document.getElementById('num2').value = '';
-// }
+function resetInputCalc() {
+    document.getElementById('num1').value = '';
+    document.getElementById('num2').value = '';
+    document.querySelector('#result > p').textContent = 'Здесь будет результат';
+}
