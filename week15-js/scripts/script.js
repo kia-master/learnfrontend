@@ -46,14 +46,22 @@ function getNumberTwo() {
 }
 
 let result = document.querySelector('#result > p');
-
 let sum = () => result.textContent = getNumberOne() + getNumberTwo();
 let subtract = () => result.innerHTML = getNumberOne() - getNumberTwo();
 let multiply = () => result.innerHTML = getNumberOne() * getNumberTwo();
-let divide = () => result.innerHTML = getNumberOne() / getNumberTwo();
-
+let divide = () => {
+    if (getNumberTwo() == 0) {
+        result.textContent = 'На ноль делить нельзя!';
+        result.style.color = "red";
+        result.style.fontWeight = "bolder";
+    } else {
+        result.innerHTML = getNumberOne() / getNumberTwo();
+    }
+}
 function resetInputCalc() {
     document.getElementById('num1').value = '';
     document.getElementById('num2').value = '';
-    document.querySelector('#result > p').textContent = 'Здесь будет результат';
+    result.textContent = 'Здесь будет результат';
+    result.style.color = "";
+    result.style.fontWeight = "";
 }
