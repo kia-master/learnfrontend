@@ -56,20 +56,20 @@
             </div>
         </section>
 
-        <section class="rightb">
+        <section class="rightb" id="changeColor">
             <div class="lrb">
                 <h2>Практическое задание 2</h2>
-                <p>Меняем цвет по клику на div</p>
+                <p>Можно изменить цвет этого блока</p>
                 <div class="color">
-                    <div id="color-red" onclick="changeColorRed()">
-                        <p id="text-red">Red</p>
-                    </div>
-                    <div id="color-green" onclick="changeColorGreen()">
-                        <p id="text-green">Green</p>
-                    </div>
-                    <div id="color-blue" onclick="changeColorBlue()">
-                        <p id="text-blue">Blue</p>
-                    </div>
+                    <p class="chan-color">Выберите цвет блока: </p>
+                    <select id="colors" onchange="changeColorBlock()">
+                        <option value="Lilac">Lilac</option>
+                        <option value="Meadowland">Meadowland</option>
+                        <option value="ValleyGreen">ValleyGreen</option>
+                        <option value="RosePoint">RosePoint</option>
+                        <option value="MerionBlue">MerionBlue</option>
+                        <option value="Default">Default</option>
+                    </select>
                 </div>
             </div>
         </section>
