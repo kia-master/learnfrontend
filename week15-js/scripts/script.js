@@ -1,26 +1,25 @@
 // change color for divs
+function changeColorBlock() {
+    var selection = document.getElementById('colors').value;
+    var blockForChangeColor = document.getElementById('changeColor');
 
-function changeColorRed() {
-    let div = document.getElementById('color-red');
-    let text = document.getElementById('text-red');
-    div.style.backgroundColor = 'orange';
-    text.textContent = 'Orange';
+    switch (selection) {
+        case "Lilac": blockForChangeColor.style.backgroundColor = '#e1d6f6';
+            break;
+        case "Meadowland": blockForChangeColor.style.backgroundColor = '#ebe4b4';
+            break;
+        case "ValleyGreen": blockForChangeColor.style.backgroundColor = '#c0e8c1';
+            break;
+        case "RosePoint": blockForChangeColor.style.backgroundColor = '#fbc9c7';
+            break;
+        case "MerionBlue": blockForChangeColor.style.backgroundColor = '#9dd1e4';
+            break;
+        case "Default": blockForChangeColor.style.backgroundColor = '#fdeabd';
+            break;
+        default: blockForChangeColor.style.backgroundColor = '#fdeabd';
+            break;
+    }
 }
-
-function changeColorGreen() {
-    let div = document.getElementById('color-green');
-    let text = document.getElementById('text-green');
-    div.style.backgroundColor = 'gray';
-    text.textContent = 'Gray';
-}
-
-function changeColorBlue() {
-    let div = document.getElementById('color-blue');
-    let text = document.getElementById('text-blue');
-    div.style.backgroundColor = 'purple';
-    text.textContent = 'Purple';
-}
-
 // gallery
 
 let img = document.querySelector('.gallery-image > img');
