@@ -1,0 +1,147 @@
+.main-container {
+    display: grid;
+    grid-template-areas:
+        "header header header header header"
+        "descr  descr  descr  descr  asd   "
+        "leftb  leftb  rightb rightb asd   "
+        "leftb  leftb  rightb rightb asd   "
+        "task3  task3  task3  task3  asd   "
+        "answ   answ   answ   answ   asd   "
+        "foot   foot   foot   foot   foot  ";
+}
+
+.task3 {
+    grid-area: task3;
+}
+
+
+.about-grid-area-img,
+.about-grid-template-areas-img {
+    max-width: 45%;
+}
+
+.lrb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+}
+
+/* .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    background-color: #deeccd;
+    border: #04754f;
+} */
+
+.answer-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 24px;
+    margin: 15px 0 15px 0;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    height: 37px;
+    max-width: 30%;
+    min-width: 15%;
+    line-height: 37px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    background-color: #fff8e5;
+    transition: box-shadow .18s ease-out, background .18s ease-out, color .18s ease-out;
+}
+
+.btn:hover {
+    box-shadow: 0 1px 1px 0 #cfcfcf, 0 2px 5px 0 #cfcfcf;
+}
+
+.btn-answ {
+    min-width: 40%;
+    margin: 15px 0 0 0;
+}
+
+/* ----- ANSWERS ----- */
+
+/* change color for task 2 */
+
+.color {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    margin: 2rem 0 2rem 0;
+}
+
+.color div {
+    flex: 1 0 26%;
+    white-space: nowrap;
+    min-height: 5rem;
+    /* text in center */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    border-radius: 0.4rem;
+}
+
+#color-red {
+    background-color: red;
+}
+
+#color-green {
+    background-color: green;
+}
+
+#color-blue {
+    background-color: blue;
+}
+
+/* gallery */
+
+.gallery-image>img {
+    display: block;
+    margin: 0 auto;
+    max-width: 35%;
+}
+
+.gallery-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+/* calculater */
+
+.input-number {
+    margin: 0.5rem 0 0.5rem 0;
+    max-width: 40%;
+    text-align: center;
+}
+
+::placeholder {
+    color: #302e2f;
+    font-size: 0.8rem;
+    /* text-transform: uppercase; */
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff8e5;
+}
+
+.calc-btn>button {
+    min-width: 2rem;
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+}

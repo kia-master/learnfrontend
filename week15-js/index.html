@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>week 15</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <link rel="stylesheet" href="../assets/styles/week_style.css">
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-480px.css" media="screen and (max-width : 480px)" />
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <header class="main-head">
+            <div class="header-beauty">
+                <h1 class="logo-header">I LEARN FRONTEND</h1>
+                <nav class="navigation-header">
+                    <div><a href="#">Недели</a></div>
+                    <div><a href="#">Проекты</a></div>
+                    <div><a href="https://github.com/kia-master" target="_blank">Github</a></div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="main-description">
+            <h2 class="description-left-box">Привет! Меня зовут Ирина Куликова</h2>
+            <p>Давай ответим на вопросы домашки к 15 неделе.</p>
+            <p class="ps-text-right">PS. Это не окончательный layout ...</p>
+            <p class="ps-text-right">13.09 - 19.09 2021</p>
+        </section>
+
+        <section class="leftb">
+            <div class="lrb">
+                <h2>Практическое задание 1</h2>
+                <p>Калькулятор</p>
+
+                <input id="num1" class="input-number" type="text" placeholder="Введите первое число">
+                <input id="num2" class="input-number" type="text" placeholder="Введите второе число">
+                <p>Выберите действие:</p>
+                <div class="calc-btn">
+                    <button onclick="sum()">&#43;</button>
+                    <button onclick="subtract()">&#8722;</button>
+                    <button onclick="multiply()">&#8727;</button>
+                    <button onclick="divide()">&#247;</button>
+                </div>
+                <div id="result">
+                    <p>Здесь будет результат</p>
+                </div>
+                <button onclick="resetInputCalc()">Очистить ввод</button>
+            </div>
+        </section>
+
+        <section class="rightb">
+            <div class="lrb">
+                <h2>Практическое задание 2</h2>
+                <p>Меняем цвет по клику на div</p>
+                <div class="color">
+                    <div id="color-red" onclick="changeColorRed()">
+                        <p id="text-red">Red</p>
+                    </div>
+                    <div id="color-green" onclick="changeColorGreen()">
+                        <p id="text-green">Green</p>
+                    </div>
+                    <div id="color-blue" onclick="changeColorBlue()">
+                        <p id="text-blue">Blue</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="task3 answers">
+            <h2>Практическое задание 3</h2>
+            <p>Простая галерея</p>
+            <div class="gallery-image">
+                <img src="assets/images/img1.jpg" alt="gallery-img1">
+            </div>
+            <div class="gallery-btn">
+                <button onclick="getPreviousImg()" class="btn">Назад</button>
+                <button onclick="getNextImg()" class="btn">Вперед</button>
+            </div>
+        </section>
+
+        <!-- Answers on questions -->
+        <section class="answers">
+            <h2>Ответы на вопросы</h2>
+
+            <!-- question 1 -->
+            <div>
+                <p class="answer">1. Сколько есть видов условных операторов?</p>
+                <p>Ответ</p>
+                <p>1. условный оператор <code>if</code> (с одной ветвью)</p>
+                <p>2. условный оператор <code>if...else</code> (с двумя ветвями)</p>
+                <p>3. условный оператор <code>else if...</code> (с несколькими ветвями)</p>
+                <p>4. тернарный оператор <code>?:</code></p>
+                <p>5. оператор выбора <code>switch</code></p>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 2 -->
+            <div>
+                <p class="answer">2. Перепишите пример про определение времени суток через тернарный оператор</p>
+                <p class="textcode">
+                    let date = new Date();
+                    let time = date.getHours();
+                    if (time &lt; 10) {
+                    alert( "Доброе утро!" );
+                    } else {
+                    alert( "Добрый день!" ); }
+                </p>
+                <p>Ответ</p>
+
+                <p class="textcode">
+                    let date = new Date();
+                    let time = date.getHours();
+                    (time &lt; 10) ? alert( "Доброе утро!" ) : alert( "Добрый день!" );
+                </p>
+
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 3 -->
+            <div>
+                <p class="answer">3. Выведется ли alert?</p>
+                <p class="textcode">
+                    if ("0") {
+                    alert( 'Привет' );
+                    }
+                </p>
+                <p>Ответ</p>
+                <p>Да, алерт Привет отобразиться, т.к. наличие любого строкового символа означает True.</p>
+
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 4 -->
+            <div>
+                <p class="answer">4. Чему будет равно условие (правда или ложь) в этих случаях, если <code>x = 6</code>
+                    and <code>y = 3</code>? </p>
+                <p>1. <code>(x &lt; 10 && y > 1)</code> логическое И</p>
+                <p>2. <code>(x == 5 || y == 5)</code> логическое ИЛИ</p>
+                <p>3. <code>!(x == y)</code> логическое НЕ</p>
+                <p>Ответ</p>
+                <p>1. True</p>
+                <p>2. False</p>
+                <p>3. True</p>
+
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 5 -->
+            <div>
+                <p class="answer">5. Назовите три способа назначения обработчиков событий. Какой из них самый
+                    универсальный? </p>
+                <p>Ответ</p>
+                <p>1. Назначение обработчика прямо в разметке HTML с помощью атрибута <code>on&lt;событие></code> .
+                    Только HTML.</p>
+                <p>2. С помощью свойства DOM-элемента <code>on&lt;событие></code> . Сам обработчик пишется в скрипте,
+                    HTML + JS</p>
+                <p>3. Доступ к элементу через <code>this</code></p>
+                <p>Более универсальный способ назначение обработчика событий с помощью атрибута
+                    <code>on&lt;событие></code></p>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 6 -->
+            <div>
+                <p class="answer">6. Корректна ли такая запись?</p>
+                <p><code>button.onclick = hello();</code></p>
+                <p>Ответ</p>
+                <p>Эта запись не корректна, т.к. функция должна быть присвоена как <code>hello</code>. Если добавить
+                    скобки, то <code>hello()</code> – это уже вызов функции, результат которого
+                    (равный <code>undefined</code>, так
+                    как функция ничего не возвращает) будет присвоен <code>onclick</code>.</p>
+                <p>Правильно: <code>button.onclick = hello;</code></p>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 7 -->
+            <div>
+                <p class="answer">7. Какие есть события у клавиатуры?</p>
+                <p>Ответ</p>
+                <p>1. <code>keydown</code> возникает при нажатии клавиши клавиатуры и длится, пока нажата клавиша</p>
+                <p>2. <code>keyup</code> возникает при отпускании клавиши клавиатуры</p>
+                <p>3. <code>keypress</code> возникает при нажатии клавиши клавиатуры, но после события keydown и до
+                    события keyup. Надо учитывать, что данное событие генерируется только для тех клавиш, которые
+                    формируют вывод в виде символов, например, при печати символов. Нажатия на остальные клавиши,
+                    например, на Alt, не учитываются.</p>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 8 -->
+            <div>
+                <p class="answer">8. Что такое объект события и какие у него могут быть свойства?</p>
+                <p>Ответ</p>
+                <p>Объект события (Event) - это объект, который создает браузер, когда происходит какое-либо событие,
+                    записывает в него детали и передаёт его в качестве аргумента функции-обработчику. В объект браузер
+                    помещает много различной информации. Например, для события click: какая клавиша нажата, координаты
+                    курсора и др.</p>
+                <p>Свойства объекта Event:</p>
+                <p><code>event.bubbles</code> – логическое значение, указывающее на то является ли данное событие
+                    всплывающим;</p>
+                <p><code>event.cancelable</code> – определяет можно ли событие отменить;</p>
+                <p><code>event.clientX</code> и <code>event.clientY</code> – координаты курсора относительно левого
+                    верхнего угла viewport;</p>
+                <p>
+                    <code>event.cancelBubble</code> – при установке true предотвращает всплытие события, т.е. оно
+                    всплывать не будет (является псевдонимом метода stopPropagation);
+                </p>
+                <p><code>event.currentTarget</code> – элемент, привязанный к обработчику события;</p>
+                <p><code>event.target</code> – элемент, который создал событие;</p>
+                <p><code>event.timestamp</code> – время, когда произошло событие;</p>
+                <p><code>event.type</code> – тип (имя) события.</p>
+
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 9 -->
+            <div>
+                <p class="answer">9. Самостоятельно разберитесь, какие бывают операторы сравнения? Напишите сюда как
+                    выглядят сравнение "равно", "не равно", "больше чем".</p>
+                <p>Ответ</p>
+                <p>Операторы сравнения в JavaScript:</p>
+                <p>Больше/меньше: <code>a > b</code>, <code>a &lt; b</code>.</p>
+                <p>Больше/меньше или равно: <code>a >= b</code>, <code>a &lt;= b</code>.</p>
+                <p>
+                    Равно: <code>a == b</code>. Для сравнения используется двойной знак равенства ==. Один знак
+                    равенства a = b означал бы присваивание.
+                </p>
+                <p>Не равно: <code>a != b</code>.</p>
+                <p>Все операторы сравнения возвращают значение логического типа:</p>
+                <p><code>true</code> – означает «да», «верно», «истина».</p>
+                <p><code>false</code> – означает «нет», «неверно», «ложь».</p>
+            </div>
+        </section>
+
+        <aside class="asd">
+            <div class="right-box-container">
+                <div>
+                    <h2>Страничка про кота</h2>
+                    <p>Это первая работа. Первая неделя ... </p>
+                    <a href="https://kia-master.github.io/learnfrontend/week1/" class="right-box-img-hover"
+                        target="_blank">
+                    </a>
+                </div>
+                <div>
+                    <h2>Страница блогера</h2>
+                    <p>Проект для третьей недели учебы. Доработанный, с векторными и растровыми картинками</p>
+                    <a href="https://kia-master.github.io/learnfrontend/week3/" class="right-box-img-hover-2"
+                        target="_blank">
+                    </a>
+                </div>
+                <div>
+                    <h2>Сайт-визитка</h2>
+                    <p>Это окончательная верстка сайта-визитки с использованием позиционирования.</p>
+                    <a href="https://kia-master.github.io/learnfrontend/buscard/" class="right-box-img-hover-3"
+                        target="_blank">
+                    </a>
+                </div>
+                <div>
+                    <h2>Шаблон на гридах</h2>
+                    <p>За основу был взят шаблон Figma - Dashboard. Небольшая разметка макета.</p>
+                    <a href="https://kia-master.github.io/learnfrontend/dashboard-grid/" class="right-box-img-hover-4"
+                        target="_blank">
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <footer class="footer">
+            <div class="footer-beauty">
+                <div>Секция 1</div>
+                <div>Секция 2</div>
+                <div>Секция 3</div>
+                <div>Секция 4</div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>

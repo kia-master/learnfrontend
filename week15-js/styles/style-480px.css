@@ -1,0 +1,105 @@
+.main-container {
+    grid-template-areas:
+        "header header header header"
+        "asd    asd    asd    asd   "
+        "descr  descr  descr  descr "
+        "leftb  leftb  rightb rightb"
+        "leftb  leftb  rightb rightb"
+        "answ   answ   answ   answ  "
+        "game   game   game   game  "
+        "foot   foot   foot   foot  ";
+    max-width: 100%;
+    height: 10%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.right-box-container {
+    flex-direction: row;
+    overflow-x: auto;
+    justify-content: space-between;
+    scrollbar-width: none;
+}
+
+.right-box-container::-webkit-scrollbar {
+    display: none;
+    width: 0;
+}
+
+.right-box-container div {
+    padding: 1em;
+    flex: 0 0 35%;
+    align-content: stretch;
+}
+
+.right-box-container>div>p {
+    display: none;
+}
+
+.right-box-container>div>h2 {
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+.right-box-img-hover,
+.right-box-img-hover-2,
+.right-box-img-hover-3,
+.right-box-img-hover-4 {
+    max-width: 100%;
+}
+
+
+.header-beauty {
+    flex-direction: column;
+}
+
+.logo-header {
+    max-width: 100%;
+    text-align: center;
+}
+
+.navigation-header {
+    justify-content: stretch;
+    margin-right: 0;
+}
+
+.navigation-header>div {
+    max-width: 100%;
+}
+
+.textcode {
+    font-size: 1em;
+    margin: 1em 0 2em 0;
+}
+
+/* for question 5 */
+.grid-container-5q {
+    gap: 4%;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    justify-content: stretch;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* for question 4 */
+.grid-container-4q {
+    grid-template-columns: 50px 30% 1fr;
+    grid-template-rows: 100px 50px;
+}
+
+.about-grid-area-img,
+.about-grid-template-areas-img {
+    max-width: 100%;
+}
+
+.game-res figure {
+    margin: 2em 0;
+}
+
+.footer-beauty div {
+    margin: 0.4em;
+    padding: 1em;
+    font-size: 0.8em;
+    text-align: center;
+}
