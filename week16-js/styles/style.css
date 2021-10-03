@@ -3,8 +3,8 @@
     grid-template-areas:
         "header header header header header"
         "descr  descr  descr  descr  asd   "
-        "leftb  leftb  rightb rightb asd   "
-        "leftb  leftb  rightb rightb asd   "
+        "leftb  leftb  leftb  leftb  asd   "
+        "leftb  leftb  leftb  leftb  asd   "
         "task3  task3  task3  task3  asd   "
         "answ   answ   answ   answ   asd   "
         "foot   foot   foot   foot   foot  ";
@@ -12,6 +12,11 @@
 
 .task3 {
     grid-area: task3;
+}
+
+.leftb {
+    width: 40%;
+    justify-self: center;
 }
 
 .about-grid-area-img,
@@ -118,7 +123,7 @@ button {
 .form-wrap {
     display: flex;
     width: 100%;
-    background: #ffd500;
+    background: #c7dfc2;
     border-radius: 20px;
 }
 
@@ -137,7 +142,7 @@ form {
     background: white;
     width: 70%;
     padding: 2rem;
-    border-radius: 0 1rem 1rem 0;
+    border-radius: 1rem 0 0 1rem;
     color: #7b7b7b;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.1rem;
