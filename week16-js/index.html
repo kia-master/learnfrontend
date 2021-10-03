@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>week 16</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <link rel="stylesheet" href="../assets/styles/week_style.css">
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-480px.css" media="screen and (max-width : 480px)" />
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <header class="main-head">
+            <div class="header-beauty">
+                <h1 class="logo-header">I LEARN FRONTEND</h1>
+                <nav class="navigation-header">
+                    <div><a href="#">Недели</a></div>
+                    <div><a href="#">Проекты</a></div>
+                    <div><a href="https://github.com/kia-master" target="_blank">Github</a></div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="main-description">
+            <h2 class="description-left-box">Привет! Меня зовут Ирина Куликова</h2>
+            <p>Давай ответим на вопросы домашки к 16 неделе.</p>
+            <p>Тема: JS. Массивы, циклы, querySelector</p>
+            <p class="ps-text-right">PS. Это не окончательный layout ...</p>
+            <p class="ps-text-right">20.09 - 26.09 2021</p>
+        </section>
+
+        <section class="leftb">
+            <div class="lrb">
+                <h2>Практическое задание 1</h2>
+                <p>Введите число</p>
+                <button id="input-number">Введите число</button>
+            </div>
+        </section>
+
+        <section class="rightb" id="changeColor">
+            <div class="lrb">
+                <h2>Практическое задание 2</h2>
+                <p>Можно изменить цвет этого блока</p>
+                <div class="color">
+                    <p class="chan-color">Выберите цвет блока: </p>
+                    <select id="colors" onchange="changeColorBlock()">
+                        <option value="Lilac">Lilac</option>
+                        <option value="Meadowland">Meadowland</option>
+                        <option value="ValleyGreen">ValleyGreen</option>
+                        <option value="RosePoint">RosePoint</option>
+                        <option value="MerionBlue">MerionBlue</option>
+                        <option value="Default">Default</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="task3 answers">
+            <!-- <h2>Практическое задание 3</h2> -->
+            <div class="form-wrap">
+                <div class="profile">
+                    <img src="https://html5book.ru/wp-content/uploads/2016/10/profile-image.png" alt="reg">
+                    <h2 id="welcome">Регистрация</h2>
+                    <p id="info_user"></p>
+                </div>
+                <form id="form">
+                    <div>
+                        <input type="text" id="firstname" placeholder="Введите имя">
+                        <span class="warning" id="warnname"></span>
+                    </div>
+                    <div>
+                        <input type="text" id="surname" placeholder="Введите фамилию">
+                        <span class="warning" id="warnsurname"></span>
+                    </div>
+                    <div>
+                        <input type="text" id="password" placeholder="Придумайте пароль">
+                        <span class="warning" id="warnpass"></span>
+                    </div>
+                    <div>
+                        <input type="text" id="passrepeat" placeholder="Повторите пароль">
+                        <span class="warning" id="warnpassrep"></span>
+                    </div>
+                    <div>
+                        <input type="text" id="email" placeholder="Введите e-mail">
+                        <span class="warning" id="warnmail"></span>
+                    </div>
+                    <div class="radio">
+                        <span>Пол</span>
+                        <input type="radio" name="gender" value="m" /> Муж
+                        <input type="radio" name="gender" value="f" /> Жен
+                        <span class="warning" id="warngender"></span>
+                    </div>
+                    <div>
+                        <select id="country">
+                            <option value="0">Выберите страну</option>
+                            <option value="Rus">Россия</option>
+                            <option value="Ukr">Украина</option>
+                            <option value="Belarus">Беларусь</option>
+                        </select>
+                        <span class="warning" id="warncountry"></span>
+                    </div>
+                    <div><button type="submit" id="submit">Отправить</button></div>
+                    <div><button type="reset">Очистить</button></div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Answers on questions -->
+        <section class="answers">
+            <h2>Ответы на вопросы</h2>
+
+            <!-- question 1 -->
+            <div>
+                <p class="answer">1. Какими способами можно объявлять массивы в JS?</p>
+                <p>Ответ</p>
+                <p>1. С помощью квадратных скобок <br>
+                    пустой <code>let items = [];</code><br>
+                    или сразу со значениями <code>let fruits = ["Яблоко", "Апельсин", "Слива"];</code>
+                </p>
+                <p>2. Создание объекта класса Array() <br>
+                    <code>let arr = new Array("Яблоко", "Груша", "и тд");</code></p>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 2 -->
+            <div>
+                <p class="answer">2. Приведите 3 примера, из тех, которые не были озвучены в материалах, что могло бы
+                    быть массивом? </p>
+                <p>Ответ</p>
+                <p>1. Список кандидатов на выборы - это массив, состояящий из фамилий.</p>
+                <p>2. Список ингредиентов для борща - это массив из продуктов.</p>
+                <p>3. Прайс-лист на услуги парикмахера - это двумерный массив, состоящий из подмассивов, в которых
+                    услуга и цена.</p>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 3 -->
+            <div>
+                <p class="answer">3. Каким еще способом, кроме pop и shift можно удалять элементы из массивов?</p>
+                <p>Ответ</p>
+                <p>Используя свойство массива <code>length</code>, присваивая свойству новое значение длины - массив при
+                    этом укорачивается</p>
+                <p>Например, дан массив <code>let arr = [1, 2, 3, 4, 5];</code><br>
+                    Длина <code>arr.length</code> равна 5<br>
+                    Чтобы убрать, например, последние 2 элемента, достаточно присвоить массиву новую длину: <br>
+                    <code>arr.length = 3;</code></p>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 4 -->
+            <div>
+                <p class="answer">4. Можно ли пропускать части for? Что получится, если написать <code>for(;;)</code> ?
+                </p>
+                <p>Ответ</p>
+                <p>Все 3 выражения в цикле <code>for</code> не обязательны.</p>
+                <p><code>for(;;)</code> - это бесконечный цикл. Главное использовать <code>break</code> , чтобы
+                    закончить цикл.</p>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 5 -->
+            <div>
+                <p class="answer">5. Самостоятельно разберитесь, как работает цикл while и приведите два примера кода с
+                    его использованием.</p>
+                <p>Ответ</p>
+                <p>1. Код в цикле будет выполняться снова и снова, пока переменная (i) меньше 10:</p>
+                <p class="textcode">
+                    while (i &lt; 10) {
+                    &nbsp;&nbsp;&nbsp;&nbsp;alert(i);
+                    &nbsp;&nbsp;&nbsp;&nbsp;i++;
+                    }
+                </p>
+                <p>2. Ввести число от 1 до 10. Цикл while здесь подходит идеально, т.к. мы не можем заранее знать,
+                    сколько раз нам придется попросить пользователя ввести корректное число</p>
+                <p class="textcode">
+                    var theNumber = prompt("Пожалуйста, введите число от 1 до 10.");
+
+                    while (theNumber &lt; 1 || theNumber > 10 || isNaN(theNumber))
+                    {
+                    &nbsp;&nbsp;&nbsp;&nbsp;theNumber = prompt("Неправильное значение, введите число от 1 до 10!");
+                    }
+                    alert("Отлично! Вы ввели число: " + theNumber);
+                </p>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 6 -->
+            <div>
+                <p class="answer">6. Какой получится массив, если создать его вот так new Array(5)?</p>
+                <p>Ответ</p>
+                <p>Получится массив без элементов (значение будет undefined), но с длинной равной пяти.</p>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 7 -->
+            <div>
+                <p class="answer">7. Как вывести чётные числа от 2 до 10 при помощи цикла for?</p>
+                <p>Ответ</p>
+                <p class="textcode">
+                    for(i = 2; i &lt; 11; i = i + 2){
+                    &nbsp;&nbsp;&nbsp;&nbsp;console.log(i);
+                    }
+                </p>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 8 -->
+            <div>
+                <p class="answer">8. Каков будет результат выполнения этого кода? Почему?</p>
+                <p class="textcode">
+                    let arr = ["a", "b"];
+
+                    arr.push(function() {
+                    &nbsp;&nbsp;&nbsp;&nbsp;alert( arr );
+                    })
+
+                    arr[2](); // ?
+                </p>
+                <p>Ответ</p>
+                <p>Результатом будет алерт, в котором отобразится сообщение: </p>
+                <p class="textcode">
+                    a,b,function() {
+                    alert( arr );
+                    }
+                    arr[2]();
+                </p>
+                <p>Т.к. после указания индекса элемента стоят круглые скобки и третий элемент это
+                    функция, то эта функция выполнится и в алерте будут указаны все элементы массива.</p>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 9 -->
+            <div>
+                <p class="answer">9. Три основных способа перебора элементов массива?</p>
+                <p>Ответ</p>
+                <p>Цикл <code>for (начало; условие; шаг) {}</code></p>
+                <p>Цикл <code>for..of</code> : <code>for (let element of elements)</code></p>
+                <p>Метод <code>forEach</code></p>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 10 -->
+            <div>
+                <p class="answer">10. Как можно выбрать все инпуты из вашей формы регистрации из прошлого ДЗ с помощью
+                    <code>querySelector*</code>?</p>
+                <p>Ответ</p>
+                <p><code>let inputs = form.querySelectorAll('input');</code></p>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 11 -->
+            <div>
+                <p class="answer">11. Самостоятельно разберитесь, как можно проще всего сделать сортировку в массиве на
+                    JS?</p>
+                <p>Ответ</p>
+                <p>Проще всего к массиву вызвать метод <code>array.sort()</code> и массив будет отсортитрован по
+                    возрастанию. Но сортировка этим методом сортирует элементы только в лексикографическом порядке.</p>
+                <p>Для сортировки чисел по возрастанию:</p>
+                <p><code>array.sort( (a, b) => a - b );</code></p>
+                <p>Это работает так: всякий раз когда a меньше, чем b, возвращается
+                    негативное значение, что ведет к тому, что меньший элемент всегда будет выставляться левее большего,
+                    а другими словами, порядок будет выстроен по возрастанию.</p>
+            </div>
+            <hr class="hr-dotted">
+
+            <!-- question 12 -->
+            <div>
+                <p class="answer">12. Как можно принудительно остановить выполнение цикла?</p>
+                <p>Ответ</p>
+                <p>с помощью специальной директивы <code>break</code> в теле цикла, например, после выполнения
+                    какого-либо условия
+                </p>
+            </div>
+        </section>
+
+        <aside class="asd">
+            <div class="right-box-container">
+                <div>
+                    <h2>Страничка про кота</h2>
+                    <p>Это первая работа. Первая неделя ... </p>
+                    <a href="https://kia-master.github.io/learnfrontend/week1/" class="right-box-img-hover"
+                        target="_blank">
+                    </a>
+                </div>
+                <div>
+                    <h2>Страница блогера</h2>
+                    <p>Проект для третьей недели учебы. Доработанный, с векторными и растровыми картинками</p>
+                    <a href="https://kia-master.github.io/learnfrontend/week3/" class="right-box-img-hover-2"
+                        target="_blank">
+                    </a>
+                </div>
+                <div>
+                    <h2>Сайт-визитка</h2>
+                    <p>Это окончательная верстка сайта-визитки с использованием позиционирования.</p>
+                    <a href="https://kia-master.github.io/learnfrontend/buscard/" class="right-box-img-hover-3"
+                        target="_blank">
+                    </a>
+                </div>
+                <div>
+                    <h2>Шаблон на гридах</h2>
+                    <p>За основу был взят шаблон Figma - Dashboard. Небольшая разметка макета.</p>
+                    <a href="https://kia-master.github.io/learnfrontend/dashboard-grid/" class="right-box-img-hover-4"
+                        target="_blank">
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <footer class="footer">
+            <div class="footer-beauty">
+                <div>Секция 1</div>
+                <div>Секция 2</div>
+                <div>Секция 3</div>
+                <div>Секция 4</div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
